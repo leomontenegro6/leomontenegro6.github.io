@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title class="l_titulo_principal">Ace Attorney Image Generator</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicons/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="&nbsp;"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="css/css.css?v=0.6a">
+		<link rel="stylesheet" href="css/sprites_nomes.css?v=0.6a">
+		<link rel="stylesheet" href="css/sprites_subtitulos.css?v=0.6a">
+		<link rel="stylesheet" href="css/sprites_descricoes.css?v=0.6a">
+		<link rel="stylesheet" href="css/theme-dark.css">
+		
+		<!--
+		Electron - Linha necessária para que as importações de scripts js funcionem.
+		Adicionada antes das importações.
+		-->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+		<script type="text/javascript" src="js/jszip.min.js"></script>
+		<script type="text/javascript" src="js/FileSaver.min.js"></script>
+		<script type="text/javascript" src="js/html2canvas.js?v=0.6a"></script>
+		<script type="text/javascript" src="js/aaig.js?v=0.6a"></script>
+		<script type="text/javascript" src="js/lang.pt-br.js?v=0.6a"></script>
+		
+		<!--
+		Electron - Linha necessária para que as importações de scripts js funcionem.
+		Adicionada depois das importações.
+		-->
+		<script>if (window.module) module = window.module;</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container-fluid">
+				<nav id="header" class="navbar-collapse">
+					<ul class="nav navbar-nav title">
+						<li>
+							<a class="navbar-brand" href="#" style="padding-top: 0;">
+								<img src="favicons/brand.png" />
+							</a>
+						</li>
+						<li>
+							<a class="navbar-brand" href="#">
+								<span class="hidden-xs">
+									<span class="l_titulo_navbar">&nbsp;</span>
+									<span class="l_versao">&nbsp;</span>
+								</span>
+								<span class="visible-xs">
+									<span class="l_titulo_navbar_mobile">&nbsp;</span>
+									<span class="l_versao">&nbsp;</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right about">
+						<li>
+							<a class="navbar-brand t_about" href="#" title="" id="sobre_programa">
+								<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</nav>
+		
+		<!-- Campo de seleção de idioma -->
+		<div class="dropdown pull-right" style="margin-right: 5px">
+			<button class="btn btn-default dropdown-toggle" type="button" id="botao_idioma"
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<img class="bandeira" src="img/flag_brazil.png" />
+				<span class="nome_idioma" data-valor="pt-br">Português</span>
+				<span class="caret"></span>
+			</button>
+			<ul id="lista_idiomas" class="dropdown-menu" aria-labelledby="botao_idioma">
+				<li>
+					<a href="#en-us">
+						<img src="img/flag_usa.png" />
+						<span>English</span>
+					</a>
+				</li>
+				<li>
+					<a href="#es">
+						<img src="img/flag_spain.png" />
+						<span>Español</span>
+					</a>
+				</li>
+				<li>
+					<a href="#pt-br">
+						<img src="img/flag_brazil.png" />
+						<span>Português</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Campo de seleção de tema -->
+		<div class="dropdown pull-right" style="margin-right: 5px">
+			<button class="btn btn-default dropdown-toggle" type="button" id="botao_tema"
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<i class="glyphicon glyphicon-text-background"></i>
+				<span class="l_tema">Tema</span>
+				<span class="caret"></span>
+			</button>
+			<ul id="lista_temas" class="dropdown-menu" aria-labelledby="botao_tema">
+				<li>
+					<a href="#light" class="l_tema_claro">Claro</a>
+				</li>
+				<li>
+					<a href="#dark" class="l_tema_escuro">Escuro</a>
+				</li>
+			</ul>
+		</div>
+		<br /><br />
+		
+		<div class="container">
+			<!-- Abas -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#botoes" aria-controls="botoes" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-align-justify"></span>
+						<span class="l_aba_botoes">&nbsp;</span>
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#botoes_menores" aria-controls="botoes_menores" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-th-list"></span>
+						<span class="l_aba_botoes_menores">&nbsp;</span>
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#nome_prova" aria-controls="nome_prova" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-text-background"></span>
+						<span class="l_aba_nome_prova">&nbsp;</span>
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#subtitulo_prova" aria-controls="subtitulo_prova" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-text-background"></span>
+						<span class="l_aba_subtitulo_prova">&nbsp;</span>
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#descricao_prova" aria-controls="descricao_prova" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-list-alt"></span>
+						<span class="l_aba_descricao_prova">&nbsp;</span>
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#sandbox" aria-controls="sandbox" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-inbox"></span>
+						<span class="l_aba_sandbox">&nbsp;</span>
+					</a>
+				</li>
+			</ul>
+
+			<!-- Contêiners das abas -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="botoes">
+					<!-- incluir "aba_botoes.html" -->
+					<span class="l_carregando">&nbsp;</span>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="botoes_menores">
+					<!-- incluir "aba_botoes_menores.html -->
+					<span class="l_carregando">&nbsp;</span>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="nome_prova">
+					<!-- incluir "aba_nomes_provas_perfis.html" -->
+					<span class="l_carregando">&nbsp;</span>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="subtitulo_prova">
+					<!-- incluir "aba_subtitulos_provas_perfis.html" -->
+					<span class="l_carregando">&nbsp;</span>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="descricao_prova">
+					<!-- incluir "aba_descricoes_provas_perfis.html" -->
+					<span class="l_carregando">&nbsp;</span>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="sandbox">
+					<!-- incluir "aba_sandbox.html" -->
+					<span class="l_carregando">&nbsp;</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal" id="indicador_carregamento" tabindex="-1" role="dialog" aria-labelledby="loadingIndicator" data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+						<span class="l_carregando">&nbsp;</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

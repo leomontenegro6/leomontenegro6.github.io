@@ -1,0 +1,7 @@
+# Scripts em bash e arquivos de lote
+# para auxiliar no processo de commit
+*.sh
+*.bat
+
+# Arquivos de configuração privados do projeto do netbeans
+/nbproject/private/
