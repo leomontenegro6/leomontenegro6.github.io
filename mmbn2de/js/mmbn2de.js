@@ -81,7 +81,7 @@ function mmbn2de(){
 				var reader = new FileReader();
 				var filename = file.name;
 				
-				reader.readAsText(file);
+				reader.readAsText(file, "iso-8859-1");
 				reader.onload = function (evt) {
 					var fileContents = evt.target.result;
 					that.showLoadingIndicator();
@@ -94,10 +94,19 @@ function mmbn2de(){
 			var filename = file_item_list.split('/').pop();
 			
 			that.showLoadingIndicator();
-			$.get(file_item_list).then(function(fileContents){
-				that.parseScriptFile(filename, fileContents, function(){
-					that.instantiatePaginationDialogParsing();
-				});
+			
+			$.ajax({
+				url: file_item_list,
+				type: 'GET',
+				contentType: 'Content-type: text/plain; charset=iso-8859-1',
+				beforeSend: function(jqXHR) {
+					jqXHR.overrideMimeType('text/html;charset=iso-8859-1');
+				},
+				success: function(fileContents){
+					that.parseScriptFile(filename, fileContents, function(){
+						that.instantiatePaginationDialogParsing();
+					});
+				}
 			});
 		}
 		
