@@ -507,9 +507,6 @@ function mmbn2de(){
 		var $divTextWindow = $divPreview.children('div.text-window');
 		var $divCharacterName = $divPreview.children('div.character-avatar');
 		$divTextWindow.html('');
-		
-		// Removing end block tags
-		text = text.replace(/![-*]*!/g, '');
 
 		// Inserting <LF> when user presses enter
 		if(keyCode == 13){
@@ -521,6 +518,9 @@ function mmbn2de(){
 
 			$field.val(text).prop('selectionEnd', cursorPos + 5).trigger('input');
 		}
+		
+		// Removing end block tags
+		text = text.replace(/![-*]*!/g, '');
 
 		// Iterating over all characters inside text field
 		for (var i = 0, size = text.length; i < size; i++) {
@@ -664,6 +664,16 @@ function mmbn2de(){
 		
 		// Needed to avoid form submission
 		return false;
+	}
+	
+	this.openAboutPage = function(){
+		var url_github = 'https://github.com/hansenhahn/mmbn-2/blob/master/Editor/README.md';
+		if( this.checkOnElectron() ){
+			var shell = require('electron').shell;
+			shell.openExternal(url_github);
+		} else {
+			window.open(url_github);
+		}
 	}
 	
 	this.showScriptSaveSettings = function(){
@@ -1204,6 +1214,10 @@ function mmbn2de(){
 				return env;
 			}
 		}
+	}
+	
+	this.checkOnElectron = function(){
+		return (typeof process == 'object');
 	}
 }
 
