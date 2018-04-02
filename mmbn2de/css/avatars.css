@@ -1,0 +1,82 @@
+/* Element containing the character name (currently only shows the charCode value) */
+div.character-avatar span.name{
+	display: inline-block;
+	position: absolute;
+	bottom: 6px;
+	right: 0;
+	font-size: 10px;
+	color: black;
+}
+
+/* Image containing all avatars */
+div.character-avatar.loaded{
+	background: url('../images/avatars.png?v=0.1b');
+}
+
+/* Avatar list */
+div.character-avatar.loaded.megaman{
+	background-position: -2px -2px;
+}
+div.character-avatar.loaded.lan{
+	background-position: -2px -52px;
+}
+div.character-avatar.loaded.mayl{
+	background-position: -2px -102px;
+}
+div.character-avatar.loaded.mina-laytonica{
+	background-position: -2px -152px;
+}
+div.character-avatar.loaded.moleque-sapao{
+	background-position: -2px -202px;
+}
+div.character-avatar.loaded.yai{
+	background-position: -2px -252px;
+}
+div.character-avatar.loaded.dex{
+	background-position: -2px -302px;
+}
+div.character-avatar.loaded.mari{
+	background-position: -2px -352px;
+}
+div.character-avatar.loaded.quarentao-assalariado{
+	background-position: -2px -402px;
+}
+div.character-avatar.loaded.pirralho-testudo{
+	background-position: -2px -452px;
+}
+div.character-avatar.loaded.patricinha-rosa{
+	background-position: -2px -502px;
+}
+div.character-avatar.loaded.pirralho-bone{
+	background-position: -2px -552px;
+}
+div.character-avatar.loaded.grandao-frankenstein{
+	background-position: -2px -602px;
+}
+div.character-avatar.loaded.vovozinha-sapao{
+	background-position: -2px -652px;
+}
+div.character-avatar.loaded.morenao-laranja{
+	background-position: -2px -702px;
+}
+div.character-avatar.loaded.arashi{
+	background-position: -2px -752px;
+}
+div.character-avatar.loaded.mulher-gordona{
+	background-position: -2px -802px;
+}
+div.character-avatar.loaded.mae-lan{
+	background-position: -2px -852px;
+}
+div.character-avatar.loaded.programa-verde{
+	background-position: -2px -902px;
+}
+div.character-avatar.loaded.navi-roxo{
+	background-position: -2px -952px;
+}
+div.character-avatar.loaded.gutsman{
+	background-position: -2px -1002px;
+}
+div.character-avatar.loaded.roll{
+	background-position: -2px -1052px;
+}

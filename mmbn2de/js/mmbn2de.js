@@ -8,11 +8,32 @@ function mmbn2de(){
 	this.equivalenceTable = {};
 	this.dialogParserTableTextareas = $();
 	this.lastAvatar = '';
-	this.theme = 'light';
-	this.mobileShowInitially = 'p';
 	this.automaticPageChange = false;
+	this.configs = {};
+	this.defaultConfigs = {
+		'theme': 'light',
+		'mobileShowInitially': 'p'
+	};
 	
 	// Methods
+	this.loadConfigs = function(){
+		var theme = stash.get('theme');
+		var mobileShowInitially = stash.get('mobileShowInitially');
+		
+		if(typeof theme == 'undefined') theme = this.defaultConfigs.theme;
+		if(typeof mobileShowInitially == 'undefined') mobileShowInitially = this.defaultConfigs.mobileShowInitially;
+		
+		this.configs = {
+			'theme': theme,
+			'mobileShowInitially': mobileShowInitially
+		}
+	}
+	
+	this.loadTheme = function(){
+		var theme = this.configs.theme;
+		$('body').addClass(theme);
+	}
+	
 	this.changeTheme = function(element){
 		var $element = $(element);
 		var $body = $('body');
@@ -26,7 +47,7 @@ function mmbn2de(){
 			theme = $element.val();
 		}
 		
-		this.theme = theme;
+		stash.set('theme', theme);
 		$body.removeClass('light dark').addClass(theme);
 		
 		// Update table if the dialog parser table is loaded,
@@ -35,6 +56,9 @@ function mmbn2de(){
 			var tableObject = $dialogParserTable.DataTable();
 			tableObject.draw(false);
 		}
+		
+		// Reloading configs after saving the new theme
+		this.loadConfigs();
 	}
 	
 	this.loadDialogFileForm = function(){
@@ -227,7 +251,7 @@ function mmbn2de(){
 				var $trs = $tbody.children('tr');
 				
 				var device = that.getDevice();
-				var mobileShowInitially = that.mobileShowInitially;
+				var mobileShowInitially = that.configs.mobileShowInitially;
 				var checkNoValidRows = (($trs.length == 0) || (($trs.length == 1) && ($trs.find('td.dataTables_empty').length == 1)));
 				
 				// If there's no valid rows, there's no need
@@ -374,14 +398,23 @@ function mmbn2de(){
 		$dialogParserTable.closest('div.dataTables_wrapper').find('div.script-name').html('Script: <span class="script-filename">Nenhum aberto</span>');
 		$('.script-filename').html(filename);
 		
-		// Showing the rest of the options in the global actions menu
-		var $dropdownGlobalActions = $('#global-actions-dropdown');
-		$dropdownGlobalActions.children('li').show();
-		
-		// Asking user to save script before exiting
-		$(window).on("beforeunload", function() { 
-			return 'Há um arquivo aberto na aba "Tradutor de Diálogos". É recomendável salvá-lo antes de sair.\nTem certeza que quer continuar?'; 
-		});
+		if( this.checkOnElectron() ){
+			// Enabling script menus that was previously disabled
+			var ipc = require('electron').ipcRenderer;
+			ipc.send('activateScriptMenus');
+			
+			// Showing exit prompt before discarding changes
+			ipc.send('showExitPromptBeforeDiscard');
+		} else {
+			// Showing the rest of the options in the global actions menu
+			var $dropdownGlobalActions = $('#global-actions-dropdown');
+			$dropdownGlobalActions.children('li').show();
+			
+			// Asking user to save script before exiting
+			$(window).on("beforeunload", function() { 
+				return 'Há um arquivo aberto na aba "Tradutor de Diálogos". É recomendável salvá-lo antes de sair.\nTem certeza que quer continuar?'; 
+			});
+		}
 	}
 	
 	this.instantiateEventMobileToggleFieldPreview = function(){
@@ -392,7 +425,7 @@ function mmbn2de(){
 			
 			var device = mmbn2de.getDevice();
 			var tableObject = $dialogParserTable.DataTable();
-			var mobileShowInitially = that.mobileShowInitially;
+			var mobileShowInitially = that.configs.mobileShowInitially;
 			var checkUpdateTable = false;
 			
 			$tbody.children('tr').each(function(){
@@ -505,7 +538,8 @@ function mmbn2de(){
 		var tagText = '';
 		
 		var $divTextWindow = $divPreview.children('div.text-window');
-		var $divCharacterName = $divPreview.children('div.character-avatar');
+		var $divCharacterAvatar = $divPreview.children('div.character-avatar');
+		var $spanCharacterName = $divCharacterAvatar.children('span.name');
 		$divTextWindow.html('');
 
 		// Inserting <LF> when user presses enter
@@ -552,8 +586,9 @@ function mmbn2de(){
 						hasAvatarTag = true;
 
 						var tmp = tagText.split(':');
-						var characterCode = tmp.pop();
+						var characterCode = $.trim( tmp.pop() );
 						this.lastAvatar = this.getAvatar(characterCode);
+						$spanCharacterName.html(characterCode);
 					}
 				}
 				tagText = '';
@@ -561,11 +596,17 @@ function mmbn2de(){
 		}
 
 		if(!hasAvatarTag){
-			var characterCode = $divCharacterName.attr('data-character-code');
+			var characterCode = $divCharacterAvatar.attr('data-character-code');
 			this.lastAvatar = this.getAvatar(characterCode);
+			$spanCharacterName.html(characterCode);
 		}
-
-		$divCharacterName.html(this.lastAvatar);
+		
+		if(this.lastAvatar != ''){
+			$divCharacterAvatar.addClass('loaded ' + this.lastAvatar);
+			$spanCharacterName.html('');
+		} else {
+			$divCharacterAvatar.attr('class', 'character-avatar');
+		}
 		
 		var textWithoutTags = this.getTextWithoutTags(text);
 		$divTextWithoutTags.html(textWithoutTags);
@@ -589,8 +630,54 @@ function mmbn2de(){
 	}
 	
 	this.getAvatar = function(code){
-		// TODO: Implement avatar showing routine
-		return '';
+		var avatar = '';
+		if(code == '0 64'){
+			avatar = 'megaman';
+		} else if(code == '0 0'){
+			avatar = 'lan';
+		} else if(code == '0 7'){
+			avatar = 'mayl';
+		} else if(code == '0 9'){
+			avatar = 'mina-laytonica';
+		} else if(code == '0 8'){
+			avatar = 'moleque-sapao';
+		} else if(code == '0 1'){
+			avatar = 'yai';
+		} else if(code == '0 2'){
+			avatar = 'dex';
+		} else if(code == '0 3'){
+			avatar = 'mari';
+		} else if(code == '0 18'){
+			avatar = 'quarentao-assalariado';
+		} else if(code == '0 10'){
+			avatar = 'pirralho-testudo';
+		} else if(code == '0 16'){
+			avatar = 'patricinha-rosa';
+		} else if(code == '0 26'){
+			avatar = 'pirralho-bone';
+		} else if(code == '0 15'){
+			avatar = 'grandao-frankenstein';
+		} else if(code == '0 19'){
+			avatar = 'vovozinha-sapao';
+		} else if(code == '0 39'){
+			avatar = 'morenao-laranja';
+		} else if(code == '0 38'){
+			avatar = 'arashi';
+		} else if(code == '0 14'){
+			avatar = 'mulher-gordona';
+		} else if(code == '0 11'){
+			avatar = 'mae-lan';
+		} else if(code == '0 66'){
+			avatar = 'programa-verde';
+		} else if(code == '0 71'){
+			avatar = 'navi-roxo';
+		} else if(code == '0 76'){
+			avatar = 'gutsman';
+		} else if(code == '0 69'){
+			avatar = 'roll';
+		}
+		
+		return avatar;
 	}
 	
 	this.showTextPreview = function(scriptText){
@@ -614,27 +701,47 @@ function mmbn2de(){
 		// Showing modal
 		$divConfigSettings.modal('show');
 		
-		// Loading default configs 
-		this.loadDefaultConfigs();
+		// Loading configs into form
+		this.loadConfigsForm();
 	}
 	
-	this.loadDefaultConfigs = function(){
+	this.loadConfigsForm = function(){
 		var $radioMobileShowInitiallyPreview = $('#config-mobile-show-initially-preview');
 		var $radioMobileShowInitiallyTextfield = $('#config-mobile-show-initially-textfield');
 		var $radioThemeLight = $('#config-theme-light');
 		var $radioThemeDark = $('#config-theme-dark');
 		
 		// Checking default options for each field
-		if(this.mobileShowInitially == 'p'){
+		if(this.configs.mobileShowInitially == this.defaultConfigs.mobileShowInitially){
 			$radioMobileShowInitiallyPreview.prop('checked', true);
 		} else {
 			$radioMobileShowInitiallyTextfield.prop('checked', true);
 		}
-		if(this.theme == 'light'){
+		if(this.configs.theme == this.defaultConfigs.theme){
 			$radioThemeLight.prop('checked', true);
 		} else {
 			$radioThemeDark.prop('checked', true);
 		}
+		
+		// Avoid form resetting default behaviour
+		return false;
+	}
+	
+	this.loadDefaultConfigsForm = function(){
+		var theme = this.defaultConfigs.theme;
+		var mobileShowInitially = this.defaultConfigs.mobileShowInitially;
+		
+		var $radioThemeDefault = $('#config-theme-' + theme);
+		var $radioMobileShowInitiallyDefault;
+		if(mobileShowInitially == 'p'){
+			$radioMobileShowInitiallyDefault = $('#config-mobile-show-initially-preview');
+		} else {
+			$radioMobileShowInitiallyDefault = $('#config-mobile-show-initially-textfield');
+		}
+		
+		// Checking default options for each field
+		$radioThemeDefault.prop('checked', true);
+		$radioMobileShowInitiallyDefault.prop('checked', true);
 		
 		// Avoid form resetting default behaviour
 		return false;
@@ -648,8 +755,8 @@ function mmbn2de(){
 		var $radioMobileShowInitially = $("input[name='config-mobile-show-initially']:checked");
 		var $radioTheme = $("input[name='config-theme']:checked");
 		
-		var checkMobileShowInitiallyChanged = ($radioMobileShowInitially.val() != this.mobileShowInitially);
-		var checkThemeChanged = ($radioTheme.val() != this.theme);
+		var checkMobileShowInitiallyChanged = ($radioMobileShowInitially.val() != this.configs.mobileShowInitially);
+		var checkThemeChanged = ($radioTheme.val() != this.configs.theme);
 		
 		this.hideScriptConfigSettings();
 		this.showLoadingIndicator();
@@ -736,7 +843,9 @@ function mmbn2de(){
 		
 		var tableObject = $dialogParserTable.DataTable();
 		var mobileShowInitially = $radio.val();
-		this.mobileShowInitially = mobileShowInitially;
+		stash.set('mobileShowInitially', mobileShowInitially);
+		
+		this.loadConfigs();
 		
 		this.updatePreviewVisibleTextareas();
 		tableObject.draw(false);

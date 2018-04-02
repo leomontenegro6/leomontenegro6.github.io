@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Editor de Diálogos do Mega Man Battle Network 2</title>
+		<title>Editor de diálogos do Mega Man Battle Network 2 v0.1b</title>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		
@@ -29,9 +29,10 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
 		<link rel="stylesheet" href="css/jquery.highlight-within-textarea.css">
-		<link rel="stylesheet" href="css/css.css?v=0.1a">
-		<link rel="stylesheet" href="css/theme-dark.css?v=0.1a">
-		<link rel="stylesheet" href="css/font_sprites.css?v=0.1a">
+		<link rel="stylesheet" href="css/css.css?v=0.1b">
+		<link rel="stylesheet" href="css/avatars.css?v=0.1b">
+		<link rel="stylesheet" href="css/theme-dark.css?v=0.1b">
+		<link rel="stylesheet" href="css/font_sprites.css?v=0.1b">
 		
 		<!--
 		Electron - Line needed in order to script imports to work.
@@ -48,7 +49,8 @@
 		<script type="text/javascript" src="js/safeSave.js"></script>
 		<script type="text/javascript" src="js/jsrender.min.js"></script>
 		<script type="text/javascript" src="js/jquery.highlight-within-textarea.js"></script>
-		<script type="text/javascript" src="js/mmbn2de.js?v=0.1a"></script>
+		<script type="text/javascript" src="js/stash.min.js"></script>
+		<script type="text/javascript" src="js/mmbn2de.js?v=0.1b"></script>
 		<script type="text/javascript">
 			// Electron - Line needed in order to script imports to work.
 			// Need to be added after all JS files are loaded.
@@ -57,6 +59,8 @@
 			// Common tool routines
 			var device = mmbn2de.getDevice(true);
 			$(function(){
+				mmbn2de.loadConfigs();
+				mmbn2de.loadTheme();
 				mmbn2de.loadDialogFileForm();
 				mmbn2de.loadModalWindows();
 			})
@@ -76,10 +80,10 @@
 					<a class="navbar-brand" href="#">
 						<img class="brand" alt="Brand" src="favicons/brand.png" />
 						<span class="title hidden-xs">
-							Editor de Diálogos do Mega Man Battle Network 2 v0.1a
+							Editor de Diálogos do Mega Man Battle Network 2 v0.1b
 						</span>
 						<span class="title visible-xs">
-							EDMMBN2 v0.1a
+							EDMMBN2 v0.1b
 						</span>
 					</a>
 				</div>

@@ -113,7 +113,7 @@ td.form-fields textarea.text-field{
 	position: relative;
 	width: 240px;
 	height: 64px;
-	background: url('../images/block.png?v=0.1a');
+	background: url('../images/block.png');
 	display: inline-block;
 }
 .dialog-preview div.character-avatar{
@@ -137,7 +137,7 @@ td.form-fields textarea.text-field{
 	left: 245px;
 }
 .dialog-preview.invalid{
-	background: url('../images/block_invalid.png?v=0.1a');
+	background: url('../images/block_invalid.png');
 }
 #text-preview textarea{
 	height: 320px;

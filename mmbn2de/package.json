@@ -1,0 +1,23 @@
+{
+	"name": "mmbn2de",
+	"version": "0.1b",
+	"description": "Editor de diálogos do Mega Man Battle Network 2",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": "https://github.com/hansenhahn/mmbn-2/tree/master/Editor",
+	"keywords": [
+		"mega",
+		"man",
+		"battle",
+		"network",
+		"rock",
+		"man"
+	],
+	"author": "Solid One, DiegoHH",
+	"license": "GPL-3.0",
+	"devDependencies": {
+		"electron": "~1.8.4"
+	}
+}
