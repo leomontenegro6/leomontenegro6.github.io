@@ -1,6 +1,6 @@
 {
-	"name": "mmbn2de",
-	"version": "0.1b",
+	"name": "Editor de diálogos do Mega Man Battle Network 2",
+	"version": "0.1c",
 	"description": "Editor de diálogos do Mega Man Battle Network 2",
 	"main": "main.js",
 	"scripts": {

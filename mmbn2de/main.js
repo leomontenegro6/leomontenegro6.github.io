@@ -10,16 +10,22 @@ const dialog = electron.dialog
 const path = require('path')
 const url = require('url')
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
+// Keep a global reference of the variables below, if you don't, the app may
+// be affected by javascript garbage collection routines
 let mainWindow
 let menu
+let aboutWindow
 
 app.showExitPrompt = false
 
 function createWindow () {
-	// Create the browser window.
-	mainWindow = new BrowserWindow({width: 1280, height: 768})
+	// Create windows
+	mainWindow = new BrowserWindow({
+		width: 1280,
+		height: 768
+	})
+	
+	// Maximize window, if needed
 	//mainWindow.maximize();
 
 	// and load the index.html of the app.
@@ -61,6 +67,7 @@ function createWindow () {
 		// Dereference the window object, usually you would store windows
 		// in an array if your app supports multi windows, this is the time
 		// when you should delete the corresponding element.
+		aboutWindow = null
 		mainWindow = null
 	})
 
@@ -160,8 +167,33 @@ function createWindow () {
 				{
 					id: 'about',
 					label: 'Sobre',
+					accelerator: 'F1',
 					click () {
-						mainWindow.webContents.executeJavaScript("mmbn2de.openAboutPage()")
+						// Creating about window, and setting it as child of main window
+						aboutWindow = new BrowserWindow({
+							width: 640,
+							height: 384,
+							parent: mainWindow,
+							resizable: false,
+							fullscreenable: false,
+							minimizable: false,
+							maximizable: false,
+							center: true,
+							modal: true
+						})
+						
+						// Loading "about.html" inside the window
+						aboutWindow.loadURL(url.format({
+							pathname: path.join(__dirname, 'about.html'),
+							protocol: 'file:',
+							slashes: true
+						}))
+						
+						// Open the DevTools for the about window.
+						//aboutWindow.webContents.openDevTools()
+						
+						// Removing menubar from about window
+						aboutWindow.setMenu(null)
 					}
 				}
 			]
@@ -230,4 +262,7 @@ ipc.on('activateScriptMenus', () => {
 })
 ipc.on('showExitPromptBeforeDiscard', () => {
 	app.showExitPrompt = true
+})
+ipc.on('closeAboutWindow', () => {
+	aboutWindow.close()
 })

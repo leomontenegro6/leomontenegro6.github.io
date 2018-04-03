@@ -10,7 +10,7 @@ div.character-avatar span.name{
 
 /* Image containing all avatars */
 div.character-avatar.loaded{
-	background: url('../images/avatars.png?v=0.1b');
+	background: url('../images/avatars.png?v=0.1c');
 }
 
 /* Avatar list */

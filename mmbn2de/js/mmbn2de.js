@@ -405,6 +405,11 @@ function mmbn2de(){
 			
 			// Showing exit prompt before discarding changes
 			ipc.send('showExitPromptBeforeDiscard');
+			
+			// Updating window title in order to prepend filename on it
+			var $title = $('title');
+			var title = $title.html();
+			$title.html(filename + ' - ' + title);
 		} else {
 			// Showing the rest of the options in the global actions menu
 			var $dropdownGlobalActions = $('#global-actions-dropdown');
@@ -554,7 +559,7 @@ function mmbn2de(){
 		}
 		
 		// Removing end block tags
-		text = text.replace(/![-*]*!/g, '');
+		text = text.replace(/![-*]{3,}!/g, '');
 
 		// Iterating over all characters inside text field
 		for (var i = 0, size = text.length; i < size; i++) {
@@ -601,11 +606,10 @@ function mmbn2de(){
 			$spanCharacterName.html(characterCode);
 		}
 		
+		$divCharacterAvatar.attr('class', 'character-avatar');
 		if(this.lastAvatar != ''){
 			$divCharacterAvatar.addClass('loaded ' + this.lastAvatar);
 			$spanCharacterName.html('');
-		} else {
-			$divCharacterAvatar.attr('class', 'character-avatar');
 		}
 		
 		var textWithoutTags = this.getTextWithoutTags(text);
@@ -1298,6 +1302,18 @@ function mmbn2de(){
 			return newChar;
 		} else {
 			return 'unknown';
+		}
+	}
+	
+	this.closeAboutWindowOnEscEvent = function(){
+		if( this.checkOnElectron() ){
+			document.addEventListener('keydown', function(e){
+				if(e.which == 27){
+					// Enabling script menus that was previously disabled
+					var ipc = require('electron').ipcRenderer;
+					ipc.send('closeAboutWindow');
+				}
+			});
 		}
 	}
 	
