@@ -22,7 +22,8 @@ function createWindow () {
 	// Create windows
 	mainWindow = new BrowserWindow({
 		width: 1280,
-		height: 768
+		height: 768,
+		title: app.getName()
 	})
 	
 	// Maximize window, if needed
@@ -173,6 +174,7 @@ function createWindow () {
 						aboutWindow = new BrowserWindow({
 							width: 640,
 							height: 384,
+							title: 'Sobre o programa',
 							parent: mainWindow,
 							resizable: false,
 							fullscreenable: false,
@@ -257,6 +259,12 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+ipc.on('getTitle', (e) => {
+	e.returnValue = mainWindow.getTitle()
+})
+ipc.on('setTitle', (e, title) => {
+	mainWindow.setTitle(title)
+})
 ipc.on('activateScriptMenus', () => {
 	toggleScriptMenus(true)
 })

@@ -10,73 +10,90 @@ div.character-avatar span.name{
 
 /* Image containing all avatars */
 div.character-avatar.loaded{
-	background: url('../images/avatars.png?v=0.1c');
+	background: url('../images/avatars.png?v=0.1d');
 }
 
 /* Avatar list */
-div.character-avatar.loaded.megaman{
-	background-position: -2px -2px;
-}
-div.character-avatar.loaded.lan{
-	background-position: -2px -52px;
-}
-div.character-avatar.loaded.mayl{
-	background-position: -2px -102px;
-}
-div.character-avatar.loaded.mina-laytonica{
-	background-position: -2px -152px;
-}
-div.character-avatar.loaded.moleque-sapao{
-	background-position: -2px -202px;
-}
-div.character-avatar.loaded.yai{
-	background-position: -2px -252px;
-}
-div.character-avatar.loaded.dex{
-	background-position: -2px -302px;
-}
-div.character-avatar.loaded.mari{
-	background-position: -2px -352px;
-}
-div.character-avatar.loaded.quarentao-assalariado{
-	background-position: -2px -402px;
-}
-div.character-avatar.loaded.pirralho-testudo{
-	background-position: -2px -452px;
-}
-div.character-avatar.loaded.patricinha-rosa{
-	background-position: -2px -502px;
-}
-div.character-avatar.loaded.pirralho-bone{
-	background-position: -2px -552px;
-}
-div.character-avatar.loaded.grandao-frankenstein{
-	background-position: -2px -602px;
-}
-div.character-avatar.loaded.vovozinha-sapao{
-	background-position: -2px -652px;
-}
-div.character-avatar.loaded.morenao-laranja{
-	background-position: -2px -702px;
-}
-div.character-avatar.loaded.arashi{
-	background-position: -2px -752px;
-}
-div.character-avatar.loaded.mulher-gordona{
-	background-position: -2px -802px;
-}
-div.character-avatar.loaded.mae-lan{
-	background-position: -2px -852px;
-}
-div.character-avatar.loaded.programa-verde{
-	background-position: -2px -902px;
-}
-div.character-avatar.loaded.navi-roxo{
-	background-position: -2px -952px;
-}
-div.character-avatar.loaded.gutsman{
-	background-position: -2px -1002px;
-}
-div.character-avatar.loaded.roll{
-	background-position: -2px -1052px;
-}
+div.character-avatar.loaded.megaman{ background-position: -2px -2px; }
+div.character-avatar.loaded.lan{ background-position: -2px -52px; }
+div.character-avatar.loaded.mayl{ background-position: -2px -102px; }
+div.character-avatar.loaded.mina-laytonica{ background-position: -2px -152px; }
+div.character-avatar.loaded.moleque-sapao{ background-position: -2px -202px; }
+div.character-avatar.loaded.yai{ background-position: -2px -252px; }
+div.character-avatar.loaded.dex{ background-position: -2px -302px; }
+div.character-avatar.loaded.mari{ background-position: -2px -352px; }
+div.character-avatar.loaded.quarentao-assalariado{ background-position: -2px -402px; }
+div.character-avatar.loaded.pirralho-testudo{ background-position: -2px -452px; }
+div.character-avatar.loaded.patricinha-rosa{ background-position: -2px -502px; }
+div.character-avatar.loaded.pirralho-bone{ background-position: -2px -552px; }
+div.character-avatar.loaded.grandao-frankenstein{ background-position: -2px -602px; }
+div.character-avatar.loaded.vovozinha-sapao{ background-position: -2px -652px; }
+div.character-avatar.loaded.morenao-laranja{ background-position: -2px -702px; }
+div.character-avatar.loaded.arashi{ background-position: -2px -752px; }
+div.character-avatar.loaded.mulher-gordona{ background-position: -2px -802px; }
+div.character-avatar.loaded.mae-lan{ background-position: -2px -852px; }
+div.character-avatar.loaded.programa-verde{ background-position: -2px -902px; }
+div.character-avatar.loaded.navi-roxo-mal{ background-position: -2px -952px; }
+div.character-avatar.loaded.gutsman{ background-position: -2px -1002px; }
+div.character-avatar.loaded.roll{ background-position: -2px -1052px; }
+div.character-avatar.loaded.glyde{ background-position: -2px -1102px; }
+div.character-avatar.loaded.cientista-generico{ background-position: -2px -1152px; }
+div.character-avatar.loaded.airman{ background-position: -2px -1202px; }
+div.character-avatar.loaded.homem-desconhecido{ background-position: -2px -1252px; }
+div.character-avatar.loaded.velhinho-chapeu{ background-position: -2px -1302px; }
+div.character-avatar.loaded.pirralhinha-chuquinha{ background-position: -2px -1352px; }
+div.character-avatar.loaded.carinha-metro{ background-position: -2px -1402px; }
+div.character-avatar.loaded.maid-avental{ background-position: -2px -1452px; }
+div.character-avatar.loaded.secretaria-cabelo-curto{ background-position: -2px -1502px; }
+div.character-avatar.loaded.loirao-topetudo{ background-position: -2px -1552px; }
+div.character-avatar.loaded.ribitta{ background-position: -2px -1602px; }
+div.character-avatar.loaded.cameraman{ background-position: -2px -1652px; }
+div.character-avatar.loaded.guile-velho{ background-position: -2px -1702px; }
+div.character-avatar.loaded.protoman{ background-position: -2px -1752px; }
+div.character-avatar.loaded.chaud{ background-position: -2px -1802px; }
+div.character-avatar.loaded.mina-cachecol{ background-position: -2px -1852px; }
+div.character-avatar.loaded.fortao-bandana{ background-position: -2px -1902px; }
+div.character-avatar.loaded.speedy-dave{ background-position: -2px -1952px; }
+div.character-avatar.loaded.quickman{ background-position: -2px -2002px; }
+div.character-avatar.loaded.kingman{ background-position: -2px -2052px; }
+div.character-avatar.loaded.cutman{ background-position: -2px -2102px; }
+div.character-avatar.loaded.pai-lan{ background-position: -2px -2152px; }
+div.character-avatar.loaded.assistente-loirao{ background-position: -2px -2202px; }
+div.character-avatar.loaded.aeromoca{ background-position: -2px -2252px; }
+div.character-avatar.loaded.mina-albina{ background-position: -2px -2302px; }
+div.character-avatar.loaded.vendedor-gravata{ background-position: -2px -2352px; }
+div.character-avatar.loaded.vendedora-gravata{ background-position: -2px -2402px; }
+div.character-avatar.loaded.nega-brinco-azul{ background-position: -2px -2452px; }
+div.character-avatar.loaded.loirao-serio{ background-position: -2px -2502px; }
+div.character-avatar.loaded.loirinha-gravata{ background-position: -2px -2552px; }
+div.character-avatar.loaded.brutamontes-oculos{ background-position: -2px -2602px; }
+div.character-avatar.loaded.nego-zoin{ background-position: -2px -2652px; }
+div.character-avatar.loaded.negao-bombado{ background-position: -2px -2702px; }
+div.character-avatar.loaded.velha-nariguda{ background-position: -2px -2752px; }
+div.character-avatar.loaded.raoul{ background-position: -2px -2802px; }
+div.character-avatar.loaded.sr-higsby{ background-position: -2px -2852px; }
+div.character-avatar.loaded.sra-millions{ background-position: -2px -2902px; }
+div.character-avatar.loaded.numberman{ background-position: -2px -2952px; }
+div.character-avatar.loaded.princesa-pride{ background-position: -2px -3002px; }
+div.character-avatar.loaded.gauss{ background-position: -2px -3052px; }
+div.character-avatar.loaded.sean{ background-position: -2px -3102px; }
+div.character-avatar.loaded.careca-laytonico{ background-position: -2px -3152px; }
+div.character-avatar.loaded.piloto-com-oculos{ background-position: -2px -3202px; }
+div.character-avatar.loaded.piloto-sem-oculos{ background-position: -2px -3252px; }
+div.character-avatar.loaded.magnetman{ background-position: -2px -3302px; }
+div.character-avatar.loaded.mr-match{ background-position: -2px -3352px; }
+div.character-avatar.loaded.freezeman{ background-position: -2px -3402px; }
+div.character-avatar.loaded.sr-famoso{ background-position: -2px -3452px; }
+div.character-avatar.loaded.navi-verde{ background-position: -2px -3502px; }
+div.character-avatar.loaded.navi-roxo{ background-position: -44px -3502px; }
+div.character-avatar.loaded.navi-mal{ background-position: -86px -3502px; }
+div.character-avatar.loaded.navi-ciclope{ background-position: -128px -3502px; }
+div.character-avatar.loaded.shadowman{ background-position: -2px -3552px; }
+div.character-avatar.loaded.operador-shadowman{ background-position: -44px -3552px; }
+div.character-avatar.loaded.escuridao{ background-position: -86px -3552px; }
+div.character-avatar.loaded.knightman{ background-position: -128px -3552px; }
+div.character-avatar.loaded.lord-gospel{ background-position: -2px -3602px; }
+div.character-avatar.loaded.bass{ background-position: -44px -3602px; }
+div.character-avatar.loaded.pharaohman{ background-position: -2px -3652px; }
+div.character-avatar.loaded.napalmman{ background-position: -2px -3702px; }
+div.character-avatar.loaded.wall-e{ background-position: -2px -3752px; }

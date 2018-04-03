@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Editor de diálogos do Mega Man Battle Network 2 v0.1c</title>
+		<title>Editor de diálogos do Mega Man Battle Network 2 v0.1d</title>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		
@@ -29,10 +29,10 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
 		<link rel="stylesheet" href="css/jquery.highlight-within-textarea.css">
-		<link rel="stylesheet" href="css/css.css?v=0.1c">
-		<link rel="stylesheet" href="css/avatars.css?v=0.1c">
-		<link rel="stylesheet" href="css/theme-dark.css?v=0.1c">
-		<link rel="stylesheet" href="css/font_sprites.css?v=0.1c">
+		<link rel="stylesheet" href="css/css.css?v=0.1d">
+		<link rel="stylesheet" href="css/avatars.css?v=0.1d">
+		<link rel="stylesheet" href="css/theme-dark.css?v=0.1d">
+		<link rel="stylesheet" href="css/font_sprites.css?v=0.1d">
 		
 		<!--
 		Electron - Line needed in order to script imports to work.
@@ -50,7 +50,8 @@
 		<script type="text/javascript" src="js/jsrender.min.js"></script>
 		<script type="text/javascript" src="js/jquery.highlight-within-textarea.js"></script>
 		<script type="text/javascript" src="js/stash.min.js"></script>
-		<script type="text/javascript" src="js/mmbn2de.js?v=0.1c"></script>
+		<script type="text/javascript" src="js/mmbn2de.js?v=0.1d"></script>
+		<script type="text/javascript" src="js/mmbn2de-avatars.js?v=0.1d"></script>
 		<script type="text/javascript">
 			// Electron - Line needed in order to script imports to work.
 			// Need to be added after all JS files are loaded.
@@ -63,6 +64,7 @@
 				mmbn2de.loadTheme();
 				mmbn2de.loadDialogFileForm();
 				mmbn2de.loadModalWindows();
+				mmbn2de.removeTitleAttributeOnElectron();
 			})
 		</script>
 	</head>
@@ -80,10 +82,10 @@
 					<a class="navbar-brand" href="#">
 						<img class="brand" alt="Brand" src="favicons/brand.png" />
 						<span class="title hidden-xs">
-							Editor de Diálogos do Mega Man Battle Network 2 v0.1c
+							Editor de Diálogos do Mega Man Battle Network 2 v0.1d
 						</span>
 						<span class="title visible-xs">
-							EDMMBN2 v0.1c
+							EDMMBN2 v0.1d
 						</span>
 					</a>
 				</div>

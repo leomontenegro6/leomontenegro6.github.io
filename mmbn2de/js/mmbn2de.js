@@ -191,6 +191,8 @@ function mmbn2de(){
 					var textWithoutTags = that.getTextWithoutTags(text);
 					var dialogId = 'b-' + number + '-dialog';
 					
+					var checkHasEndSection = /![*]{3,}!/g.test(text);
+					
 					var rowInfo = {
 						'blockNumber': number,
 						'dialogId': dialogId,
@@ -202,6 +204,10 @@ function mmbn2de(){
 
 					$tbody.append($tr);
 					$textarea.val(text);
+					
+					if(checkHasEndSection){
+						$tr.find('button.add-new-block').remove();
+					}
 				}
 				
 				// Updating total row count in table footer
@@ -405,11 +411,6 @@ function mmbn2de(){
 			
 			// Showing exit prompt before discarding changes
 			ipc.send('showExitPromptBeforeDiscard');
-			
-			// Updating window title in order to prepend filename on it
-			var $title = $('title');
-			var title = $title.html();
-			$title.html(filename + ' - ' + title);
 		} else {
 			// Showing the rest of the options in the global actions menu
 			var $dropdownGlobalActions = $('#global-actions-dropdown');
@@ -420,6 +421,10 @@ function mmbn2de(){
 				return 'Há um arquivo aberto na aba "Tradutor de Diálogos". É recomendável salvá-lo antes de sair.\nTem certeza que quer continuar?'; 
 			});
 		}
+		
+		// Updating window title in order to prepend filename on it
+		var title = this.getTitle();
+		this.setTitle(filename + ' - ' + title);
 	}
 	
 	this.instantiateEventMobileToggleFieldPreview = function(){
@@ -634,53 +639,8 @@ function mmbn2de(){
 	}
 	
 	this.getAvatar = function(code){
-		var avatar = '';
-		if(code == '0 64'){
-			avatar = 'megaman';
-		} else if(code == '0 0'){
-			avatar = 'lan';
-		} else if(code == '0 7'){
-			avatar = 'mayl';
-		} else if(code == '0 9'){
-			avatar = 'mina-laytonica';
-		} else if(code == '0 8'){
-			avatar = 'moleque-sapao';
-		} else if(code == '0 1'){
-			avatar = 'yai';
-		} else if(code == '0 2'){
-			avatar = 'dex';
-		} else if(code == '0 3'){
-			avatar = 'mari';
-		} else if(code == '0 18'){
-			avatar = 'quarentao-assalariado';
-		} else if(code == '0 10'){
-			avatar = 'pirralho-testudo';
-		} else if(code == '0 16'){
-			avatar = 'patricinha-rosa';
-		} else if(code == '0 26'){
-			avatar = 'pirralho-bone';
-		} else if(code == '0 15'){
-			avatar = 'grandao-frankenstein';
-		} else if(code == '0 19'){
-			avatar = 'vovozinha-sapao';
-		} else if(code == '0 39'){
-			avatar = 'morenao-laranja';
-		} else if(code == '0 38'){
-			avatar = 'arashi';
-		} else if(code == '0 14'){
-			avatar = 'mulher-gordona';
-		} else if(code == '0 11'){
-			avatar = 'mae-lan';
-		} else if(code == '0 66'){
-			avatar = 'programa-verde';
-		} else if(code == '0 71'){
-			avatar = 'navi-roxo';
-		} else if(code == '0 76'){
-			avatar = 'gutsman';
-		} else if(code == '0 69'){
-			avatar = 'roll';
-		}
-		
+		var avatar = this.avatars[code];
+		if(typeof avatar == 'undefined') avatar = '';
 		return avatar;
 	}
 	
@@ -864,11 +824,14 @@ function mmbn2de(){
 	this.addNewDialogBlock = function(button){
 		var $button = $(button);
 		var $tr = $button.closest('tr');
+		var $divDialogPreview = $button.closest('div.dialog-preview');
+		var $divCharacterAvatar = $divDialogPreview.children('div.character-avatar');
 		var $dialogParserTable = $('#dialog-parser-table');
 		
 		var tableObject = $dialogParserTable.DataTable();
 		
 		var that = this;
+		var characterCode = $divCharacterAvatar.attr('data-character-code');
 		var currentBlockNumber = parseFloat( $tr.find('.block-number').first().html() );
 		var newBlockNumber = (currentBlockNumber + 0.01).toFixed(2);
 		var newDialogId = (newBlockNumber.toString().replace(/\./g, '_')) + '-dialog';
@@ -886,6 +849,10 @@ function mmbn2de(){
 			var $newTdPreviewConteiners = $newTr.children('td.preview-conteiners');
 			var $newTdFormFields = $newTr.children('td.form-fields');
 			var $newTextarea = $newTdFormFields.find('textarea');
+			var $newDivCharacterAvatar = $newTdPreviewConteiners.find('div.character-avatar');
+			
+			// Setting avatar from previous block into the new one
+			$newDivCharacterAvatar.attr('data-character-code', characterCode);
 
 			// Updating selector property with all textareas in an property
 			tableObject.row.add($newTr);
@@ -893,7 +860,7 @@ function mmbn2de(){
 			tableObject.draw(false);
 			
 			// Adding end block tag in the new block
-			$newTextarea.val('!---------------------!');
+			$newTextarea.val('\n!---------------------!');
 			
 			// Adding remove button
 			var $newButtonGroups = $newTdPreviewConteiners.find('div.btn-group');
@@ -907,6 +874,10 @@ function mmbn2de(){
 			
 			// Incrementing row counter in the footer of the table
 			that.incrementTotalDialogsFooter();
+			
+			// Focusing new textarea and placing cursor at beginning of the field
+			$newTextarea.focus();
+			$newTextarea[0].setSelectionRange(0, 0);
 		});
 	}
 	
@@ -1305,11 +1276,38 @@ function mmbn2de(){
 		}
 	}
 	
+	this.getTitle = function(){
+		if( this.checkOnElectron() ){
+			var ipc = require('electron').ipcRenderer;
+			return ipc.sendSync('getTitle');
+		} else {
+			return $('title').html();
+		}
+	}
+	
+	this.setTitle = function(title){
+		if( this.checkOnElectron() ){
+			var ipc = require('electron').ipcRenderer;
+			ipc.send('setTitle', title);
+		} else {
+			$('title').html(title);
+		}
+	}
+	
+	this.removeTitleAttributeOnElectron = function(){
+		if( this.checkOnElectron() ){
+			var $title = $('title');
+			var title = $title.html();
+			
+			$title.remove();
+			this.setTitle(title);
+		}
+	}
+	
 	this.closeAboutWindowOnEscEvent = function(){
 		if( this.checkOnElectron() ){
 			document.addEventListener('keydown', function(e){
 				if(e.which == 27){
-					// Enabling script menus that was previously disabled
 					var ipc = require('electron').ipcRenderer;
 					ipc.send('closeAboutWindow');
 				}
