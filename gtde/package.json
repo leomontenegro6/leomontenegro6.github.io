@@ -1,0 +1,22 @@
+{
+	"name": "Editor de diálogos do Ghost Trick Phantom Detective",
+	"version": "0.1a",
+	"description": "Editor de diálogos do Ghost Trick Phantom Detective",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": "https://github.com/djmatheusito",
+	"keywords": [
+		"ghost",
+		"trick",
+		"phantom",
+		"detective",
+		"editor"
+	],
+	"author": "Solid One, djmatheusito",
+	"license": "GPL-3.0",
+	"devDependencies": {
+		"electron": "~1.8.4"
+	}
+}

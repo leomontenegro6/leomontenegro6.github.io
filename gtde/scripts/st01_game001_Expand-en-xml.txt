@@ -1,0 +1,255 @@
+[m01_0340]
+<Cena: 1 36>It's done.<FIM_BLOCO>
+
+[m01_0350]
+<Cena: 1 37>I'm on my way.<FIM_BLOCO>
+
+[m01_0290]
+<Cena: 1 38><texto_centro>
+In the end, it looks like her<Q>
+<texto_centro>
+fate remains unchanged.<Unknown4><texto_centro>
+So what good are these<Q>
+<texto_centro>
+”ghost tricks” of mine?<Unknown4><texto_centro>
+But just as I was thinking this...<FIM_BLOCO>
+
+[m01_0360]
+<Cena: 1 39><RETRATO: 129>Hello, there.<Q>
+How are you feeling?<FIM>
+Not very well, I imagine.<Q>
+A terrible tragedy, what<Q>
+happened tonight...<FIM>
+<RETRATO: 41>.........<FIM>
+<RETRATO: 129><Unknown15: 21><Unknown16>Ah, ignoring me, are you? It's<Q>
+a little too early for you to be<Q>
+so stiff and cold, I'd say.<FIM>
+<RETRATO: 39>Ah, so it was you. You were<Q>
+that voice in my head, right?<FIM>
+<RETRATO: 129>Well, I wouldn't say ”voice,”<Q>
+exactly. The dead don't have<Q>
+voices, you see.<FIM>
+It's more like my thoughts were<Q>
+being beamed directly into your<Q>
+mind.<FIM>
+That's another little<Q>
+”trick” ghosts can do.<FIM>
+<RETRATO: 52>It looks like my ghost tricks<Q>
+didn't do much good...<FIM_BLOCO>
+
+[m01_0370]
+<Cena: 1 40><RETRATO: 43><COR: 9>(She still ended up just<Q>
+as dead as before.)<COR: 15><FIM>
+<RETRATO: 131>That's true. For now.<FIM>
+<RETRATO: 43><Unknown15: 22>”For now”?<FIM_BLOCO>
+
+[m01_0381]
+<Cena: 1 41><RETRATO: 129>I still have more to teach<Q>
+you about the powers of<Q>
+the dead -- your ”ghost tricks.”<FIM>
+<RETRATO: 41>Who exactly are you, anyway?<FIM>
+<RETRATO: 129>Before I answer that, I think we<Q>
+should save this young lady.<FIM_BLOCO>
+
+[m01_0410]
+<Cena: 1 43><RETRATO: 128>Isn't it a shame to see such a<Q>
+pretty young woman lying here<Q>
+like a discarded piece of trash?<FIM>
+<RETRATO: 52>But what can I do?<Q>
+She's already dead.<FIM_BLOCO>
+
+[m01_0420]
+<Cena: 1 44><RETRATO: 131>Time for more ghost lessons<Q>
+for you, my friend.<FIM>
+<Unknown15: 22>First of all, I'll have<Q>
+you possess <COR: 6>me<COR: 15>.<FIM>
+<RETRATO: 43>Possess you, eh?<FIM>
+<RETRATO: 131>Once you've done that, I'll tell you<Q>
+about another one of your powers.<FIM_BLOCO>
+
+[m01_0430]
+<Cena: 1 45><Unknown5: 15><texto_centro>
+Why am I so determined to<Q>
+<texto_centro>
+save this woman? After all,<Q>
+<texto_centro>
+it's not like I know her.<Unknown4><texto_centro>
+But I guess I'll take the desk<Q>
+<texto_centro>
+lamp up on his invitation anyway.<FIM>
+<texto_centro>
+My reason is twofold.<Unknown4><texto_centro>
+Number one, I'm not the type<Q>
+<texto_centro>
+to leave women lying around,<Q>
+<texto_centro>
+discarded like trash.<Unknown4><texto_centro>
+And number two, I don't have<Q>
+<texto_centro>
+anything else to lose at this point.<FIM_BLOCO>
+
+[m01_0450]
+<Cena: 1 46><Mini_RETRATO: 4>That <COR: 6>thought bubble<COR: 15><Q>
+you just touched...<FIM>
+<Unknown15: 22>Those are your <COR: 6>thoughts<COR: 15>,<Q>
+what you're saying to<Q>
+yourself in your head.<FIM>
+<Mini_RETRATO: 1>My thoughts, eh?<FIM>
+<COR: 9>(So, the dead don't<Q>
+have voices...)<COR: 15><FIM>
+<COR: 9>(...and what we think is<Q>
+communicated directly<Q>
+to one another...)<COR: 15><FIM>
+<COR: 9>(So these <COR: 6>thought bubbles<Q>
+<COR: 9>are sort of a stand-in. I<Q>
+think I'm starting to get it.)<COR: 15><FIM>
+<Mini_RETRATO: 4>I think so, too.<FIM>
+Just remember to<Q>
+always keep an eye<Q>
+out for <COR: 6>thought bubbles<COR: 15>.<FIM>
+<Mini_RETRATO: 1>Okay, good idea.<FIM>
+<COR: 9>(I just might get some<Q>
+important clues from them...)<COR: 15><FIM>
+<Mini_RETRATO: 4>Now, then.<FIM>
+In order to possess me,<Q>
+you first have to enter<Q>
+the <COR: 6>Ghost World<COR: 15>.<FIM>
+And the <GHOST> button<Q>
+is your ticket in.<Unknown13><FIM>
+The best thing to do is try it.<Unknown13><FIM>
+<Mini_RETRATO: 1><COR: 9>(The <GHOST> button, eh?<Q>
+Guess I'll give it a little<Q>
+<COR: 6>touch<COR: 9>.)<COR: 15><FIM_BLOCO>
+
+[m01_0460]
+<Cena: 1 47><Mini_RETRATO: 4><Unknown15: 21><Unknown16>By the way, have you taken<Q>
+a look at the <COR: 6>top screen<COR: 15>?<FIM>
+<Mini_RETRATO: 1>What about it?<FIM>
+<Mini_RETRATO: 4>It tells you what ”<COR: 6>trick<COR: 15>” you<Q>
+can perform with the object<Q>
+you're currently possessing.<FIM>
+The information is there<Q>
+for you to check out<Q>
+whenever you need it.<FIM>
+<Mini_RETRATO: 1><COR: 9>(So, in the case of this<Q>
+folding cot, it looks like<Q>
+I can ”<COR: 6>unfold<COR: 9>” it.)<COR: 15><FIM>
+<Mini_RETRATO: 4>And to perform a ”trick”<Q>
+on the object you're<Q>
+possessing...<FIM>
+...you first have to return<Q>
+to the <COR: 6>land of the living<COR: 15>.<FIM>
+<Mini_RETRATO: 1>Oh, okay.<FIM>
+<Mini_RETRATO: 4>This time, the <BACK> button<Q>
+is your ticket out of the<Q>
+Ghost World.<Unknown13><FIM>
+Well, good luck!<Q>
+We're counting on you.<Unknown13><FIM>
+<Mini_RETRATO: 1><COR: 9>(Huh? Who's this ”we”?)<COR: 15><FIM_BLOCO>
+
+[m01_0470]
+<Cena: 1 48><RETRATO: 43><Unknown15: 22><Unknown16>Huh. That's funny...<FIM>
+<RETRATO: 131>What is?<FIM_BLOCO>
+
+[m01_0480]
+<Cena: 1 49><RETRATO: 68>My corpse and her corpse...<FIM>
+There's definitely something<Q>
+<COR: 6>different<COR: 15> about the two.<FIM>
+<COR: 9>(There's something emanating<Q>
+from my corpse...)<COR: 15><FIM>
+<RETRATO: 131>That's because...<FIM>
+...you're special.<FIM>
+<RETRATO: 54>What's that supposed to mean?<FIM>
+<RETRATO: 131>Not everybody who dies gets<Q>
+special <COR: 6>powers<COR: 15>, you know.<FIM>
+<RETRATO: 43><COR: 9>(So those waves are because<Q>
+of my ”<COR: 6>powers of the dead<COR: 9>,” eh?)<COR: 15><FIM>
+<RETRATO: 131>Anyway...<FIM_BLOCO>
+
+[m01_0500]
+<Cena: 1 50><RETRATO: 131>Congratulations, you passed.<FIM>
+<RETRATO: 39>Well, what do you know.<Q>
+What prize do I get?<FIM>
+<RETRATO: 131><Unknown15: 22>A <COR: 6>new power<COR: 15>. What else?<FIM>
+<RETRATO: 54>Another one?<FIM>
+<RETRATO: 131>Now, let's review. You can possess<Q>
+objects and manipulate them, right?<FIM_BLOCO>
+
+[m01_0510]
+<Cena: 1 51><RETRATO: 134>Now what do you suppose will<Q>
+happen if you possess a <COR: 6>corpse<COR: 15>?<FIM>
+<RETRATO: 52>Nothing, because I already tried<Q>
+that, remember? And nothing<Q>
+happened at all.<FIM>
+<RETRATO: 134>True. You don't have the ability to<Q>
+”manipulate” a corpse.<FIM_BLOCO>
+
+[m01_0511]
+<Cena: 1 52><RETRATO: 134>However...<FIM>
+<Unknown15: 21><Unknown16>There is <COR: 6>something else<COR: 15> you can do.<FIM>
+<RETRATO: 43>Oh, yeah? What's that?<FIM_BLOCO>
+
+[m01_0515]
+<Cena: 1 53><RETRATO: 134>Why don't you try it and see?<FIM_BLOCO>
+
+[m01_0520]
+<Cena: 1 54><Unknown14: 268 30><Unknown3: 120><RETRATO: 54>What's this?<FIM>
+<RETRATO: 268><Unknown15: 0>.........<FIM>
+<RETRATO: 41>Can you hear me?<FIM>
+<RETRATO: 268><Unknown15: 0>.........<FIM>
+<RETRATO: 58><Unknown16><Unknown17: 1 40>Wait a minute.<Q>
+What's going on here?<FIM>
+<RETRATO: 131>Hmm...<FIM>
+It looks like she's<Q>
+unconscious, poor thing.<FIM>
+<RETRATO: 47>Unconscious? But she's dead.<FIM>
+<RETRATO: 131>Yes, but think back.<Q>
+Remember when you died?<FIM>
+When you came to your senses,<Q>
+you'd been unconscious, too.<FIM>
+<RETRATO: 43><COR: 9>(Unconscious, eh?)<COR: 15><FIM_BLOCO>
+
+[m01_0530]
+<Cena: 1 55><RETRATO: 68><COR: 9>(Come to think of it,<Q>
+the desk lamp is right.)<COR: 15><FIM_BLOCO>
+
+[m01_0531]
+<Cena: 1 56><RETRATO: 68><COR: 9>(When I ”came to,”<Q>
+I was already dead.)<COR: 15><FIM_BLOCO>
+
+[m01_0535]
+<Cena: 1 57><Unknown20><Unknown14: 133 60><Unknown2: 120><Unknown21>Let's leave her like this for now.<FIM>
+<RETRATO: 131>And while she's resting,<Q>
+we can save her life.<FIM>
+<RETRATO: 43>Oh, sure. You make it<Q>
+sound so easy.<FIM>
+<RETRATO: 131>And it IS easy.<FIM>
+When you use your<Q>
+powers on a corpse...<FIM>
+<Unknown15: 22><Unknown16>...you can go back to the past,<Q>
+to a time <COR: 6>four minutes before<COR: 15><Q>
+that person's death.<FIM>
+<RETRATO: 47><Unknown15: 21><Unknown16>Are you serious?!<Q>
+Back through time?!<FIM>
+<RETRATO: 131>That's right. But there's a catch.<FIM>
+It only works on ”new corpses,”<Q>
+corpses that have been dead<Q>
+for <COR: 6>less than one day<COR: 15>.<FIM>
+And she's still well<Q>
+within that limit.<FIM>
+You might want to give it<Q>
+a try, before it's too late.<FIM>
+<RETRATO: 45><Unknown16><Unknown17: 1 40>But this is crazy!<Q>
+None of it makes any sense!<FIM>
+<RETRATO: 131>We're talking about the<Q>
+powers of the dead, here.<Q>
+It doesn't have to make sense.<FIM>
+Now, then. Let's go, shall we?<FIM>
+<Unknown15: 23><Unknown16><Unknown17: 1 40>To the time four minutes before<Q>
+this woman was murdered!<FIM>
+<RETRATO: 54><Unknown15: 21><Unknown16><Unknown17: 1 40>H-Hey! Wait a second!<Q>
+I still don't know what<Q>
+you're talking about!<FIM>
+<RETRATO: 131><Unknown12: 60>Heh heh.<FIM>
+<Unknown15: 22>You'll see. You'll see.<FIM_BLOCO>
+
