@@ -111,22 +111,40 @@ td.form-fields textarea.text-field{
 }
 .dialog-preview{
 	position: relative;
-	width: 240px;
-	height: 64px;
-	background: url('../images/block.png');
+	width: 256px;
+	height: 192px;
+	background: black;
 	display: inline-block;
 }
-.dialog-preview div.character-avatar{
+.dialog-preview.block{
+	width: 208px;
+	height: 51px;
+	background: url('../images/block.png');
+}
+.dialog-preview.block.invalid{
+	background: url('../images/block_invalid.png');
+}
+.dialog-preview.big-block{
+	width: 256px;
+	height: 46px;
+	background: url('../images/big_block.png');
+}
+.dialog-preview.big-block.invalid{
+	background: url('../images/big_block_invalid.png');
+}	
+.dialog-preview.block div.character-name,
+.dialog-preview.big-block div.character-name{
 	position: absolute;
-	top: 8px;
-	left: 14px;
-	width: 40px;
-	height: 48px;
+	bottom: 61px;
+	left: 2px;
+	width: 44px;
+	text-align: center;
+	font-size: 11px;
 }
 .dialog-preview div.text-window{
 	position: absolute;
-	top: 6px;
-	left: 64px;
+	bottom: 4px;
+	left: 8px;
 	width: 160px;
 	height: 50px;
 	white-space: nowrap;
@@ -135,9 +153,6 @@ td.form-fields textarea.text-field{
 .dialog-preview div.btn-group{
 	top: 0;
 	left: 245px;
-}
-.dialog-preview.invalid{
-	background: url('../images/block_invalid.png');
 }
 #text-preview textarea{
 	height: 320px;

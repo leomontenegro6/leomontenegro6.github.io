@@ -1,8 +1,12 @@
 <tr>
+	<td class="hidden-xs order">{{:order}}</td>
+	<td class="hidden-xs section">{{:section}}</td>
 	<td class="hidden-xs block-number">{{:blockNumber}}</td>
 	<td class="form-fields">
 		<div class="row visible-xs">
 			<div class="col-xs-4">
+				<b>Ordem:</b> <span class="order">{{:order}}</span><br />
+				<b>Seção:</b> <span class="section">{{:section}}</span><br />
 				<b>Número:</b> <span class="block-number">{{:blockNumber}}</span>
 			</div>
 			<div class="col-xs-8">
@@ -22,6 +26,8 @@
 	<td class="preview-conteiners hidden-xs">
 		<div class="row visible-xs" style="padding-bottom: 5px">
 			<div class="col-xs-4">
+				<b>Ordem:</b> <span class="order">{{:order}}</span><br />
+				<b>Seção:</b> <span class="section">{{:section}}</span><br />
 				<b>Número:</b> <span class="block-number">{{:blockNumber}}</span>
 			</div>
 			<div class="col-xs-8">
@@ -37,9 +43,7 @@
 			</div>
 		</div>
 		<div id="{{:dialogId}}" class="dialog-preview">
-			<div class="character-avatar" data-character-code="{{:characterCode}}">
-				<span class="name"></span>
-			</div>
+			<div class="character-name" data-character-code="{{:characterCode}}"></div>
 			<div class="btn-group btn-group-xs hidden-xs" role="group" aria-label="Ações">
 				<button class="btn btn-success add-new-block" tabindex="-1" title="Adicionar novo bloco de diálogo"
 					onclick="gtde.addNewDialogBlock(this)">

@@ -105,7 +105,7 @@ function gtde(){
 				var reader = new FileReader();
 				var filename = file.name;
 				
-				reader.readAsText(file, "iso-8859-1");
+				reader.readAsText(file, "utf-8");
 				reader.onload = function (evt) {
 					var fileContents = evt.target.result;
 					that.showLoadingIndicator();
@@ -122,9 +122,9 @@ function gtde(){
 			$.ajax({
 				url: file_item_list,
 				type: 'GET',
-				contentType: 'Content-type: text/plain; charset=iso-8859-1',
+				contentType: 'Content-type: text/plain; charset=utf-8',
 				beforeSend: function(jqXHR) {
-					jqXHR.overrideMimeType('text/html;charset=iso-8859-1');
+					jqXHR.overrideMimeType('text/html;charset=utf-8');
 				},
 				success: function(fileContents){
 					that.parseScriptFile(filename, fileContents, function(){
@@ -143,31 +143,117 @@ function gtde(){
 		
 		// Separating strings in blocks
 		var that = this;
-		var number = 1;
-		var blocks = [];
+		var sectionCode = '';
+		var sections = [];
 		var lines = fileContents.split('\n');
 		var characterCode = '';
+		
+		// Separating strings in sections
 		for(var i in lines){
 			var line = $.trim( lines[i] );
 			
-			var regexCharacterCode = line.match(/<Char:[( 0-9)]*>/g);
-			if(regexCharacterCode != null && regexCharacterCode.length > 0){
-				var characterCodeTag = regexCharacterCode[0];
-				characterCode = that.getCharacterCode(characterCodeTag);
+			var regexSection = line.match(/\[[(A-z0-9_)]*\]/g);
+			var checkDialogueChanged = (regexSection != null && regexSection.length > 0);
+			if(checkDialogueChanged){
+				sectionCode = regexSection[0].replace('[', '').replace(']', '');
 			}
 			
-			if(typeof blocks[number] == 'undefined'){
-				blocks[number] = [];
+			if(sectionCode != ''){
+				line = line.replace('[' + sectionCode + ']', '')
+
+				if(typeof sections[sectionCode] == 'undefined'){
+					sections[sectionCode] = line;
+				} else {
+					sections[sectionCode] += line;
+				}
 			}
-			if(typeof blocks[number]['text'] == 'undefined'){
-				blocks[number]['text'] = line + '\n';
-			} else {
-				blocks[number]['text'] += line + '\n';
-			}
-			blocks[number]['characterCode'] = characterCode;
+		}
+		
+		var sectionBlocks = [];
+		var tag = false;
+		var characterCode = '';
+		var tagText = '';
+		var color = '';
+		
+		// Iterating into sections to separate them into blocks	
+		for(var sectionCode in sections){
+			var section = sections[sectionCode];
+			var blockNumber = 1;
 			
-			if(line == '!---------------------!' || line == '!*********************!'){
-				number++;
+			for(var i = 0; i < section.length; i++){
+				var char = section[i];
+				
+				if(char == '<'){
+					tag = true;
+				} else if(char == '>'){
+					tag = false;
+				}
+				
+				// Creating additional variables in section_blocks array, in order to
+				// mount the table with textarea fields below
+				if(typeof sectionBlocks[sectionCode] == 'undefined'){
+					sectionBlocks[sectionCode] = [];
+				}
+				if(typeof sectionBlocks[sectionCode][blockNumber] == 'undefined'){
+					sectionBlocks[sectionCode][blockNumber] = [];
+				}
+				if(typeof sectionBlocks[sectionCode][blockNumber]['characterCode'] != 'undefined'){
+					sectionBlocks[sectionCode][blockNumber]['characterCode'] = characterCode;
+				}
+				if(typeof sectionBlocks[sectionCode][blockNumber]['text'] == 'undefined'){
+					sectionBlocks[sectionCode][blockNumber]['text'] = char;
+				} else {
+					sectionBlocks[sectionCode][blockNumber]['text'] += char;
+				}
+				if(typeof sectionBlocks[sectionCode][blockNumber]['color'] != 'undefined'){
+					sectionBlocks[sectionCode][blockNumber]['color'] = color;
+				}
+				if(typeof sectionBlocks[sectionCode][blockNumber]['hasEndTag'] != 'undefined'){
+					sectionBlocks[sectionCode][blockNumber]['hasEndTag'] = false;
+				}
+				
+				if(tag){
+					if(char != '<'){
+						tagText += $.trim(char);
+					}
+				} else {
+					// Adding line break after <Q>
+					if(tagText == 'Q'){
+						sectionBlocks[sectionCode][blockNumber]['text'] += '\n';
+					}
+
+					// Obtaining character code from <RETRATO> and <Mini_RETRATO> tags
+					var regexCharacterCode = line.match(/<(Mini_)*RETRATO:[( 0-9)]*>/g);
+					if(regexCharacterCode != null && regexCharacterCode.length > 0){
+						var characterCodeTag = regexCharacterCode[0];
+						characterCode = that.getCharacterCode(characterCodeTag);
+						
+						sectionBlocks[sectionCode][blockNumber]['characterCode'] = characterCode;
+					}
+					
+					// Obtaining last color change from <COR> tags
+					if(tagText.startsWith('COR')){
+						var tmp = tagText.split(':');
+						var color = $.trim( tmp.pop() );
+						
+						sectionBlocks[sectionCode][blockNumber]['color'] = color;
+					}
+					
+					// Checking if block has <FIM_BLOCO> tag
+					var checkHasEndTag = (tagText == 'FIM_BLOCO');
+					if(checkHasEndTag){
+						color = '';
+						sectionBlocks[sectionCode][blockNumber]['hasEndTag'] = true;
+					}
+					
+					// Checking if block has <FIM> tag
+					var checkBreakDetected = (tagText == 'FIM');
+					if(checkBreakDetected){
+						blockNumber++;
+					}
+					
+					tagText = '';
+				}
 			}
 		}
 		
@@ -175,6 +261,7 @@ function gtde(){
 		$divDialogParserTableContainer.load('dialog-parser-table.html', function(){
 			var $dialogParserTable = $divDialogParserTableContainer.children('table');
 			var $tbody = $dialogParserTable.children('tbody');
+			var $spanTotalSections = $dialogParserTable.find('span.total-sections');
 			var $spanTotalDialogBlocks = $dialogParserTable.find('span.total-dialog-blocks');
 			
 			$divDialogFileFormContainer.hide();
@@ -184,35 +271,51 @@ function gtde(){
 			$.get('dialog-parser-row.html').then(function(response){
 				var template = $.templates(response);
 				
-				// Iterating into blocks to create a table row for each
-				for(var number in blocks){
-					var text = $.trim( blocks[number]['text'] );
-					var characterCode = blocks[number]['characterCode'];
-					var textWithoutTags = that.getTextWithoutTags(text);
-					var dialogId = 'b-' + number + '-dialog';
+				var order = 1;
+				var totalSections = 0;
+				var totalDialogBlocks = 0;
+				
+				// Iterating into section blocks to create a table row for each
+				for(var sectionCode in sectionBlocks){
+					totalSections++;
 					
-					var checkHasEndSection = /![*]{3,}!/g.test(text);
-					
-					var rowInfo = {
-						'blockNumber': number,
-						'dialogId': dialogId,
-						'characterCode': characterCode,
-						'textWithoutTags': textWithoutTags
-					}
-					var $tr = $( template.render(rowInfo) );
-					var $textarea = $tr.find('textarea.text-field');
+					var section = sectionBlocks[sectionCode];
+					for(var blockNumber in section){
+						totalDialogBlocks++;
+						
+						var block = section[blockNumber];
+						var text = $.trim( block['text'] );
+						var characterCode = block['characterCode'];
+						var textWithoutTags = that.getTextWithoutTags(text);
+						var dialogId = 's-' + sectionCode + '-b-' + blockNumber + '-dialog';
 
-					$tbody.append($tr);
-					$textarea.val(text);
-					
-					if(checkHasEndSection){
-						$tr.find('button.add-new-block').remove();
+						var checkHasEndTag = /<FIM_BLOCO>/g.test(text);
+
+						var rowInfo = {
+							'order': order,
+							'section': sectionCode,
+							'blockNumber': blockNumber,
+							'dialogId': dialogId,
+							'characterCode': characterCode,
+							'textWithoutTags': textWithoutTags
+						}
+						var $tr = $( template.render(rowInfo) );
+						var $textarea = $tr.find('textarea.text-field');
+
+						$tbody.append($tr);
+						$textarea.val(text);
+
+						if(checkHasEndTag){
+							$tr.find('button.add-new-block').remove();
+						}
+						
+						order++;
 					}
 				}
 				
-				// Updating total row count in table footer
-				var totalRows = $tbody.children('tr').length;
-				$spanTotalDialogBlocks.html(totalRows);
+				// Updating total counters in table footer
+				$spanTotalSections.html(totalSections);
+				$spanTotalDialogBlocks.html(totalDialogBlocks);
 				
 				that.hideLoadingIndicator();
 				
@@ -489,16 +592,16 @@ function gtde(){
 			$textarea.highlightWithinTextarea({
 				'highlight': [
 					{
-						'highlight': /<(.+?)[^LF][^CR]>/g,
+						'highlight': /<(.+?)[^Q][^FIM]>/g,
 						'className': 'red'
 					}, {
-						'highlight': '<LF>',
+						'highlight': '<Q>',
 						'className': 'blue'
 					}, {
-						'highlight': '<CR>',
+						'highlight': '<FIM>',
 						'className': 'yellow'
 					}, {
-						'highlight': ['!---------------------!', '!*********************!'],
+						'highlight': '<FIM_BLOCO>',
 						'className': 'gray'
 					}
 				]
@@ -551,19 +654,16 @@ function gtde(){
 		var $divCharacterName = $divPreview.children('div.character-name');
 		$divTextWindow.html('');
 
-		// Inserting <LF> when user presses enter
+		// Inserting <Q> when user presses enter
 		if(keyCode == 13){
 			var cursorPos = $field.prop('selectionStart') - 1;
 			var textBefore = text.substring(0,  cursorPos);
 			var textAfter  = $.trim( text.substring(cursorPos, text.length) );
 			
-			text = textBefore + '<LF>\n' + textAfter;
+			text = textBefore + '<Q>\n' + textAfter;
 
-			$field.val(text).prop('selectionEnd', cursorPos + 5).trigger('input');
+			$field.val(text).prop('selectionEnd', cursorPos + 4).trigger('input');
 		}
-		
-		// Removing end block tags
-		text = text.replace(/![-*]{3,}!/g, '');
 
 		// Iterating over all characters inside text field
 		for (var i = 0, size = text.length; i < size; i++) {
@@ -591,8 +691,14 @@ function gtde(){
 					);
 				} else {
 					// Specific tags for dialog parsing
-					if(tagText.startsWith('Char:')){
+					if(tagText.startsWith('RETRATO:') || tagText.startsWith('Mini_RETRATO:')){
 						hasNameTag = true;
+						
+						if(tagText.startsWith('RETRATO:')){
+							$divPreview.removeClass('block').addClass('big-block');
+						} else {
+							$divPreview.removeClass('big-block').addClass('block');
+						}
 
 						var tmp = tagText.split(':');
 						var characterCode = $.trim( tmp.pop() );
@@ -827,14 +933,21 @@ function gtde(){
 		
 		var that = this;
 		var characterCode = $divCharacterName.attr('data-character-code');
+		
+		var currentOrder = parseFloat( $tr.find('.order').first().html() );
+		var currentSection = $tr.find('.section').first().html();
 		var currentBlockNumber = parseFloat( $tr.find('.block-number').first().html() );
+		
+		var newOrder = (currentOrder + 0.01).toFixed(2);
 		var newBlockNumber = (currentBlockNumber + 0.01).toFixed(2);
 		var newDialogId = (newBlockNumber.toString().replace(/\./g, '_')) + '-dialog';
 		
 		$.get('dialog-parser-row.html').then(function(response){
 			var template = $.templates(response);
-
+			
 			var rowInfo = {
+				'order': newOrder,
+				'section': currentSection,
 				'blockNumber': newBlockNumber,
 				'dialogId': newDialogId,
 				'characterCode': '',
@@ -855,7 +968,7 @@ function gtde(){
 			tableObject.draw(false);
 			
 			// Adding end block tag in the new block
-			$newTextarea.val('\n!---------------------!');
+			$newTextarea.val('\n<FIM>');
 			
 			// Adding remove button
 			var $newButtonGroups = $newTdPreviewConteiners.find('div.btn-group');
@@ -988,14 +1101,24 @@ function gtde(){
 		var tableObject = $dialogParserTable.DataTable();
 		
 		var scriptText = '';
+		var scriptSections = [];
 
 		$( tableObject.rows().nodes() ).find('textarea.text-field').sort(function(a, b){
 			// Sort all textareas by id attribute, to avoid messing
 			// with the order of dialogues
-			return parseFloat( $(a).attr('data-block') ) - parseFloat( $(b).attr('data-block') );
+			return parseFloat( $(a).attr('data-order') ) - parseFloat( $(b).attr('data-order') );
 		}).each(function(){
 			var $textarea = $(this);
+			
+			var section = $textarea.attr('data-section');
 			var text = $textarea.val();
+
+			var checkSectionInserted = ($.inArray(section, scriptSections) !== -1);
+			if(!checkSectionInserted){
+				scriptSections.push(section);
+				
+				scriptText += ('\n\n[' + section + ']\n');
+			}
 
 			scriptText += (text + '\n');
 		});
