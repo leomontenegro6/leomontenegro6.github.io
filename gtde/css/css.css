@@ -109,50 +109,81 @@ td.form-fields textarea.text-field{
 	width: 640px;
 	height: 90px;
 }
-.dialog-preview{
-	position: relative;
-	width: 256px;
-	height: 192px;
-	background: black;
-	display: inline-block;
-}
-.dialog-preview.block{
-	width: 208px;
-	height: 51px;
-	background: url('../images/block.png');
-}
-.dialog-preview.block.invalid{
-	background: url('../images/block_invalid.png');
-}
-.dialog-preview.big-block{
-	width: 256px;
-	height: 46px;
-	background: url('../images/big_block.png');
-}
-.dialog-preview.big-block.invalid{
-	background: url('../images/big_block_invalid.png');
-}	
-.dialog-preview.block div.character-name,
-.dialog-preview.big-block div.character-name{
-	position: absolute;
-	bottom: 61px;
-	left: 2px;
-	width: 44px;
-	text-align: center;
-	font-size: 11px;
-}
 .dialog-preview div.text-window{
-	position: absolute;
-	bottom: 4px;
-	left: 8px;
-	width: 160px;
-	height: 50px;
 	white-space: nowrap;
 	line-height: 1;
 }
-.dialog-preview div.btn-group{
-	top: 0;
-	left: 245px;
+.dialog-preview.block{
+	position: relative;
+	width: 256px;
+	height: 48px;
+	margin-top: 22px;
+	background: url('../images/big_block.png?v=0.1a');
+}
+.dialog-preview.block.invalid{
+	background: url('../images/big_block_invalid.png?v=0.1a');
+}
+.dialog-preview.block div.text-window{
+	position: relative;
+	top: -20px;
+	left: 6px;
+}
+.dialog-preview.medium-block{
+	position: relative;
+	width: 208px;
+	height: 51px;
+	margin-top: 22px;
+	background: url('../images/block.png?v=0.1a');
+}
+.dialog-preview.medium-block.invalid{
+	background: url('../images/block_invalid.png?v=0.1a');
+}
+
+.dialog-preview.medium-block div.character-name,
+.dialog-preview.block div.character-name{
+	position: absolute;
+	left: 10px;
+	text-align: center;
+	font-size: 11px;
+	border: 1px solid black;
+	border-bottom: 0;
+	border-radius: 3px;
+	padding: 0 3px;
+}
+.dialog-preview.block div.character-name{
+	bottom: 47px;
+}
+.dialog-preview.medium-block div.character-name{
+	bottom: 50px;
+}
+.dialog-preview.block div.btn-group,
+.dialog-preview.medium-block div.btn-group{
+	top: -22px;
+	left: 100px;
+}
+.dialog-preview.medium-block div.text-window{
+	position: relative;
+	top: -20px;
+	left: 8px;
+}
+.dialog-preview.prelude{
+	width: 252px;
+	margin-top: -20px;
+	display: inline-block;
+}
+.dialog-preview.prelude div.btn-group{
+	top: 22px;
+	left: 260px;
+}
+.dialog-preview.prelude div.text-window{
+	background: black;
+	border: 2px solid transparent;
+}
+.dialog-preview.prelude.invalid div.text-window{
+	border-color: red;
+}
+.dialog-preview div.text-window.centered{
+	text-align: center;
 }
 #text-preview textarea{
 	height: 320px;

@@ -8,6 +8,7 @@ function gtde(){
 	this.equivalenceTable = {};
 	this.dialogParserTableTextareas = $();
 	this.lastName = '';
+	this.lastColor = '';
 	this.automaticPageChange = false;
 	this.configs = {};
 	this.defaultConfigs = {
@@ -146,7 +147,6 @@ function gtde(){
 		var sectionCode = '';
 		var sections = [];
 		var lines = fileContents.split('\n');
-		var characterCode = '';
 		
 		// Separating strings in sections
 		for(var i in lines){
@@ -197,7 +197,7 @@ function gtde(){
 				if(typeof sectionBlocks[sectionCode][blockNumber] == 'undefined'){
 					sectionBlocks[sectionCode][blockNumber] = [];
 				}
-				if(typeof sectionBlocks[sectionCode][blockNumber]['characterCode'] != 'undefined'){
+				if(typeof sectionBlocks[sectionCode][blockNumber]['characterCode'] == 'undefined'){
 					sectionBlocks[sectionCode][blockNumber]['characterCode'] = characterCode;
 				}
 				if(typeof sectionBlocks[sectionCode][blockNumber]['text'] == 'undefined'){
@@ -205,10 +205,10 @@ function gtde(){
 				} else {
 					sectionBlocks[sectionCode][blockNumber]['text'] += char;
 				}
-				if(typeof sectionBlocks[sectionCode][blockNumber]['color'] != 'undefined'){
+				if(typeof sectionBlocks[sectionCode][blockNumber]['color'] == 'undefined'){
 					sectionBlocks[sectionCode][blockNumber]['color'] = color;
 				}
-				if(typeof sectionBlocks[sectionCode][blockNumber]['hasEndTag'] != 'undefined'){
+				if(typeof sectionBlocks[sectionCode][blockNumber]['hasEndTag'] == 'undefined'){
 					sectionBlocks[sectionCode][blockNumber]['hasEndTag'] = false;
 				}
 				
@@ -217,17 +217,15 @@ function gtde(){
 						tagText += $.trim(char);
 					}
 				} else {
-					// Adding line break after <Q>
-					if(tagText == 'Q'){
+					// Adding line break after <Q> or <E>
+					if((tagText == 'Q') || (tagText == 'E')){
 						sectionBlocks[sectionCode][blockNumber]['text'] += '\n';
 					}
 
-					// Obtaining character code from <RETRATO> and <Mini_RETRATO> tags
-					var regexCharacterCode = line.match(/<(Mini_)*RETRATO:[( 0-9)]*>/g);
-					if(regexCharacterCode != null && regexCharacterCode.length > 0){
-						var characterCodeTag = regexCharacterCode[0];
-						characterCode = that.getCharacterCode(characterCodeTag);
-						
+					// Obtaining character code and block type from <RETRATO> and <Mini_RETRATO> tags
+					if(tagText.startsWith('RETRATO') || tagText.startsWith('Mini_RETRATO')){
+						var tmp = tagText.split(':');
+						var characterCode = $.trim( tmp.pop() );
 						sectionBlocks[sectionCode][blockNumber]['characterCode'] = characterCode;
 					}
 					
@@ -274,6 +272,7 @@ function gtde(){
 				var order = 1;
 				var totalSections = 0;
 				var totalDialogBlocks = 0;
+				var lastValidBlockType = '';
 				
 				// Iterating into section blocks to create a table row for each
 				for(var sectionCode in sectionBlocks){
@@ -286,10 +285,15 @@ function gtde(){
 						var block = section[blockNumber];
 						var text = $.trim( block['text'] );
 						var characterCode = block['characterCode'];
+						var blockType = that.getBlockType(text, totalDialogBlocks, sectionCode, filename);
+						if(blockType != false){
+							lastValidBlockType = blockType;
+						} else {
+							blockType = lastValidBlockType;
+						}
 						var textWithoutTags = that.getTextWithoutTags(text);
 						var dialogId = 's-' + sectionCode + '-b-' + blockNumber + '-dialog';
-
-						var checkHasEndTag = /<FIM_BLOCO>/g.test(text);
+						var checkHasEndTag = block['hasEndTag'];
 
 						var rowInfo = {
 							'order': order,
@@ -297,16 +301,22 @@ function gtde(){
 							'blockNumber': blockNumber,
 							'dialogId': dialogId,
 							'characterCode': characterCode,
+							'blockType': blockType,
 							'textWithoutTags': textWithoutTags
 						}
 						var $tr = $( template.render(rowInfo) );
 						var $textarea = $tr.find('textarea.text-field');
+						
+						var checkHasCharacterName = ($.inArray(lastValidBlockType, ['block', 'medium-block']) !== -1);
 
 						$tbody.append($tr);
 						$textarea.val(text);
 
 						if(checkHasEndTag){
 							$tr.find('button.add-new-block').remove();
+						}
+						if(!checkHasCharacterName){
+							$tr.find('div.character-name').remove();
 						}
 						
 						order++;
@@ -324,6 +334,41 @@ function gtde(){
 		});
 	}
 	
+	this.getBlockType = function(textBlock, totalDialogBlocksInSection, sectionCode, scriptFilename){
+		var checkBlockContainCenterTextTag = (textBlock.indexOf('<texto_centro>') !== -1);
+		var checkBlockContainLineBreakTag = (textBlock.indexOf('<Q>') !== -1);
+		var checkBlockContainStanzaTag = (textBlock.indexOf('<E>') !== -1);
+		var checkScriptIsDatabase = (scriptFilename.indexOf('database_') !== -1);
+		var checkIsEncyclopediaSubtitle = (sectionCode.indexOf('_sub_') !== -1);
+		var checkIsPrelude = (checkBlockContainCenterTextTag && checkBlockContainLineBreakTag && checkBlockContainStanzaTag);
+		
+		if(checkScriptIsDatabase){
+			if(checkIsEncyclopediaSubtitle){
+				return 'encyclopedia-subtitle';
+			} else {
+				return 'encyclopedia-description';
+			}
+		} else {
+			var regexPortraits = textBlock.match(/<(Mini_)*RETRATO:[( 0-9)]*>/g);
+			if(regexPortraits != null && regexPortraits.length > 0){
+				var regexMiniPortrait = textBlock.match(/<Mini_RETRATO:[( 0-9)]*>/g);
+				if(regexMiniPortrait != null && regexMiniPortrait.length > 0){
+					return 'medium-block';
+				} else {
+					return 'block';
+				}
+			} else if(checkIsPrelude){
+				return 'prelude';
+			} else {
+				if(totalDialogBlocksInSection == 1){
+					return 'bold-block';
+				} else {
+					return false; // Unable to get block type with current parameters
+				}
+			}
+		}
+	}
+	
 	this.getCharacterCode = function(characterCodeTag){
 		characterCodeTag = characterCodeTag.replace('<', '');
 		characterCodeTag = characterCodeTag.replace('>', '');
@@ -333,7 +378,6 @@ function gtde(){
 	
 	this.getTextWithoutTags = function(text){
 		text = text.replace(/<(.*?)>/g, '');
-		text = text.replace(/![-*]*!/g, '');
 		text = text.replace(/\n/g, ' ');
 		text = $.trim( text );
 		return text;
@@ -376,7 +420,8 @@ function gtde(){
 					that.dialogParserTableTextareas = $( tableObject.rows().nodes() ).find("textarea.text-field");
 				}
 			
-				// Iterating over each visible row and update the preview
+				// Iterating over each visible row, instantiate "copy to clipboard"
+				// buttons and update the preview
 				$trs.each(function(){
 					var $tr = $(this);
 					var $textareaTextField = $tr.find('textarea.text-field');
@@ -385,10 +430,12 @@ function gtde(){
 					var $tdPreviewConteiners = $tr.children('td.preview-conteiners');
 					var $buttonShowPreviewMobile = $tr.find('button.show-preview-mobile');
 					var $buttonShowTextfieldMobile = $tr.find('button.show-textfield-mobile');
+					var $buttonsCopyClipboard = $tr.find('button.copy-clipboard');
 
 					var previewFieldId = $divDialogPreview.attr('id');
 
 					that.updatePreview($textareaTextField, previewFieldId);
+					that.instantiateCopyClipboardButtons($buttonsCopyClipboard, $textareaTextField);
 					
 					if(device == 'xs'){
 						if(mobileShowInitially == 'p' && $tdPreviewConteiners.hasClass('hidden-xs')){
@@ -416,6 +463,10 @@ function gtde(){
 					previousPage = currentPage;
 				}
 				$dialogParserTable.attr('data-current-page', currentPage);
+				
+				if(currentPage < previousPage){
+					that.lastColor = '';
+				}
 				
 				// Scrolling to top of page, if not an automatic page change
 				if(!that.automaticPageChange){
@@ -592,10 +643,10 @@ function gtde(){
 			$textarea.highlightWithinTextarea({
 				'highlight': [
 					{
-						'highlight': /<(.+?)[^Q][^FIM]>/g,
+						'highlight': /<(.+?)[^Q][^E][^FIM]>/g,
 						'className': 'red'
 					}, {
-						'highlight': '<Q>',
+						'highlight': ['<Q>', '<E>'],
 						'className': 'blue'
 					}, {
 						'highlight': '<FIM>',
@@ -607,6 +658,35 @@ function gtde(){
 				]
 			}).attr('data-highlight-instantiated', 'true');
 		});
+	}
+	
+	this.instantiateCopyClipboardButtons = function(buttons, textarea){
+		var $buttons = $(buttons);
+		var $textarea = $(textarea);
+		
+		$buttons.each(function(){
+			var $button = $(this);
+			
+			$button.tooltip({
+				'trigger': 'click',
+				'placement': 'top'
+			});
+
+			var clipboard = new Clipboard(this, {
+				'text': function(){					
+					var text = $textarea.val();
+					text = $.trim( text.replace(/<(.*?)>/g, '').replace(/\n/g, ' ') );
+					return text;
+				}
+			});
+
+			clipboard.on('success', function(e) {
+				$button.attr('data-original-title', 'Copiado para a área de transferência').tooltip('show');
+				setTimeout(function(){
+					$button.tooltip('hide');
+				}, 3000);
+			});
+		})
 	}
 	
 	this.showPreviewOnMobile = function(button){
@@ -643,12 +723,17 @@ function gtde(){
 		
 		var $field = $(field);
 		var $divTextWithoutTags = $field.closest('td').children('div.text-without-tags');
+		var $previousField = this.dialogParserTableTextareas.filter("[data-order='" + (parseInt($field.attr('data-order'), 10) - 1) + "']");
 		var $divPreview = $('#' + previewFieldId);
 		
 		var text = $field.val();
 		var tag = false;
 		var hasNameTag = false;
 		var tagText = '';
+		
+		var checkFirstField = ($previousField.length == 0);
+		var fieldSection = parseInt($field.attr('data-section'), 10);
+		var previousFieldSection = parseInt($previousField.attr('data-section'), 10);
 		
 		var $divTextWindow = $divPreview.children('div.text-window');
 		var $divCharacterName = $divPreview.children('div.character-name');
@@ -663,6 +748,19 @@ function gtde(){
 			text = textBefore + '<Q>\n' + textAfter;
 
 			$field.val(text).prop('selectionEnd', cursorPos + 4).trigger('input');
+		}
+		
+		// Defining last color, if from second field onwards
+		if(!checkFirstField){
+			// Setting color of previous field as last used color.
+			// However, if the section changes, color must be resetted.
+			var lastColor;
+			if((fieldSection == previousFieldSection)){
+				lastColor = parseInt($previousField.attr('data-color'), 10);
+			} else {
+				lastColor = 0;
+			}
+			this.lastColor = this.getColorClass(lastColor);
 		}
 
 		// Iterating over all characters inside text field
@@ -681,29 +779,35 @@ function gtde(){
 				}
 			} else {
 				// Tags for all contexts
-				if(tagText == 'LF'){
+				if(tagText == 'Q'){
 					$divTextWindow.append('<br />');
+				} else if(tagText == 'E'){
+					$divTextWindow.append('<br /><br />');
 				} else if(char != '>' && char != '\n'){
 					var newChar = this.formatChar(char);
 
 					$divTextWindow.append(
-						$('<span />').addClass('letter ' + newChar).html('&nbsp;')
+						$('<span />').addClass('letter ' + newChar + ' ' + this.lastColor).html('&nbsp;')
 					);
 				} else {
 					// Specific tags for dialog parsing
 					if(tagText.startsWith('RETRATO:') || tagText.startsWith('Mini_RETRATO:')){
 						hasNameTag = true;
 						
-						if(tagText.startsWith('RETRATO:')){
-							$divPreview.removeClass('block').addClass('big-block');
-						} else {
-							$divPreview.removeClass('big-block').addClass('block');
-						}
-
+						// Setting character name by character code
 						var tmp = tagText.split(':');
 						var characterCode = $.trim( tmp.pop() );
 						this.lastName = this.getName(characterCode);
-						$divCharacterName.html(characterCode);
+						$divCharacterName.html(this.lastName);
+					} else if(tagText.startsWith('COR:')){
+						var tmp = tagText.split(':');
+						var colorCode = parseInt(tmp.pop(), 10);
+
+						this.lastColor = this.getColorClass(colorCode);
+					} else if(tagText == 'texto_centro'){
+						this.lastColor = 'color-white';
+						
+						$divTextWindow.addClass('centered');
 					}
 				}
 				tagText = '';
@@ -713,7 +817,7 @@ function gtde(){
 		if(!hasNameTag){
 			var characterCode = $divCharacterName.attr('data-character-code');
 			this.lastName = this.getName(characterCode);
-			$divCharacterName.html(characterCode);
+			$divCharacterName.html(this.lastName);
 		}
 		
 		$divCharacterName.html(this.lastName);
@@ -741,7 +845,7 @@ function gtde(){
 	
 	this.getName = function(code){
 		var name = this.equivalenceTable[code];
-		if(typeof name == 'undefined') name = '';
+		if(typeof name == 'undefined' || name == '') name = '---';
 		return name;
 	}
 	
@@ -951,6 +1055,7 @@ function gtde(){
 				'blockNumber': newBlockNumber,
 				'dialogId': newDialogId,
 				'characterCode': '',
+				'blockType': '',
 				'textWithoutTags': ''
 			}
 			var $newTr = $( template.render(rowInfo) );
@@ -1102,6 +1207,8 @@ function gtde(){
 		
 		var scriptText = '';
 		var scriptSections = [];
+		
+		var checkAtLeastOneSectionInserted = false;
 
 		$( tableObject.rows().nodes() ).find('textarea.text-field').sort(function(a, b){
 			// Sort all textareas by id attribute, to avoid messing
@@ -1117,7 +1224,13 @@ function gtde(){
 			if(!checkSectionInserted){
 				scriptSections.push(section);
 				
-				scriptText += ('\n\n[' + section + ']\n');
+				if(checkAtLeastOneSectionInserted){
+					scriptText += ('\n[' + section + ']\n');
+				} else {
+					scriptText += ('[' + section + ']\n');
+				}
+				
+				checkAtLeastOneSectionInserted = true;
 			}
 
 			scriptText += (text + '\n');
@@ -1338,7 +1451,7 @@ function gtde(){
 	this.formatChar = function(char){
 		var charTable = {
 			// Symbols
-			' ': 'space', '!': 'exclamation', '"': 'double-quotes', '#': 'cerquilha',
+			' ': 'space', '!': 'exclamation', '"': 'double-quotes', '”': 'open-quotes', '#': 'cerquilha',
 			'$': 'money-sign', '%': 'percent', '&': 'ampersand', "'": 'quotes',
 			"(": 'open-parenthesis', ")": 'close-parenthesis', '*': 'asterisk',
 			'+': 'plus', ',': 'comma', '-': 'minus', '.': 'dot', '/': 'slash',
@@ -1394,6 +1507,18 @@ function gtde(){
 		}
 	}
 	
+	this.getColorClass = function(colorCode){
+		if(colorCode == 6){
+			return 'color-red';
+		} else if(colorCode == 12){
+			return 'color-green';
+		} else if(colorCode == 9){
+			return 'color-blue';
+		} else {
+			return '';
+		}
+	}
+	
 	this.getTitle = function(){
 		if( this.checkOnElectron() ){
 			var ipc = require('electron').ipcRenderer;
@@ -1431,6 +1556,40 @@ function gtde(){
 				}
 			});
 		}
+	}
+	
+	this.renderPreviewImageOnBrowser = function(button){
+		var $button = $(button);
+		var $tdPreviewConteiners = $button.closest('td.preview-conteiners');
+		var $previewField = $tdPreviewConteiners.children('div.dialog-preview');
+		var $btnGroup = $previewField.children('div.btn-group');
+		var $td = $button.closest('td.preview-conteiners');
+		
+		var previewFieldId = $previewField.attr('id');
+		var filename = 'preview-' + previewFieldId;
+		
+		$btnGroup.hide();
+		html2canvas($td, {
+			'onrendered': function(canvas) {
+				var width = 320, height = 104;
+				var ctx = canvas.getContext('2d');
+				var imageData = ctx.getImageData(7, 2, width, height);
+				
+				canvas.width = width;
+				canvas.height = height;
+				ctx.putImageData(imageData, 0, 0);
+				
+				var a = document.createElement('a');
+				a.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+				a.download = filename + '.png';
+				var $a = $(a);
+				$('body').append($a);
+				a.click();
+				$a.remove();
+				
+				$btnGroup.show();
+			}
+		});
 	}
 	
 	this.getDevice = function(onresize){

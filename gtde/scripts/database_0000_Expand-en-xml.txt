@@ -1,0 +1,3006 @@
+[linne_sub_010]
+<Cena: 0 0><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_010]
+<Cena: 0 1>A woman who was at the scene<Q>
+of my death. I don't know her<Q>
+name or anything else about her.<Q>
+She's already been killed once by<Q>
+the hitman, and I saved her with<Q>
+my powers of the dead.<FIM_BLOCO>
+
+[linne_sub_020]
+<Cena: 0 2><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_020]
+<Cena: 0 3>A woman who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She's already been killed once by<Q>
+the hitman, and I saved her with<Q>
+my powers of the dead.<FIM_BLOCO>
+
+[linne_sub_030]
+<Cena: 0 4><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_030]
+<Cena: 0 5>A woman who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+After she phoned the little girl in<Q>
+her apartment, I lost track of<Q>
+her. A hitman is after her again.<FIM_BLOCO>
+
+[linne_sub_040]
+<Cena: 0 6><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_040]
+<Cena: 0 7>A woman who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+After she phoned the little girl in<Q>
+her apartment, I lost track of<Q>
+her. A hitman is after her again.<Q>
+She's a detective, apparently.<FIM_BLOCO>
+
+[linne_sub_050]
+<Cena: 0 8><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_050]
+<Cena: 0 9>A woman who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She's a detective who was looking<Q>
+into a case tonight. She was<Q>
+arrested on suspicion of my<Q>
+murder. She says she doesn't<Q>
+know me.<FIM_BLOCO>
+
+[linne_sub_060]
+<Cena: 0 10><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_060]
+<Cena: 0 11>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She's looking into a certain<Q>
+murder case. She was arrested on<Q>
+suspicion of my murder, but she<Q>
+escaped, and she and I are now<Q>
+helping each other.<FIM_BLOCO>
+
+[linne_sub_070]
+<Cena: 0 12><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_070]
+<Cena: 0 13>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She's looking into a certain<Q>
+murder case. Also suspected of<Q>
+my murder, she's now on the lam.<Q>
+The security camera at the scene<Q>
+caught her crime on tape.<FIM_BLOCO>
+
+[linne_sub_080]
+<Cena: 0 14><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_080]
+<Cena: 0 15>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She's trying to stop the execution<Q>
+of a prisoner who got a death<Q>
+sentence for murder five years<Q>
+ago. She's also suspected of my<Q>
+shooting.<FIM_BLOCO>
+
+[linne_sub_090]
+<Cena: 0 16><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_090]
+<Cena: 0 17>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She's trying to stop Detective<Q>
+Jowd's execution. She went to<Q>
+Temsik Park to look for an<Q>
+important piece of evidence.<FIM_BLOCO>
+
+[linne_sub_110]
+<Cena: 0 18><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_110]
+<Cena: 0 19>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+In the park ten years ago, she was<Q>
+saved by a falling meteorite, but<Q>
+she doesn't know that. She found<Q>
+the evidence that will prove Jowd's<Q>
+innocence inside the music box.<FIM_BLOCO>
+
+[linne_sub_120]
+<Cena: 0 20><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_120]
+<Cena: 0 21>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+In the park ten years ago, she was<Q>
+saved by a falling meteorite, but<Q>
+she doesn't know that. If this<Q>
+”manipulator” exists, could Lynne<Q>
+have been manipulated into<Q>
+shooting me?<FIM_BLOCO>
+
+[linne_sub_130]
+<Cena: 0 22><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_130]
+<Cena: 0 23>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She was apparently manipulated<Q>
+into shooting me by the ghost of<Q>
+the man who lost his life while<Q>
+trying to hold her hostage ten<Q>
+years ago.<FIM_BLOCO>
+
+[linne_sub_140]
+<Cena: 0 24><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_140]
+<Cena: 0 25>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+In order to rescue Kamila, she<Q>
+promised to get a phone line<Q>
+hooked up to the submarine for<Q>
+me. She and Detective Jowd are<Q>
+in pursuit of the man in red.<FIM_BLOCO>
+
+[linne_sub_150]
+<Cena: 0 26><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_150]
+<Cena: 0 27>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She managed to sneak onto the<Q>
+submarine and find Kamila. She<Q>
+lost her life trying to protect<Q>
+Kamila from an explosion.<FIM_BLOCO>
+
+[linne_sub_160]
+<Cena: 0 28><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_160]
+<Cena: 0 29>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She managed to sneak onto the<Q>
+submarine and find Kamila. She<Q>
+lost her life trying to protect<Q>
+Kamila from an explosion.<FIM_BLOCO>
+
+[linne_sub_170]
+<Cena: 0 30><texto_centro>
+Red-Headed Target<FIM_BLOCO>
+
+[linne_170]
+<Cena: 0 31>A detective who was at the scene<Q>
+of my death. Her name's ”Lynne.”<Q>
+She and Kamila are trapped inside<Q>
+the sinking submarine, the Yonoa.<Q>
+Now our only hopes are the powers<Q>
+of the dead and Detective Jowd.<FIM_BLOCO>
+
+[cicel_sub_010]
+<Cena: 0 32><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_010]
+<Cena: 0 33>I lost my life at a lonely spot on<Q>
+the outskirts of town. I'm trying<Q>
+to regain my lost memory and find<Q>
+out the truth behind my death.<Q>
+My only lead is the red-headed<Q>
+woman who witnessed that death.<FIM_BLOCO>
+
+[cicel_sub_020]
+<Cena: 0 34><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_020]
+<Cena: 0 35>I lost my life at a lonely spot on<Q>
+the outskirts of town. I'm trying<Q>
+to regain my lost memory and find<Q>
+out the truth behind my death.<Q>
+My only lead is the woman who<Q>
+witnessed that death, Lynne.<FIM_BLOCO>
+
+[cicel_sub_030]
+<Cena: 0 36><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_030]
+<Cena: 0 37>I lost my life at a lonely spot on<Q>
+the outskirts of town. My name<Q>
+is ”Sissel.” I think there's a<Q>
+connection between me and<Q>
+Lynne, who witnessed my death.<Q>
+I was apparently trying to make<Q>
+a deal with a mysterious old man<Q>
+tonight.<FIM_BLOCO>
+
+[cicel_sub_040]
+<Cena: 0 38><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_040]
+<Cena: 0 39>I lost my life at a lonely spot on<Q>
+the outskirts of town. My name is<Q>
+”Sissel.” I apparently asked Lynne<Q>
+to meet me at the junkyard<Q>
+tonight. And I was trying to make<Q>
+a deal with a mysterious old man.<FIM_BLOCO>
+
+[cicel_sub_050]
+<Cena: 0 40><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_050]
+<Cena: 0 41>I lost my life at a lonely spot on<Q>
+the outskirts of town. My name is<Q>
+”Sissel.” I apparently asked Lynne<Q>
+to meet me at the junkyard<Q>
+tonight, and told her I had<Q>
+information about the case she<Q>
+was investigating.<FIM_BLOCO>
+
+[cicel_sub_060]
+<Cena: 0 42><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_060]
+<Cena: 0 43>I lost my life at a lonely spot on<Q>
+the outskirts of town. My name<Q>
+is ”Sissel.” I apparently had<Q>
+information on the case Lynne<Q>
+was investigating. The security<Q>
+camera at the junkyard caught<Q>
+the moment of Lynne shooting<Q>
+me on tape.<FIM_BLOCO>
+
+[cicel_sub_070]
+<Cena: 0 44><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_070]
+<Cena: 0 45>I lost my life at a lonely spot on<Q>
+the outskirts of town. My name is<Q>
+”Sissel.” In order to find out the<Q>
+truth of my death, I agreed to<Q>
+”cooperate” with Lynne. I was<Q>
+apparently trying to make a deal<Q>
+with some people from overseas<Q>
+tonight...<FIM_BLOCO>
+
+[cicel_sub_080]
+<Cena: 0 46><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_080]
+<Cena: 0 47>I lost my life at a lonely spot on<Q>
+the outskirts of town. My name is<Q>
+”Sissel.” In order to stop Detective<Q>
+Jowd's execution, Lynne asked me<Q>
+to try and get the justice minister<Q>
+on our side.<FIM_BLOCO>
+
+[cicel_sub_090]
+<Cena: 0 48><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_090]
+<Cena: 0 49>I lost my life at a lonely spot on<Q>
+the outskirts of town, and I'm<Q>
+now trying to find out the truth<Q>
+of my death. My name is ”Sissel.”<Q>
+In order to stop Detective Jowd's<Q>
+execution, I got the justice<Q>
+minister on our side, but now it<Q>
+seems Lynne needs my help.<FIM_BLOCO>
+
+[cicel_sub_100]
+<Cena: 0 50><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_100]
+<Cena: 0 51>I lost my life at a lonely spot on<Q>
+the outskirts of town, and I'm<Q>
+now trying to find out the truth<Q>
+of my death. My name is ”Sissel.”<Q>
+In order to stop Detective Jowd's<Q>
+execution, Lynne and I obtained<Q>
+a crucial piece of evidence at<Q>
+the park.<FIM_BLOCO>
+
+[cicel_sub_110]
+<Cena: 0 52><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_110]
+<Cena: 0 53>I lost my life at a lonely spot on<Q>
+the outskirts of town. Is my name<Q>
+really ”Sissel”? That man who was<Q>
+hit by a meteorite fragment in<Q>
+front of Detective Jowd in the<Q>
+park ten years ago, the man<Q>
+who was trying to take Lynne<Q>
+hostage... Is that me...?<FIM_BLOCO>
+
+[cicel_sub_120]
+<Cena: 0 54><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_120]
+<Cena: 0 55>I lost my life at a lonely spot on<Q>
+the outskirts of town. That ”Sissel”<Q>
+fellow that I thought was me... is<Q>
+apparently NOT me...<FIM_BLOCO>
+
+[cicel_sub_130]
+<Cena: 0 56><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_130]
+<Cena: 0 57>I lost my life at a lonely spot on<Q>
+the outskirts of town. I don't<Q>
+know who I am. The man I pursued,<Q>
+thinking he was me, took Lynne<Q>
+hostage in the park ten years ago,<Q>
+and was hit by a meteorite and<Q>
+killed.<FIM_BLOCO>
+
+[cicel_sub_140]
+<Cena: 0 58><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_140]
+<Cena: 0 59>I lost my life at a lonely spot on<Q>
+the outskirts of town. I don't<Q>
+know who I am. The man I<Q>
+pursued, thinking he was me,<Q>
+took Lynne hostage in the park<Q>
+ten years ago, and was hit by a<Q>
+meteorite and killed.<FIM_BLOCO>
+
+[cicel_sub_150]
+<Cena: 0 60><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_150]
+<Cena: 0 61>I lost my life at a lonely spot on<Q>
+the outskirts of town. I don't<Q>
+know who I am. The man I pursued,<Q>
+thinking he was me, was hit by a<Q>
+meteorite and killed ten years<Q>
+ago. Do I know that man...?<FIM_BLOCO>
+
+[cicel_sub_160]
+<Cena: 0 62><texto_centro>
+Me, the Mystery<FIM_BLOCO>
+
+[cicel_160]
+<Cena: 0 63>I lost my life at a lonely spot on<Q>
+the outskirts of town. I don't<Q>
+know who I am. The man I pursued,<Q>
+thinking he was me, was hit by a<Q>
+meteorite and killed ten years<Q>
+ago. I traveled back ten years, and<Q>
+witnessed the beginning of it all<Q>
+with my own eyes.<FIM_BLOCO>
+
+[kuneri_sub_010]
+<Cena: 0 64><texto_centro>
+Ray of Light<FIM_BLOCO>
+
+[kuneri_010]
+<Cena: 0 65>He calls himself ”Ray.” I don't know<Q>
+who he really is. He taught me the<Q>
+secrets of the powers of the dead.<FIM_BLOCO>
+
+[kuneri_sub_020]
+<Cena: 0 66><texto_centro>
+Ray of Light<FIM_BLOCO>
+
+[kuneri_020]
+<Cena: 0 67>He calls himself ”Ray.” I don't know<Q>
+who he really is. He taught me the<Q>
+secrets of the powers of the dead.<Q>
+He wants me to find out the truth<Q>
+behind the mysterious things<Q>
+happening in this town tonight.<FIM_BLOCO>
+
+[killer_jo_sub_010]
+<Cena: 0 68><texto_centro>
+Hunter in the Dark<FIM_BLOCO>
+
+[killer_jo_010]
+<Cena: 0 69>He calls himself ”Nearsighted<Q>
+Jeego.” He's a sniper who carries<Q>
+a golden shotgun. Somebody<Q>
+apparently ordered him to kill<Q>
+the red-headed woman and me.<Q>
+But he's gone now, due to an<Q>
+unfortunate accident...<FIM_BLOCO>
+
+[killer_jo_sub_020]
+<Cena: 0 70><texto_centro>
+Hunter in the Dark<FIM_BLOCO>
+
+[killer_jo_020]
+<Cena: 0 71>He calls himself ”Nearsighted<Q>
+Jeego.” He's a sniper who carries<Q>
+a golden shotgun. Somebody<Q>
+apparently ordered him to kill<Q>
+the detective Lynne and me.<Q>
+But he's gone now, due to an<Q>
+unfortunate accident...<FIM_BLOCO>
+
+[sith_sub_010]
+<Cena: 0 72><texto_centro>
+Eyebrowed Villain<FIM_BLOCO>
+
+[sith_010]
+<Cena: 0 73>The man who gave Nearsighted<Q>
+Jeego the order to kill. He's<Q>
+probably behind my death, and<Q>
+the red-headed woman's death<Q>
+too, but his motives are unknown.<FIM_BLOCO>
+
+[sith_sub_020]
+<Cena: 0 74><texto_centro>
+Eyebrowed Villain<FIM_BLOCO>
+
+[sith_020]
+<Cena: 0 75>The man who gave Nearsighted<Q>
+Jeego the order to kill. He's<Q>
+probably behind my death, and<Q>
+Lynne's death too, but his motives<Q>
+are unknown.<FIM_BLOCO>
+
+[sith_sub_030]
+<Cena: 0 76><texto_centro>
+Eyebrowed Villain<FIM_BLOCO>
+
+[sith_030]
+<Cena: 0 77>He's probably the culprit behind<Q>
+my death, and Lynne's death too,<Q>
+but his motives are unknown.<Q>
+Apparently, he's planning to carry<Q>
+out a deal with me tonight, but I<Q>
+don't know the details.<FIM_BLOCO>
+
+[sith_sub_050]
+<Cena: 0 78><texto_centro>
+Eyebrowed Villain<FIM_BLOCO>
+
+[sith_050]
+<Cena: 0 79>A foreigner who planned to carry<Q>
+out a deal tonight involving the<Q>
+powers of the dead. He knew the<Q>
+source of those powers was the<Q>
+meteorite fragment, so he stole it<Q>
+from the man in red's body and<Q>
+made his escape, abandoning the<Q>
+Yonoa to the sea.<FIM_BLOCO>
+
+[sith_sub_060]
+<Cena: 0 80><texto_centro>
+Eyebrowed Villain<FIM_BLOCO>
+
+[sith_060]
+<Cena: 0 81>A foreigner who planned to carry<Q>
+out a deal tonight involving the<Q>
+powers of the dead. He knew the<Q>
+source of those powers was the<Q>
+meteorite fragment, so he stole it<Q>
+from the man in red's body and<Q>
+made his escape, abandoning the<Q>
+Yonoa to the sea.<FIM_BLOCO>
+
+[sanbou_sub_010]
+<Cena: 0 82><texto_centro>
+Masked Muscleman<FIM_BLOCO>
+
+[sanbou_010]
+<Cena: 0 83>He appears to be the old man's<Q>
+servant. He operates the machines<Q>
+in the strange room expertly.<FIM_BLOCO>
+
+[sanbou_sub_020]
+<Cena: 0 84><texto_centro>
+Masked Muscleman<FIM_BLOCO>
+
+[sanbou_020]
+<Cena: 0 85>He appears to be the old man's<Q>
+servant. He operates the machines<Q>
+in the strange room expertly. He<Q>
+was with Detective Jowd when the<Q>
+strange room suddenly disappeared<Q>
+from the rest of the submarine.<FIM_BLOCO>
+
+[sanbou_sub_030]
+<Cena: 0 86><texto_centro>
+Masked Muscleman<FIM_BLOCO>
+
+[sanbou_030]
+<Cena: 0 87>He appears to be the old man's<Q>
+servant. He operates the<Q>
+machines in the strange room<Q>
+expertly. He and the room, with<Q>
+Detective Jowd inside as well,<Q>
+suddenly disappeared from the<Q>
+rest of the submarine.<FIM_BLOCO>
+
+[sanbou_sub_040]
+<Cena: 0 88><texto_centro>
+Masked Muscleman<FIM_BLOCO>
+
+[sanbou_040]
+<Cena: 0 89>He appears to be the old man's<Q>
+servant. He operates the machines<Q>
+in the strange room expertly.<Q>
+He's apparently a finely-crafted,<Q>
+remote-control robot. He used a<Q>
+machine gun to shoot and kill<Q>
+Detective Jowd.<FIM_BLOCO>
+
+[killer_po_sub_010]
+<Cena: 0 90><texto_centro>
+The Other Hitman<FIM_BLOCO>
+
+[killer_po_010]
+<Cena: 0 91>He's a hitman who, on the old<Q>
+man's orders, is targeting Lynne.<Q>
+His name is ”One Step Ahead”<Q>
+Tengo. He's Nearsighted Jeego's<Q>
+rival. He arrived at Lynne's<Q>
+apartment early and is now<Q>
+waiting for his prey to come<Q>
+home.<FIM_BLOCO>
+
+[killer_po_sub_020]
+<Cena: 0 92><texto_centro>
+The Other Hitman<FIM_BLOCO>
+
+[killer_po_020]
+<Cena: 0 93>He's a hitman who, on the old<Q>
+man's orders, is targeting Lynne.<Q>
+His name is ”One Step Ahead”<Q>
+Tengo. He's Nearsighted Jeego's<Q>
+rival. Upon hearing that Lynne<Q>
+was still at the junkyard, he headed<Q>
+there at once.<FIM_BLOCO>
+
+[killer_po_sub_030]
+<Cena: 0 94><texto_centro>
+The Other Hitman<FIM_BLOCO>
+
+[killer_po_030]
+<Cena: 0 95>He's a hitman who, on the old<Q>
+man's orders, is targeting Lynne.<Q>
+His name is ”One Step Ahead”<Q>
+Tengo. He's Nearsighted Jeego's<Q>
+rival. He followed Lynne to the<Q>
+junkyard, but met with an<Q>
+unfortunate accident.<FIM_BLOCO>
+
+[ribbon_sub_010]
+<Cena: 0 96><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_010]
+<Cena: 0 97>Her name is ”Kamila.” Apparently,<Q>
+she lives with Lynne and a small<Q>
+dog. Currently, she has been tied<Q>
+up by a hitman and is in terrible<Q>
+danger.<FIM_BLOCO>
+
+[ribbon_sub_020]
+<Cena: 0 98><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_020]
+<Cena: 0 99>Her name is ”Kamila.” Over the<Q>
+phone, Lynne asked her to find<Q>
+the music box hidden in the<Q>
+apartment and to bring it to the<Q>
+restaurant.<FIM_BLOCO>
+
+[ribbon_sub_030]
+<Cena: 0 100><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_030]
+<Cena: 0 101>Her name is ”Kamila.” Lynne asked<Q>
+her to find the music box hidden<Q>
+in the apartment and to bring it<Q>
+to the restaurant, but she hasn't<Q>
+arrived yet.<FIM_BLOCO>
+
+[ribbon_sub_040]
+<Cena: 0 102><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_040]
+<Cena: 0 103>Her name is ”Kamila.” Lynne asked<Q>
+her to find the music box hidden<Q>
+in the apartment and to bring it<Q>
+to the restaurant. She was missing,<Q>
+but then she appeared from out of<Q>
+the kidnappers' trunk.<FIM_BLOCO>
+
+[ribbon_sub_050]
+<Cena: 0 104><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_050]
+<Cena: 0 105>She's Detective Jowd's daughter.<Q>
+Her name is ”Kamila.” Apparently,<Q>
+she believes her mother's death<Q>
+was caused by the contraption<Q>
+she created. She was kidnapped<Q>
+because she was mistaken for the<Q>
+justice minister's daughter.<FIM_BLOCO>
+
+[ribbon_sub_060]
+<Cena: 0 106><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_060]
+<Cena: 0 107>She's Detective Jowd's daughter.<Q>
+Her name is ”Kamila.” Apparently,<Q>
+she believes her mother's death<Q>
+was caused by the contraption<Q>
+she created. She lost her life when<Q>
+she was kidnapped, but was saved<Q>
+by the little doggie.<FIM_BLOCO>
+
+[ribbon_sub_070]
+<Cena: 0 108><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_070]
+<Cena: 0 109>She's Detective Jowd's daughter.<Q>
+Her name is ”Kamila.” Apparently,<Q>
+she believes her mother's death<Q>
+was caused by the contraption<Q>
+she created. Kidnapped because<Q>
+she was mistaken for the justice<Q>
+minister's daughter, her current<Q>
+whereabouts are unknown.<FIM_BLOCO>
+
+[ribbon_sub_080]
+<Cena: 0 110><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_080]
+<Cena: 0 111>She's Detective Jowd's daughter.<Q>
+Her name is ”Kamila.” Apparently,<Q>
+she believes her mother's death<Q>
+was caused by the contraption<Q>
+she created. Kidnapped because<Q>
+she was mistaken for the justice<Q>
+minister's daughter, she's now<Q>
+somewhere on the submarine.<FIM_BLOCO>
+
+[ribbon_sub_090]
+<Cena: 0 112><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_090]
+<Cena: 0 113>She's Detective Jowd's daughter.<Q>
+Her name is ”Kamila.” Apparently,<Q>
+she believes her mother's death<Q>
+was caused by the contraption<Q>
+she created. Lynne found her in<Q>
+the submarine, but the man in red<Q>
+was controlling her.<FIM_BLOCO>
+
+[ribbon_sub_100]
+<Cena: 0 114><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_100]
+<Cena: 0 115>She's Detective Jowd's daughter.<Q>
+Her name is ”Kamila.” Apparently,<Q>
+she believes her mother's death<Q>
+was caused by the contraption<Q>
+she created. She was being<Q>
+controlled by the man in red, but<Q>
+is apparently unconscious now.<FIM_BLOCO>
+
+[ribbon_sub_110]
+<Cena: 0 116><texto_centro>
+The Little Lady<FIM_BLOCO>
+
+[ribbon_110]
+<Cena: 0 117>She's Detective Jowd's daughter.<Q>
+Her name is ”Kamila.” Apparently,<Q>
+she believes her mother's death<Q>
+was caused by the contraption<Q>
+she created. She and Lynne are<Q>
+waiting to be rescued from the<Q>
+now sinking sub ”Yonoa.”<FIM_BLOCO>
+
+[missile_sub_010]
+<Cena: 0 118><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_010]
+<Cena: 0 119>His name is ”Missile.” He was<Q>
+killed by a hitman while trying<Q>
+to protect his little mistress.<Q>
+He's a loyal little doggie.<FIM_BLOCO>
+
+[missile_sub_020]
+<Cena: 0 120><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_020]
+<Cena: 0 121>A friendly little Pomeranian, his<Q>
+name is ”Missile.” His mission is<Q>
+to protect the little girl who is<Q>
+his mistress. He's doing his best<Q>
+right now to create a path to do<Q>
+just that.<FIM_BLOCO>
+
+[missile_sub_025]
+<Cena: 0 122><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_025]
+<Cena: 0 123>A friendly little Pomeranian, his<Q>
+name is ”Missile.” He left the<Q>
+apartment to look for the little<Q>
+lady who is his mistress. He was<Q>
+hit and killed by the kidnapper's<Q>
+motorcycle, but gained the powers<Q>
+of the dead and was able to save<Q>
+the little girl from death.<FIM_BLOCO>
+
+[missile_sub_030]
+<Cena: 0 124><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_030]
+<Cena: 0 125>A friendly little Pomeranian, his<Q>
+name is ”Missile.” Thinking he<Q>
+needs his powers to protect the<Q>
+little lady, he chose not to be<Q>
+brought back to life. Possessing<Q>
+a leaf, he was blown away on the<Q>
+wind.<FIM_BLOCO>
+
+[missile_sub_040]
+<Cena: 0 126><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_040]
+<Cena: 0 127>A friendly little Pomeranian, his<Q>
+name is ”Missile.” Thinking he<Q>
+needs his powers to protect the<Q>
+little lady, he chose not to be<Q>
+brought back to life. He was<Q>
+blown away on the wind, but I<Q>
+met up with him again when he<Q>
+came floating along in the sewer.<FIM_BLOCO>
+
+[missile_sub_050]
+<Cena: 0 128><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_050]
+<Cena: 0 129>A friendly little Pomeranian, his<Q>
+name is ”Missile.” Thinking he<Q>
+needs his powers to protect the<Q>
+little lady, he chose not to be<Q>
+brought back to life. He came<Q>
+along to the sub with me to save<Q>
+his mistresses, Lynne and Kamila.<FIM_BLOCO>
+
+[missile_sub_060]
+<Cena: 0 130><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_060]
+<Cena: 0 131>A friendly little Pomeranian, his<Q>
+name is ”Missile.” Thinking he<Q>
+needs his powers to protect the<Q>
+little lady, he chose not to be<Q>
+brought back to life. He came<Q>
+along to the sub with me to save<Q>
+his mistresses, Lynne and Kamila.<FIM_BLOCO>
+
+[missile_sub_070]
+<Cena: 0 132><texto_centro>
+Valiant Pet<FIM_BLOCO>
+
+[missile_070]
+<Cena: 0 133>A friendly little Pomeranian, his<Q>
+name is ”Missile.” Thinking he<Q>
+needs his powers to protect the<Q>
+little lady, he chose not to be<Q>
+brought back to life. He went<Q>
+back in time ten years with<Q>
+me to help fight the last battle<Q>
+against fate.<FIM_BLOCO>
+
+[enma_sub_010]
+<Cena: 0 134><texto_centro>
+Perfumed Lady<FIM_BLOCO>
+
+[enma_010]
+<Cena: 0 135>Lynne's neighbor. All I know about<Q>
+her is that she's a woman clad in<Q>
+purple, who lives in an apartment<Q>
+decorated in red.<FIM_BLOCO>
+
+[enma_sub_020]
+<Cena: 0 136><texto_centro>
+Perfumed Lady<FIM_BLOCO>
+
+[enma_020]
+<Cena: 0 137>Lynne's neighbor. She lives in an<Q>
+apartment decorated in red with<Q>
+her daughter. Apparently, she's a<Q>
+novelist who moved here due to<Q>
+a disagreement with her husband.<FIM_BLOCO>
+
+[enma_sub_030]
+<Cena: 0 138><texto_centro>
+Perfumed Lady<FIM_BLOCO>
+
+[enma_030]
+<Cena: 0 139>Lynne's neighbor. She lives in an<Q>
+apartment decorated in red with<Q>
+her daughter. Apparently, she's a<Q>
+novelist who moved here due to<Q>
+a disagreement with her husband.<Q>
+She refuses to answer the phone<Q>
+anymore tonight.<FIM_BLOCO>
+
+[enma_sub_040]
+<Cena: 0 140><texto_centro>
+Perfumed Lady<FIM_BLOCO>
+
+[enma_040]
+<Cena: 0 141>Lynne's neighbor, her name is<Q>
+”Emma.” Apparently, she's a<Q>
+novelist who moved here due to<Q>
+a disagreement with her husband.<Q>
+Because of the ongoing fight, she<Q>
+won't answer any calls or let her<Q>
+daughter use the phone, either.<FIM_BLOCO>
+
+[enma_sub_050]
+<Cena: 0 142><texto_centro>
+Perfumed Lady<FIM_BLOCO>
+
+[enma_050]
+<Cena: 0 143>Lynne's neighbor, her name is<Q>
+”Emma.” She lives in an apartment<Q>
+decorated in red with her daughter.<Q>
+Her relationship with her husband<Q>
+seems to have improved, but she's<Q>
+apparently doomed to dangle from<Q>
+the chandelier tonight.<FIM_BLOCO>
+
+[enma_sub_060]
+<Cena: 0 144><texto_centro>
+Perfumed Lady<FIM_BLOCO>
+
+[enma_060]
+<Cena: 0 145>Lynne's neighbor, her name is<Q>
+”Emma.” In protest of her justice<Q>
+minister husband's execution<Q>
+order, she moved out with her<Q>
+daughter. She's made up with<Q>
+her husband, but is apparently<Q>
+doomed to dangle from the<Q>
+chandelier tonight.<FIM_BLOCO>
+
+[eimin_sub_010]
+<Cena: 0 146><texto_centro>
+Feverish Firecracker<FIM_BLOCO>
+
+[eimin_010]
+<Cena: 0 147>The daughter of the woman in<Q>
+purple, she has a fever of 102 and<Q>
+is resting in bed. Apparently, she<Q>
+and Kamila are friends. She isn't<Q>
+going out for her lesson tonight.<FIM_BLOCO>
+
+[eimin_sub_020]
+<Cena: 0 148><texto_centro>
+Feverish Firecracker<FIM_BLOCO>
+
+[eimin_020]
+<Cena: 0 149>The daughter of the woman in<Q>
+purple, her name is ”Amelie.”<Q>
+Because of her fever of 102, she<Q>
+isn't going out for her lesson<Q>
+tonight. Apparently, she and<Q>
+Kamila are friends. She's worried<Q>
+about her father's birthday.<FIM_BLOCO>
+
+[eimin_sub_030]
+<Cena: 0 150><texto_centro>
+Feverish Firecracker<FIM_BLOCO>
+
+[eimin_030]
+<Cena: 0 151>The daughter of the woman in<Q>
+purple, her name is ”Amelie.”<Q>
+Because of her fever of 102, she<Q>
+isn't going out for her lesson<Q>
+tonight. Apparently, she and<Q>
+Kamila are friends. She's worried<Q>
+about her father's birthday. She<Q>
+seems to have been kidnapped.<FIM_BLOCO>
+
+[eimin_sub_040]
+<Cena: 0 152><texto_centro>
+Feverish Firecracker<FIM_BLOCO>
+
+[eimin_040]
+<Cena: 0 153>The daughter of the woman in<Q>
+purple, her name is ”Amelie.”<Q>
+Because of her fever of 102,<Q>
+she's crying out in her sleep.<Q>
+She's worried about her father's<Q>
+birthday. She was thought to<Q>
+have been kidnapped, but that<Q>
+apparently isn't the case.<FIM_BLOCO>
+
+[eimin_sub_050]
+<Cena: 0 154><texto_centro>
+Feverish Firecracker<FIM_BLOCO>
+
+[eimin_050]
+<Cena: 0 155>The daughter of the woman in<Q>
+purple, her name is ”Amelie.”<Q>
+Because of her fever of 102,<Q>
+she's crying out in her sleep.<Q>
+She's worried about her father's<Q>
+birthday. In a case of mistaken<Q>
+identity, Kamila was kidnapped<Q>
+in Amelie's place.<FIM_BLOCO>
+
+[eimin_sub_060]
+<Cena: 0 156><texto_centro>
+Feverish Firecracker<FIM_BLOCO>
+
+[eimin_060]
+<Cena: 0 157>The daughter of the woman in<Q>
+purple, her name is ”Amelie.”<Q>
+Because she slipped out to buy<Q>
+her father a birthday present,<Q>
+her fever has apparently climbed<Q>
+back up again. She wants to call<Q>
+her father on the phone.<FIM_BLOCO>
+
+[eimin_sub_070]
+<Cena: 0 158><texto_centro>
+Feverish Firecracker<FIM_BLOCO>
+
+[eimin_070]
+<Cena: 0 159>The daughter of the woman in<Q>
+purple, her name is ”Amelie.”<Q>
+With peace restored to her family,<Q>
+and after finally being able to call<Q>
+her father, she is now sleeping<Q>
+soundly. Maybe she's worn out by<Q>
+all the drama?<FIM_BLOCO>
+
+[daijin_sub_010]
+<Cena: 0 160><texto_centro>
+Careworn Gentleman<FIM_BLOCO>
+
+[daijin_010]
+<Cena: 0 161>He sits alone in his stately office,<Q>
+tearing out his hair. He is frantic<Q>
+about his wife, the woman in<Q>
+purple, who has left him.<FIM_BLOCO>
+
+[daijin_sub_020]
+<Cena: 0 162><texto_centro>
+Careworn Gentleman<FIM_BLOCO>
+
+[daijin_020]
+<Cena: 0 163>A justice minister who sits alone<Q>
+in his stately office, tearing out<Q>
+his hair. His wife, the woman in<Q>
+purple, has left him, and won't<Q>
+answer the phone. With his<Q>
+daughter kidnapped, he promised<Q>
+the kidnappers the execution<Q>
+would be carried out tonight.<FIM_BLOCO>
+
+[daijin_sub_030]
+<Cena: 0 164><texto_centro>
+Careworn Gentleman<FIM_BLOCO>
+
+[daijin_030]
+<Cena: 0 165>A justice minister who sits<Q>
+agonizing in his stately office. He<Q>
+calls himself a ”realist.” Because<Q>
+his wife won't answer the phone,<Q>
+he can't be sure of his daughter's<Q>
+safety, and is left only to<Q>
+frantically pull out his hair.<FIM_BLOCO>
+
+[daijin_sub_040]
+<Cena: 0 166><texto_centro>
+Careworn Gentleman<FIM_BLOCO>
+
+[daijin_040]
+<Cena: 0 167>A justice minister who sits<Q>
+agonizing in his stately office.<Q>
+One month ago, he was physically<Q>
+manipulated into ordering the<Q>
+death-row convict's execution.<Q>
+Not wanting this to get out, he's<Q>
+since been in constant anguish.<FIM_BLOCO>
+
+[daijin_sub_050]
+<Cena: 0 168><texto_centro>
+Careworn Gentleman<FIM_BLOCO>
+
+[daijin_050]
+<Cena: 0 169>A justice minister who sits<Q>
+agonizing in his stately office.<Q>
+One month ago, he was physically<Q>
+manipulated into ordering the<Q>
+death-row convict's execution.<Q>
+Not wanting this to get out, he's<Q>
+since been in constant anguish.<Q>
+He decided to halt the execution.<FIM_BLOCO>
+
+[daijin_sub_060]
+<Cena: 0 170><texto_centro>
+Careworn Gentleman<FIM_BLOCO>
+
+[daijin_060]
+<Cena: 0 171>A justice minister who sits<Q>
+agonizing in his gray office. One<Q>
+month ago, he was physically<Q>
+manipulated into ordering the<Q>
+death-row convict's execution.<Q>
+Not wanting this to get out, he's<Q>
+been in constant anguish. He<Q>
+decided to halt the execution.<FIM_BLOCO>
+
+[daijin_sub_070]
+<Cena: 0 172><texto_centro>
+Careworn Gentleman<FIM_BLOCO>
+
+[daijin_070]
+<Cena: 0 173>A justice minister who sits<Q>
+agonizing in his gray office. One<Q>
+month ago, he was physically<Q>
+manipulated into ordering the<Q>
+death-row convict's execution.<Q>
+Not wanting this to get out, he's<Q>
+been in constant anguish. He<Q>
+decided to halt the execution.<FIM_BLOCO>
+
+[keiji_G_sub_020]
+<Cena: 0 174><texto_centro>
+The Green Detective<FIM_BLOCO>
+
+[keiji_G_020]
+<Cena: 0 175>A member of the police who's<Q>
+investigating my murder. His<Q>
+partner is the blue detective.<Q>
+He works under Inspector<Q>
+Cabanela.<FIM_BLOCO>
+
+[keiji_G_sub_030]
+<Cena: 0 176><texto_centro>
+The Green Detective<FIM_BLOCO>
+
+[keiji_G_030]
+<Cena: 0 177>A member of the police who's<Q>
+investigating my murder. His<Q>
+partner is the blue detective.<Q>
+He works under Inspector<Q>
+Cabanela. Apparently, his<Q>
+name is ”Detective McCaw.”<FIM_BLOCO>
+
+[keiji_B_sub_020]
+<Cena: 0 178><texto_centro>
+The Blue Detective<FIM_BLOCO>
+
+[keiji_B_020]
+<Cena: 0 179>A member of the police who's<Q>
+investigating my murder. His<Q>
+partner is the green detective.<Q>
+He works under Inspector<Q>
+Cabanela.<FIM_BLOCO>
+
+[keikan_A_sub_010]
+<Cena: 0 180><texto_centro>
+Typical Cop<FIM_BLOCO>
+
+[keikan_A_010]
+<Cena: 0 181>I guess he's one of the policemen<Q>
+investigating my murder. There are<Q>
+so many of them, I can't tell them<Q>
+apart.<FIM_BLOCO>
+
+[doctor_sub_010]
+<Cena: 0 182><texto_centro>
+Odd Blue Doctor<FIM_BLOCO>
+
+[doctor_010]
+<Cena: 0 183>He's apparently a colleague of<Q>
+the detectives. He's examining<Q>
+my corpse. There's something<Q>
+off about him...<FIM_BLOCO>
+
+[doctor_sub_020]
+<Cena: 0 184><texto_centro>
+Odd Blue Doctor<FIM_BLOCO>
+
+[doctor_020]
+<Cena: 0 185>A phony medical examiner, he was<Q>
+working with the man in red. His<Q>
+plan was to steal the corpse from<Q>
+the site, but Inspector Cabanela<Q>
+saw through his plot and bribed him<Q>
+to bring the body to the junkyard's<Q>
+maintenance building basement.<FIM_BLOCO>
+
+[cubanelle_sub_010]
+<Cena: 0 186><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_010]
+<Cena: 0 187>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” Apparently, he's the<Q>
+group's top investigator, looked up<Q>
+to by his men. He seems to dance<Q>
+through life. He has some kind of<Q>
+special tie to Lynne.<FIM_BLOCO>
+
+[cubanelle_sub_030]
+<Cena: 0 188><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_030]
+<Cena: 0 189>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” He's looking after<Q>
+Lynne in Jowd's stead. He's<Q>
+investigating a deal that could<Q>
+”affect the future of the<Q>
+nation.”<FIM_BLOCO>
+
+[cubanelle_sub_040]
+<Cena: 0 190><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_040]
+<Cena: 0 191>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” Getting ahead is the<Q>
+only thing he thinks about. He's<Q>
+investigating a big deal tonight.<Q>
+Upon discovering his friend Jowd's<Q>
+escape from prison, he decided to<Q>
+haul him in personally.<FIM_BLOCO>
+
+[cubanelle_sub_050]
+<Cena: 0 192><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_050]
+<Cena: 0 193>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” Getting ahead is the<Q>
+only thing he thinks about. He's<Q>
+investigating a big deal tonight.<Q>
+Upon discovering Jowd's escape,<Q>
+he decided to haul him in to the<Q>
+minister's office personally.<FIM_BLOCO>
+
+[cubanelle_sub_060]
+<Cena: 0 194><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_060]
+<Cena: 0 195>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” Getting ahead is the<Q>
+only thing he thinks about. He's<Q>
+investigating a big deal tonight.<Q>
+After finding out what the<Q>
+manipulator really is, he rushed<Q>
+off somewhere.<FIM_BLOCO>
+
+[cubanelle_sub_070]
+<Cena: 0 196><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_070]
+<Cena: 0 197>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” He's investigating a<Q>
+big deal. After finding out what<Q>
+the manipulator really is and<Q>
+rushing off, he called the justice<Q>
+minister, demanding that the<Q>
+execution be carried out.<FIM_BLOCO>
+
+[cubanelle_sub_080]
+<Cena: 0 198><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_080]
+<Cena: 0 199>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” After calling the<Q>
+minister from the junkyard office,<Q>
+demanding that the execution be<Q>
+carried out, he was shot and killed<Q>
+by the other me.<FIM_BLOCO>
+
+[cubanelle_sub_090]
+<Cena: 0 200><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_090]
+<Cena: 0 201>The head of the Special<Q>
+Investigation Unit. His name is<Q>
+”Cabanela.” In order to find out,<Q>
+with the junkyard super's help,<Q>
+the source of the manipulator's<Q>
+powers, he had the man in red's<Q>
+corpse brought to the junkyard's<Q>
+maintenance building basement.<FIM_BLOCO>
+
+[cubanelle_sub_110]
+<Cena: 0 202><texto_centro>
+Lanky and Loose Lawman<FIM_BLOCO>
+
+[cubanelle_110]
+<Cena: 0 203>The head of the Special<Q>
+Investigation Unit. His insistence<Q>
+on a spotless record was so that<Q>
+he'd be able to prove his friend<Q>
+innocent. He fired a bullet with a<Q>
+radio transmitter into the man in<Q>
+red's body, and urged Lynne to<Q>
+bring the case to a conclusion.<FIM_BLOCO>
+
+[kalon_sub_010]
+<Cena: 0 204><texto_centro>
+Detective with the Cap<FIM_BLOCO>
+
+[kalon_010]
+<Cena: 0 205>He works under Inspector<Q>
+Cabanela. He's performing a<Q>
+stakeout from the park. An odd<Q>
+man seems to be bothering him.<FIM_BLOCO>
+
+[kalon_sub_020]
+<Cena: 0 206><texto_centro>
+Detective with the Cap<FIM_BLOCO>
+
+[kalon_020]
+<Cena: 0 207>He works under Inspector<Q>
+Cabanela. Apparently, his name<Q>
+is ”Detective Rindge.” He's<Q>
+performing a stakeout from the<Q>
+park. Something happened while<Q>
+he was driving, which caused him to<Q>
+crash his van into the restaurant.<FIM_BLOCO>
+
+[kalon_sub_030]
+<Cena: 0 208><texto_centro>
+Detective with the Cap<FIM_BLOCO>
+
+[kalon_030]
+<Cena: 0 209>He works under Inspector<Q>
+Cabanela. Apparently, his name<Q>
+is ”Detective Rindge.” While<Q>
+performing a stakeout from the<Q>
+park, he caught sight of Lynne,<Q>
+and hurried to the restaurant.<FIM_BLOCO>
+
+[kalon_sub_040]
+<Cena: 0 210><texto_centro>
+Detective with the Cap<FIM_BLOCO>
+
+[kalon_040]
+<Cena: 0 211>He works under Inspector<Q>
+Cabanela. Apparently, his name<Q>
+is ”Detective Rindge.” After<Q>
+hearing Lynne's story at the<Q>
+restaurant, he takes on the task<Q>
+of looking for the little lady.<FIM_BLOCO>
+
+[leaflet_sub_010]
+<Cena: 0 212><texto_centro>
+Guardian of the Park<FIM_BLOCO>
+
+[leaflet_010]
+<Cena: 0 213>There's no other way to describe<Q>
+him, except ”the man who is<Q>
+bothering the detective with the<Q>
+cap.” His mission is apparently to<Q>
+”protect the park.”<FIM_BLOCO>
+
+[leaflet_sub_020]
+<Cena: 0 214><texto_centro>
+Guardian of the Park<FIM_BLOCO>
+
+[leaflet_020]
+<Cena: 0 215>A man who ”protects the park.”<Q>
+He was bothering the detective<Q>
+with the cap, but then suddenly<Q>
+wound up dead in the tall grass<Q>
+of the park.<FIM_BLOCO>
+
+[leaflet_sub_030]
+<Cena: 0 216><texto_centro>
+Guardian of the Park<FIM_BLOCO>
+
+[leaflet_030]
+<Cena: 0 217>A man who ”protects the park.”<Q>
+He was bothering the detective<Q>
+with the cap, but then suddenly<Q>
+wound up dead in the tall grass<Q>
+of the park. He was trying to<Q>
+save the little lady from being<Q>
+abducted, but ended up as<Q>
+somebody's collateral damage.<FIM_BLOCO>
+
+[leaflet_sub_040]
+<Cena: 0 218><texto_centro>
+Guardian of the Park<FIM_BLOCO>
+
+[leaflet_040]
+<Cena: 0 219>A man who ”protects the park.”<Q>
+Ten years ago, he witnessed<Q>
+Lynne being saved by a falling<Q>
+meteorite. Now, to protect the<Q>
+”rock of the gods” that performed<Q>
+this miracle, he lobbies to stop<Q>
+the park from being turned into<Q>
+a housing site.<FIM_BLOCO>
+
+[kanri_sub_010]
+<Cena: 0 220><texto_centro>
+Pigeon Man<FIM_BLOCO>
+
+[kanri_010]
+<Cena: 0 221>The superintendent of the<Q>
+junkyard. He apparently also lives<Q>
+in the maintenance building.<Q>
+A man who loves and is loved by<Q>
+his pet pigeon... Or, at least, that's<Q>
+how it appears to be.<FIM_BLOCO>
+
+[kanri_sub_020]
+<Cena: 0 222><texto_centro>
+Pigeon Man<FIM_BLOCO>
+
+[kanri_020]
+<Cena: 0 223>The superintendent of the<Q>
+junkyard. He apparently also<Q>
+lives in the maintenance building.<Q>
+A mysterious ”murder machine” in<Q>
+the building's basement shot and<Q>
+killed Lynne.<FIM_BLOCO>
+
+[kanri_sub_030]
+<Cena: 0 224><texto_centro>
+Pigeon Man<FIM_BLOCO>
+
+[kanri_030]
+<Cena: 0 225>The superintendent of the<Q>
+junkyard. He apparently also lives<Q>
+in the maintenance building. The<Q>
+”murder machine” in the building's<Q>
+basement is almost identical to<Q>
+the contraption that killed Jowd's<Q>
+wife.<FIM_BLOCO>
+
+[kanri_sub_040]
+<Cena: 0 226><texto_centro>
+Pigeon Man<FIM_BLOCO>
+
+[kanri_040]
+<Cena: 0 227>The superintendent of the<Q>
+junkyard. Working with Inspector<Q>
+Cabanela to find the source of<Q>
+the manipulator's powers, he was<Q>
+examining the man in red's corpse.<Q>
+That fact was what made him a<Q>
+target to be killed.<FIM_BLOCO>
+
+[kanri_sub_050]
+<Cena: 0 228><texto_centro>
+Pigeon Man<FIM_BLOCO>
+
+[kanri_050]
+<Cena: 0 229>The superintendent of the<Q>
+junkyard. He was a police medical<Q>
+examiner, but he quit the force to<Q>
+research the meteorite's radiation.<Q>
+He built the basement contraption<Q>
+based on Cabanela's reports in<Q>
+order to further the investigation<Q>
+into Jowd's case.<FIM_BLOCO>
+
+[cock_sub_010]
+<Cena: 0 230><texto_centro>
+Jovial Tenor<FIM_BLOCO>
+
+[cock_010]
+<Cena: 0 231>Most likely, he's the chef of the<Q>
+restaurant, the Chicken Kitchen.<FIM_BLOCO>
+
+[cock_sub_015]
+<Cena: 0 232><texto_centro>
+Jovial Tenor<FIM_BLOCO>
+
+[cock_015]
+<Cena: 0 233>The man who called for help from<Q>
+the restaurant, the Chicken<Q>
+Kitchen.<FIM_BLOCO>
+
+[cock_sub_020]
+<Cena: 0 234><texto_centro>
+Jovial Tenor<FIM_BLOCO>
+
+[cock_020]
+<Cena: 0 235>The chef at the Chicken Kitchen.<Q>
+He cooks the chicken that the<Q>
+waitress brings to the customers.<Q>
+He sings in his rich tenor voice<Q>
+whenever he gets the chance.<FIM_BLOCO>
+
+[cock_sub_030]
+<Cena: 0 236><texto_centro>
+Jovial Tenor<FIM_BLOCO>
+
+[cock_030]
+<Cena: 0 237>The chef at the Chicken Kitchen.<Q>
+He cooks the chicken that the<Q>
+waitress delivers to the<Q>
+customers. He sings in his rich<Q>
+tenor whenever he gets the<Q>
+chance.<FIM_BLOCO>
+
+[cock_sub_040]
+<Cena: 0 238><texto_centro>
+Jovial Tenor<FIM_BLOCO>
+
+[cock_040]
+<Cena: 0 239>The chef at the Chicken Kitchen.<Q>
+He appears to be in the middle of<Q>
+a delivery, but he's busy singing in<Q>
+his rich tenor voice while swinging<Q>
+away on the park swing.<FIM_BLOCO>
+
+[keibi_A_sub_010]
+<Cena: 0 240><texto_centro>
+Navy-Blue Square<FIM_BLOCO>
+
+[keibi_A_010]
+<Cena: 0 241>He sits ramrod straight at his desk<Q>
+in some office. He's apparently<Q>
+known as ”Officer Bailey.”<FIM_BLOCO>
+
+[keibi_A_sub_020]
+<Cena: 0 242><texto_centro>
+Navy-Blue Square<FIM_BLOCO>
+
+[keibi_A_020]
+<Cena: 0 243>He sits at his desk in some office,<Q>
+and appears to be working. These<Q>
+guys all wear the same uniform.<Q>
+I can't tell them apart.<FIM_BLOCO>
+
+[keibi_A_sub_030]
+<Cena: 0 244><texto_centro>
+Navy-Blue Square<FIM_BLOCO>
+
+[keibi_A_030]
+<Cena: 0 245>A guard at a prison. He sits at his<Q>
+desk and appears to be working.<Q>
+He seems to be on edge and is<Q>
+carefully watching the clock.<FIM_BLOCO>
+
+[keibi_A_sub_040]
+<Cena: 0 246><texto_centro>
+Navy-Blue Square<FIM_BLOCO>
+
+[keibi_A_040]
+<Cena: 0 247>A guard at a prison. He's no longer<Q>
+sitting at his desk working.<Q>
+In grave situations, he performs<Q>
+the ”Panic Dance,” a dance that's<Q>
+been passed down in his family for<Q>
+generations.<FIM_BLOCO>
+
+[Rock_sub_010]
+<Cena: 0 248><texto_centro>
+Rock Jailbird<FIM_BLOCO>
+
+[Rock_010]
+<Cena: 0 249>A rock-'n'-roller who sang<Q>
+national secrets during a live,<Q>
+nation-wide broadcast. He's now<Q>
+creating a horrible cacophony in<Q>
+his prison cell.<FIM_BLOCO>
+
+[Rock_sub_020]
+<Cena: 0 250><texto_centro>
+Rock Jailbird<FIM_BLOCO>
+
+[Rock_020]
+<Cena: 0 251>A rock-'n'-roller who sang<Q>
+national secrets during a live,<Q>
+nation-wide broadcast. Thought<Q>
+to have been manipulated into<Q>
+committing his crime, he's now<Q>
+being held in a top-secret<Q>
+research facility.<FIM_BLOCO>
+
+[shujin_B_sub_010]
+<Cena: 0 252><texto_centro>
+Curry-Loving Jailbird<FIM_BLOCO>
+
+[shujin_B_010]
+<Cena: 0 253>An odd fellow who laid siege to<Q>
+the Metro Police Department<Q>
+and demanded curry and rice.<Q>
+He now appears to be digging a<Q>
+tunnel out of his prison cell...<FIM_BLOCO>
+
+[shujin_B_sub_020]
+<Cena: 0 254><texto_centro>
+Curry-Loving Jailbird<FIM_BLOCO>
+
+[shujin_B_020]
+<Cena: 0 255>An odd fellow who laid siege to<Q>
+the Metro Police Department<Q>
+and demanded curry and rice.<Q>
+Thought to have been manipulated<Q>
+into committing his crime, he is<Q>
+now being held in a top-secret<Q>
+research facility.<FIM_BLOCO>
+
+[jawed_sub_010]
+<Cena: 0 256><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_010]
+<Cena: 0 257>Prisoner D99. Lynne asked me to<Q>
+check out his work schedule for<Q>
+tomorrow. He apparently shot and<Q>
+killed his wife. He now appears to<Q>
+be enjoying himself as he paints a<Q>
+picture in his prison cell.<FIM_BLOCO>
+
+[jawed_sub_020]
+<Cena: 0 258><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_020]
+<Cena: 0 259>Prisoner D99. People call him<Q>
+”Detective Jowd.” He apparently<Q>
+killed his wife. The picture he was<Q>
+painting in his cell was a portrait<Q>
+of me.<FIM_BLOCO>
+
+[jawed_sub_040]
+<Cena: 0 260><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_040]
+<Cena: 0 261>A prisoner who is scheduled to<Q>
+be executed tonight for the crime<Q>
+of murdering his wife. He's the<Q>
+detective who saved Lynne's life<Q>
+ten years ago. His name is ”Jowd.”<Q>
+He was apparently good friends<Q>
+with Cabanela.<FIM_BLOCO>
+
+[jawed_sub_050]
+<Cena: 0 262><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_050]
+<Cena: 0 263>A prisoner who is scheduled to<Q>
+be executed tonight for the<Q>
+crime of murdering his wife.<Q>
+He's the detective who saved<Q>
+Lynne's life ten years ago. His<Q>
+name is ”Jowd.” He was apparently<Q>
+good friends with Cabanela.<FIM_BLOCO>
+
+[jawed_sub_060]
+<Cena: 0 264><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_060]
+<Cena: 0 265>A prisoner who is scheduled to<Q>
+be executed tonight for the crime<Q>
+of murdering his wife. He's the<Q>
+detective who saved Lynne's life<Q>
+ten years ago. His name is ”Jowd.”<Q>
+He was apparently good friends<Q>
+with Cabanela. With my help, he'll<Q>
+make it out of this prison.<FIM_BLOCO>
+
+[jawed_sub_070]
+<Cena: 0 266><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_070]
+<Cena: 0 267>A prisoner who is scheduled to<Q>
+be executed tonight for the crime<Q>
+of murdering his wife. He's the<Q>
+detective who saved Lynne's life<Q>
+ten years ago. His name is ”Jowd.”<Q>
+With my help, he escaped from<Q>
+prison, but was spotted by his pal<Q>
+Cabanela and apprehended.<FIM_BLOCO>
+
+[jawed_sub_090]
+<Cena: 0 268><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_090]
+<Cena: 0 269>A death-row inmate. His name is<Q>
+”Jowd.” To protect his daughter,<Q>
+he accepted the blame for his<Q>
+wife's murder. He claims to have<Q>
+stolen somebody else's life as<Q>
+well. Inspector Cabanela hauled<Q>
+him into the minister's office<Q>
+after his escape from prison.<FIM_BLOCO>
+
+[jawed_sub_100]
+<Cena: 0 270><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_100]
+<Cena: 0 271>A death-row inmate. His name is<Q>
+”Jowd.” To protect his daughter,<Q>
+he accepted the blame for his<Q>
+wife's murder. He claims to have<Q>
+stolen somebody else's life as<Q>
+well. Inspector Cabanela hauled<Q>
+him into the minister's office<Q>
+after his escape from prison.<FIM_BLOCO>
+
+[jawed_sub_110]
+<Cena: 0 272><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_110]
+<Cena: 0 273>A death-row inmate. His name is<Q>
+”Jowd.” To protect his daughter,<Q>
+he accepted the blame for his<Q>
+wife's murder. He claims to have<Q>
+stolen somebody else's life as<Q>
+well, but a witness says it was a<Q>
+meteorite's fault.<FIM_BLOCO>
+
+[jawed_sub_120]
+<Cena: 0 274><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_120]
+<Cena: 0 275>A detective whose execution was<Q>
+called off. His name is ”Jowd.”<Q>
+He's Kamila's father. He feels<Q>
+responsible for having driven an<Q>
+escaped suspect to take Lynne<Q>
+as a hostage and meet his death<Q>
+ten years ago. He feels his wife's<Q>
+death was his punishment.<FIM_BLOCO>
+
+[jawed_sub_130]
+<Cena: 0 276><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_130]
+<Cena: 0 277>A detective whose execution was<Q>
+called off. His name is ”Jowd.”<Q>
+He's Kamila's father. He feels<Q>
+responsible for having driven an<Q>
+escaped suspect to take Lynne<Q>
+as a hostage and meet his death<Q>
+ten years ago. He feels his wife's<Q>
+death was his punishment.<FIM_BLOCO>
+
+[jawed_sub_140]
+<Cena: 0 278><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_140]
+<Cena: 0 279>An excellent detective. His name<Q>
+is ”Jowd.” A death-row inmate, he<Q>
+feels responsible for two murders,<Q>
+but his execution was called off.<Q>
+He snuck onto this sub to rescue<Q>
+his daughter, but then disappeared<Q>
+before my eyes, along with the<Q>
+room he was in.<FIM_BLOCO>
+
+[jawed_sub_150]
+<Cena: 0 280><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_150]
+<Cena: 0 281>An excellent detective. His name<Q>
+is ”Jowd.” A death-row inmate, he<Q>
+feels responsible for two murders,<Q>
+but his execution was called off.<Q>
+He snuck onto this sub to rescue<Q>
+his daughter, but the room he and<Q>
+the man in red were in was ejected<Q>
+from the sub. He was then killed.<FIM_BLOCO>
+
+[jawed_sub_160]
+<Cena: 0 282><texto_centro>
+Fated Jailbird<FIM_BLOCO>
+
+[jawed_160]
+<Cena: 0 283>An excellent detective. His name<Q>
+is ”Jowd.” A death-row inmate, he<Q>
+feels responsible for two murders,<Q>
+but his execution was called off.<Q>
+He snuck onto this sub to rescue<Q>
+his daughter, but he was killed. To<Q>
+change his fate, I have to go back<Q>
+ten years...<FIM_BLOCO>
+
+[erai_sub_010]
+<Cena: 0 284><texto_centro>
+Itchy Man<FIM_BLOCO>
+
+[erai_010]
+<Cena: 0 285>The chief of the police's Special<Q>
+Investigation Unit. His job is to sit<Q>
+at his desk in the station, give the<Q>
+detectives their orders, and wiggle<Q>
+his itchy toes.<FIM_BLOCO>
+
+[waitress_sub_010]
+<Cena: 0 286><texto_centro>
+Cute Chicken Carrier<FIM_BLOCO>
+
+[waitress_010]
+<Cena: 0 287>A woman who serves food and<Q>
+water with a smile at the<Q>
+restaurant, the Chicken Kitchen.<Q>
+She brought Lynne water, and<Q>
+she brought the suspicious<Q>
+couple chicken.<FIM_BLOCO>
+
+[waitress_sub_020]
+<Cena: 0 288><texto_centro>
+Cute Chicken Carrier<FIM_BLOCO>
+
+[waitress_020]
+<Cena: 0 289>A woman who serves food and<Q>
+water with a smile at the<Q>
+restaurant, the Chicken Kitchen.<Q>
+Apparently, this is only her second<Q>
+day working here, but she's already<Q>
+looking for romance.<FIM_BLOCO>
+
+[waitress_sub_030]
+<Cena: 0 290><texto_centro>
+Cute Chicken Carrier<FIM_BLOCO>
+
+[waitress_030]
+<Cena: 0 291>A police investigator who is<Q>
+working undercover at the<Q>
+Chicken Kitchen as a waitress.<Q>
+Her name is ”Memry.” She planted<Q>
+a bug in the suspicious couple's<Q>
+chicken. She's a co-worker of the<Q>
+detective doing the stakeout<Q>
+from the park.<FIM_BLOCO>
+
+[yukai_M_sub_010]
+<Cena: 0 292><texto_centro>
+Black-Hearted Blue Man<FIM_BLOCO>
+
+[yukai_M_010]
+<Cena: 0 293>One half of the couple at the<Q>
+restaurant, the Chicken Kitchen.<Q>
+He and his accomplice seem to be<Q>
+waiting there for the other party<Q>
+in their deal.<FIM_BLOCO>
+
+[yukai_M_sub_020]
+<Cena: 0 294><texto_centro>
+Black-Hearted Blue Man<FIM_BLOCO>
+
+[yukai_M_020]
+<Cena: 0 295>One half of the couple that<Q>
+showed up to make a deal that<Q>
+could ”affect the future of the<Q>
+nation.” Apparently, the other<Q>
+party in that deal was me.<FIM_BLOCO>
+
+[yukai_M_sub_030]
+<Cena: 0 296><texto_centro>
+Black-Hearted Blue Man<FIM_BLOCO>
+
+[yukai_M_030]
+<Cena: 0 297>One half of the couple that<Q>
+showed up to make a deal that<Q>
+could ”affect the future of the<Q>
+nation.” Apparently, the other<Q>
+party in that deal was me. He is<Q>
+the perpetrator who abducted<Q>
+the justice minister's daughter.<FIM_BLOCO>
+
+[yukai_M_sub_040]
+<Cena: 0 298><texto_centro>
+Black-Hearted Blue Man<FIM_BLOCO>
+
+[yukai_M_040]
+<Cena: 0 299>One half of the couple that<Q>
+showed up to make a deal that<Q>
+could ”affect the future of the<Q>
+nation.” He is the perpetrator<Q>
+who abducted Kamila, mistaking<Q>
+her for the justice minister's<Q>
+daughter.<FIM_BLOCO>
+
+[yukai_M_sub_050]
+<Cena: 0 300><texto_centro>
+Black-Hearted Blue Man<FIM_BLOCO>
+
+[yukai_M_050]
+<Cena: 0 301>One half of the couple that<Q>
+showed up to make a deal that<Q>
+could ”affect the future of the<Q>
+nation.” When he mistook Kamila<Q>
+for the justice minister's daughter<Q>
+and abducted her, he accidentally<Q>
+hit the little doggie with his<Q>
+motorcycle.<FIM_BLOCO>
+
+[yukai_W_sub_010]
+<Cena: 0 302><texto_centro>
+Black-Hearted Blue Woman<FIM_BLOCO>
+
+[yukai_W_010]
+<Cena: 0 303>One half of the couple at the<Q>
+restaurant, the Chicken Kitchen.<Q>
+She and her tiny accomplice are<Q>
+apparently waiting there for the<Q>
+other party in their deal. It seems<Q>
+her name is ”Beauty.”<FIM_BLOCO>
+
+[yukai_W_sub_020]
+<Cena: 0 304><texto_centro>
+Black-Hearted Blue Woman<FIM_BLOCO>
+
+[yukai_W_020]
+<Cena: 0 305>One half of the couple that<Q>
+showed up to make a deal that<Q>
+could ”affect the future of the<Q>
+nation.” Her tiny accomplice<Q>
+calls her ”Beauty.”<FIM_BLOCO>
+
+[yukai_W_sub_030]
+<Cena: 0 306><texto_centro>
+Black-Hearted Blue Woman<FIM_BLOCO>
+
+[yukai_W_030]
+<Cena: 0 307>One half of the couple that<Q>
+showed up to make a deal that<Q>
+could ”affect the future of the<Q>
+nation.” She's called ”Beauty.”<Q>
+After kidnapping the justice<Q>
+minister's daughter, she demands<Q>
+the death-row inmate be executed<Q>
+tonight.<FIM_BLOCO>
+
+[yukai_W_sub_050]
+<Cena: 0 308><texto_centro>
+Black-Hearted Blue Woman<FIM_BLOCO>
+
+[yukai_W_050]
+<Cena: 0 309>One half of the couple that<Q>
+showed up to make a deal that<Q>
+could ”affect the future of the<Q>
+nation.” The pair kidnapped Kamila.<Q>
+She has a strong sixth sense, and<Q>
+can apparently sense my presence.<FIM_BLOCO>
+
+[barten_sub_010]
+<Cena: 0 310><texto_centro>
+Fastidious Glass Polisher<FIM_BLOCO>
+
+[barten_010]
+<Cena: 0 311>A composed bartender at the<Q>
+restaurant, the Chicken Kitchen,<Q>
+who continuously polishes glasses.<Q>
+It seems he doesn't notice<Q>
+anything besides the glass in<Q>
+his hand... or does he?<FIM_BLOCO>
+
+[mother_sub_020]
+<Cena: 0 312><texto_centro>
+Beloved Mother<FIM_BLOCO>
+
+[mother_020]
+<Cena: 0 313>Kamila's mother and Jowd's wife.<Q>
+Five years ago, she was shot and<Q>
+killed when the contraption<Q>
+Kamila made for her birthday<Q>
+made ”an impossible move.”<Q>
+Detective Jowd was arrested<Q>
+for her murder.<FIM_BLOCO>
+
+[mother_sub_030]
+<Cena: 0 314><texto_centro>
+Beloved Mother<FIM_BLOCO>
+
+[mother_030]
+<Cena: 0 315>Kamila's mother and Jowd's wife.<Q>
+Five years ago, she was shot and<Q>
+killed when the contraption<Q>
+Kamila made for her birthday<Q>
+made ”an impossible move.”<Q>
+There's a good possibility the<Q>
+manipulator had a hand in her<Q>
+death.<FIM_BLOCO>
+
+[mother_sub_040]
+<Cena: 0 316><texto_centro>
+Beloved Mother<FIM_BLOCO>
+
+[mother_040]
+<Cena: 0 317>Kamila's mother and Jowd's wife.<Q>
+Five years ago, she was shot and<Q>
+killed when the contraption<Q>
+Kamila made for her birthday<Q>
+made ”an impossible move.”<Q>
+There's a good possibility the<Q>
+manipulator's powers were<Q>
+involved in her death.<FIM_BLOCO>
+
+[crew_sub_010]
+<Cena: 0 318><texto_centro>
+Minor Crew Hand<FIM_BLOCO>
+
+[crew_010]
+<Cena: 0 319>A member of the crew of the<Q>
+submarine, the Yonoa. Afraid<Q>
+of the restless ghosts he hears<Q>
+are onboard, he decides to quit<Q>
+his job.<FIM_BLOCO>
+
+[cicel_evil_sub_010]
+<Cena: 0 320><texto_centro>
+The Other Me<FIM_BLOCO>
+
+[cicel_evil_010]
+<Cena: 0 321>The man I was pursuing, who I was<Q>
+convinced was me. His true<Q>
+identity is the ”manipulator,” the<Q>
+spirit of a man who was killed by<Q>
+a meteorite fragment ten years<Q>
+ago. Tonight, he was planning to<Q>
+get revenge on all the people who<Q>
+contributed to his death.<FIM_BLOCO>
+
+[cicel_evil_sub_020]
+<Cena: 0 322><texto_centro>
+The Other Me<FIM_BLOCO>
+
+[cicel_evil_020]
+<Cena: 0 323>The man I was pursuing, who I was<Q>
+convinced was me. His true<Q>
+identity is the ”manipulator,” the<Q>
+spirit of a man who was killed by<Q>
+a meteorite fragment ten years<Q>
+ago. The other party in his deal<Q>
+betrayed him and stole the<Q>
+fragment that was inside his body.<FIM_BLOCO>
+
+[cicel_evil_sub_030]
+<Cena: 0 324><texto_centro>
+The Other Me<FIM_BLOCO>
+
+[cicel_evil_030]
+<Cena: 0 325>The man I was pursuing, who I was<Q>
+convinced was me. His true<Q>
+identity is the ”manipulator,” the<Q>
+spirit of a man who was killed by<Q>
+a meteorite fragment ten years<Q>
+ago. He controlled Kamila as part<Q>
+of his revenge, but while he was<Q>
+”out,” his fragment was stolen.<FIM_BLOCO>
+
+[cicel_evil_sub_040]
+<Cena: 0 326><texto_centro>
+The Other Me<FIM_BLOCO>
+
+[cicel_evil_040]
+<Cena: 0 327>The man I was pursuing,<Q>
+convinced he was me. His true<Q>
+identity is the ”manipulator,” the<Q>
+spirit of a man who was killed by<Q>
+a meteorite fragment ten years<Q>
+ago. Not realizing his fragment<Q>
+had been stolen, he controlled<Q>
+Kamila as part of his revenge.<FIM_BLOCO>
+
+[cicel_evil_sub_050]
+<Cena: 0 328><texto_centro>
+The Other Me<FIM_BLOCO>
+
+[cicel_evil_050]
+<Cena: 0 329>The man I was pursuing, who I was<Q>
+convinced was me. His true<Q>
+identity is the ”manipulator,” a<Q>
+spirit. The other party in his deal<Q>
+stole his meteorite fragment. He<Q>
+controlled Kamila as part of his<Q>
+revenge plot, but then saved<Q>
+Lynne at the last minute.<FIM_BLOCO>
+
+[cicel_evil_sub_060]
+<Cena: 0 330><texto_centro>
+The Other Me<FIM_BLOCO>
+
+[cicel_evil_060]
+<Cena: 0 331>The man I was pursuing, who I was<Q>
+convinced was me. His real<Q>
+name is ”Yomiel.” While alive, he<Q>
+was a top systems engineer, but<Q>
+was arrested under suspicion of<Q>
+being a spy. He died ten years ago<Q>
+in the park. He's now trying to<Q>
+gain a new life for himself.<FIM_BLOCO>
+
+[cicel_evil_sub_070]
+<Cena: 0 332><texto_centro>
+The Other Me<FIM_BLOCO>
+
+[cicel_evil_070]
+<Cena: 0 333>The man I was pursuing,<Q>
+convinced he was me. His real<Q>
+name is ”Yomiel.” While alive, he<Q>
+was a top systems engineer, but<Q>
+was arrested under suspicion of<Q>
+being a spy. He died ten years<Q>
+ago in the park. He's now trying<Q>
+to gain a new life for himself.<FIM_BLOCO>
+
+[stage01_00_sub_010]
+<Cena: 0 334><texto_centro>
+(???)-????<FIM_BLOCO>
+
+[stage01_00_sub2_010]
+<Cena: 0 335><texto_centro>
+Junkyard<FIM_BLOCO>
+
+[stage01_00_010]
+<Cena: 0 336>The place where I lost my life.<Q>
+It appears to be a junkyard on<Q>
+the outskirts of town. Here, I<Q>
+met Ray, who taught me about<Q>
+my powers, and a red-haired<Q>
+woman, who might have<Q>
+information about my death.<FIM_BLOCO>
+
+[stage01_00_sub_020]
+<Cena: 0 337><texto_centro>
+(MHR)-8513<FIM_BLOCO>
+
+[stage01_00_sub2_020]
+<Cena: 0 338><texto_centro>
+Junkyard<FIM_BLOCO>
+
+[stage01_00_020]
+<Cena: 0 339>The place where I lost my life.<Q>
+It appears to be a junkyard on<Q>
+the outskirts of town. Here, I<Q>
+met Ray, who taught me about<Q>
+my powers, and a red-haired<Q>
+woman, who might have<Q>
+information about my death.<FIM_BLOCO>
+
+[stage01_00_sub_030]
+<Cena: 0 340><texto_centro>
+(MHR)-8513<FIM_BLOCO>
+
+[stage01_00_sub2_030]
+<Cena: 0 341><texto_centro>
+Junkyard<FIM_BLOCO>
+
+[stage01_00_030]
+<Cena: 0 342>The place where I lost my life.<Q>
+It appears to be a junkyard on<Q>
+the outskirts of town. Here, I<Q>
+met Ray, who taught me about<Q>
+my powers, and Lynne, who<Q>
+might have information about<Q>
+my death.<FIM_BLOCO>
+
+[stage01_00_sub_040]
+<Cena: 0 343><texto_centro>
+(MHR)-8513<FIM_BLOCO>
+
+[stage01_00_sub2_040]
+<Cena: 0 344><texto_centro>
+Junkyard<FIM_BLOCO>
+
+[stage01_00_040]
+<Cena: 0 345>The place where I lost my life. It<Q>
+appears to be a junkyard on the<Q>
+outskirts of town. The police have<Q>
+begun their investigation, and<Q>
+have deemed my death a murder.<FIM_BLOCO>
+
+[stage01_00_sub_050]
+<Cena: 0 346><texto_centro>
+(MHR)-8513<FIM_BLOCO>
+
+[stage01_00_sub2_050]
+<Cena: 0 347><texto_centro>
+Junkyard<FIM_BLOCO>
+
+[stage01_00_050]
+<Cena: 0 348>The place where I lost my life. It<Q>
+appears to be a junkyard on the<Q>
+outskirts of town. The detectives<Q>
+who were investigating my case<Q>
+are gone, leaving behind only a<Q>
+quietly wriggling desk lamp.<FIM_BLOCO>
+
+[stage14_00_sub_020]
+<Cena: 0 349><texto_centro>
+(SYS)-1729<FIM_BLOCO>
+
+[stage14_00_sub2_020]
+<Cena: 0 350><texto_centro>
+Luxurious Parlor<FIM_BLOCO>
+
+[stage14_00_020]
+<Cena: 0 351>A mysterious room. The mysterious<Q>
+old man who stole my life, and his<Q>
+equally mysterious underling,<Q>
+are hanging out here. The room<Q>
+appears to be equipped with many<Q>
+mysterious devices.<FIM_BLOCO>
+
+[stage14_00_sub_040]
+<Cena: 0 352><texto_centro>
+(SYS)-1459<FIM_BLOCO>
+
+[stage14_00_sub2_040]
+<Cena: 0 353><texto_centro>
+Control Room<FIM_BLOCO>
+
+[stage14_00_040]
+<Cena: 0 354>One of the rooms on the sub<Q>
+Detective Jowd hooked the phone<Q>
+line up to. It disappeared suddenly<Q>
+from the rest of the sub, with<Q>
+Jowd, the masked man, and the<Q>
+man in red's body trapped inside.<FIM_BLOCO>
+
+[stage14_00_sub_050]
+<Cena: 0 355><texto_centro>
+(SYS)-1459<FIM_BLOCO>
+
+[stage14_00_sub2_050]
+<Cena: 0 356><texto_centro>
+Control Room<FIM_BLOCO>
+
+[stage14_00_050]
+<Cena: 0 357>A room that suddenly disappeared<Q>
+from the rest of the sub, with<Q>
+Jowd, the masked man, and the<Q>
+man in red's body trapped inside.<Q>
+Afraid of a certain ”possibility,”<Q>
+the old man launched it away.<Q>
+Now its purpose has been served...<FIM_BLOCO>
+
+[stage06_00_sub_010]
+<Cena: 0 358><texto_centro>
+(YMT)-2636<FIM_BLOCO>
+
+[stage06_00_sub2_010]
+<Cena: 0 359><texto_centro>
+Lynne's Apartment<FIM_BLOCO>
+
+[stage06_00_010]
+<Cena: 0 360>Lynne's home. A hitman is waiting<Q>
+here, sent by the mysterious old<Q>
+man.<FIM_BLOCO>
+
+[stage06_00_sub_020]
+<Cena: 0 361><texto_centro>
+(YMT)-2636<FIM_BLOCO>
+
+[stage06_00_sub2_020]
+<Cena: 0 362><texto_centro>
+Lynne's Apartment<FIM_BLOCO>
+
+[stage06_00_020]
+<Cena: 0 363>Lynne's home. A little girl and<Q>
+a small dog are waiting for her<Q>
+return, but a hitman came to call<Q>
+instead.<FIM_BLOCO>
+
+[stage06_00_sub_030]
+<Cena: 0 364><texto_centro>
+(YMT)-2636<FIM_BLOCO>
+
+[stage06_00_sub2_030]
+<Cena: 0 365><texto_centro>
+Lynne's Apartment<FIM_BLOCO>
+
+[stage06_00_030]
+<Cena: 0 366>Lynne's home. A little girl and<Q>
+a small dog apparently live with<Q>
+her here as well. Because the<Q>
+little girl dropped the receiver<Q>
+in the fish tank, the phone line<Q>
+doesn't work. A music box was<Q>
+hidden in the ceiling.<FIM_BLOCO>
+
+[stage05_00_sub_010]
+<Cena: 0 367><texto_centro>
+(???)-????<FIM_BLOCO>
+
+[stage05_00_sub2_010]
+<Cena: 0 368><texto_centro>
+Lady's Red Apartment<FIM_BLOCO>
+
+[stage05_00_010]
+<Cena: 0 369>An apartment with a strangely<Q>
+thick atmosphere, the woman<Q>
+in purple lives here. It's a world<Q>
+apart from Lynne's apartment<Q>
+next door.<FIM_BLOCO>
+
+[stage05_00_sub_020]
+<Cena: 0 370><texto_centro>
+(YMT)-2948<FIM_BLOCO>
+
+[stage05_00_sub2_020]
+<Cena: 0 371><texto_centro>
+Lady's Red Apartment<FIM_BLOCO>
+
+[stage05_00_020]
+<Cena: 0 372>An apartment with a strangely<Q>
+thick atmosphere, the woman<Q>
+in purple lives here. It's a world<Q>
+apart from Lynne's apartment<Q>
+next door.<FIM_BLOCO>
+
+[stage05_00_sub_030]
+<Cena: 0 373><texto_centro>
+(YMT)-2948<FIM_BLOCO>
+
+[stage05_00_sub2_030]
+<Cena: 0 374><texto_centro>
+Lady's Red Apartment<FIM_BLOCO>
+
+[stage05_00_030]
+<Cena: 0 375>This is where the justice minister's<Q>
+wife went when she moved out on<Q>
+him. The lady's daughter has a high<Q>
+fever and is crying out in her sleep<Q>
+as she suffers in the room's thick<Q>
+atmosphere.<FIM_BLOCO>
+
+[stage05_00_sub_040]
+<Cena: 0 376><texto_centro>
+(YMT)-2948<FIM_BLOCO>
+
+[stage05_00_sub2_040]
+<Cena: 0 377><texto_centro>
+Lady's Red Apartment<FIM_BLOCO>
+
+[stage05_00_040]
+<Cena: 0 378>This is where the justice minister's<Q>
+wife went when she moved out on<Q>
+him. After a dramatic battle, the<Q>
+bonds between parent and child<Q>
+are strengthened. The daughter is<Q>
+now feeling dizzy in bed, while the<Q>
+lady is dangling from the ceiling.<FIM_BLOCO>
+
+[stage09_00_sub_010]
+<Cena: 0 379><texto_centro>
+(KCG)-3951<FIM_BLOCO>
+
+[stage09_00_sub2_010]
+<Cena: 0 380><texto_centro>
+Office of the Troubled Man<FIM_BLOCO>
+
+[stage09_00_010]
+<Cena: 0 381>A stately office that gives off a<Q>
+cold, heavy air. A man sits alone,<Q>
+tearing out his hair in anguish.<FIM_BLOCO>
+
+[stage09_00_sub_020]
+<Cena: 0 382><texto_centro>
+(KCG)-3951<FIM_BLOCO>
+
+[stage09_00_sub2_020]
+<Cena: 0 383><texto_centro>
+Office of the Troubled Man<FIM_BLOCO>
+
+[stage09_00_020]
+<Cena: 0 384>A stately office that gives off a<Q>
+cold, heavy air. The man who is<Q>
+tearing out his hair in anguish is<Q>
+apparently the ”justice minister.”<FIM_BLOCO>
+
+[stage09_00_sub_030]
+<Cena: 0 385><texto_centro>
+(KCG)-3951<FIM_BLOCO>
+
+[stage09_00_sub2_030]
+<Cena: 0 386><texto_centro>
+Office of the Troubled Man<FIM_BLOCO>
+
+[stage09_00_030]
+<Cena: 0 387>The office gives off a cold, heavy<Q>
+air, but the people gathered here<Q>
+are starting to heat it up. As usual,<Q>
+the man is tearing out his hair in<Q>
+anguish.<FIM_BLOCO>
+
+[stage09_00_sub_040]
+<Cena: 0 388><texto_centro>
+(KCG)-3951<FIM_BLOCO>
+
+[stage09_00_sub2_040]
+<Cena: 0 389><texto_centro>
+Office of the Troubled Man<FIM_BLOCO>
+
+[stage09_00_040]
+<Cena: 0 390>The justice minister's office.<Q>
+After revealing everything, the<Q>
+man seemed to gain a brief sense<Q>
+of peace, but he is destined to<Q>
+tear his hair out again.<FIM_BLOCO>
+
+[stage13_00_sub_010]
+<Cena: 0 391><texto_centro>
+(BSP)-1536<FIM_BLOCO>
+
+[stage13_00_sub2_010]
+<Cena: 0 392><texto_centro>
+Park Stakeout Point<FIM_BLOCO>
+
+[stage13_00_010]
+<Cena: 0 393>The park where the detective with<Q>
+the cap is performing a stakeout.<Q>
+An odd fellow who claims to be the<Q>
+”guardian of the park” is here, too.<FIM_BLOCO>
+
+[stage13_00_sub_025]
+<Cena: 0 394><texto_centro>
+(BSP)-1536<FIM_BLOCO>
+
+[stage13_00_sub2_025]
+<Cena: 0 395><texto_centro>
+Park Stakeout Point<FIM_BLOCO>
+
+[stage13_00_025]
+<Cena: 0 396>The park where the detective with<Q>
+the cap is performing a stakeout. <Q>
+An odd fellow who claims to be the<Q>
+”guardian of the park” is still here.<Q>
+When the little lady was abducted,<Q>
+she hid the music box in the bushes<Q>
+here.<FIM_BLOCO>
+
+[stage13_00_sub_030]
+<Cena: 0 397><texto_centro>
+(BSP)-1536<FIM_BLOCO>
+
+[stage13_00_sub2_030]
+<Cena: 0 398><texto_centro>
+Park Stakeout Point<FIM_BLOCO>
+
+[stage13_00_030]
+<Cena: 0 399>The park the little lady hid the<Q>
+music box in. The odd fellow who<Q>
+claims to be the ”guardian of the<Q>
+park” died here. His death was<Q>
+caused by the little doggie, Missile,<Q>
+who has obtained the powers of<Q>
+the dead.<FIM_BLOCO>
+
+[stage13_00_sub_040]
+<Cena: 0 400><texto_centro>
+(BSP)-1536<FIM_BLOCO>
+
+[stage13_00_sub2_040]
+<Cena: 0 401><texto_centro>
+Park Stakeout Point<FIM_BLOCO>
+
+[stage13_00_040]
+<Cena: 0 402>The park a meteorite fell on ten<Q>
+years ago. A man who tried to<Q>
+take little Lynne hostage was<Q>
+hit by a fragment and died. The<Q>
+meteorite was named ”Temsik,”<Q>
+and it still lies buried near a<Q>
+stone monument.<FIM_BLOCO>
+
+[stage13_00_sub_050]
+<Cena: 0 403><texto_centro>
+(BSP)-1536<FIM_BLOCO>
+
+[stage13_00_sub2_050]
+<Cena: 0 404><texto_centro>
+Park Stakeout Point<FIM_BLOCO>
+
+[stage13_00_050]
+<Cena: 0 405>The park became like a silent<Q>
+battlefield on an international<Q>
+scale over the Temsik meteorite<Q>
+that fell ten years ago. Turning<Q>
+the park into a housing site was<Q>
+just a pretext, apparently, because<Q>
+the real goal was to protect the<Q>
+meteorite.<FIM_BLOCO>
+
+[stage13_00_sub_060]
+<Cena: 0 406><texto_centro>
+(BSP)-1536<FIM_BLOCO>
+
+[stage13_00_sub2_060]
+<Cena: 0 407><texto_centro>
+Where Everything Began<FIM_BLOCO>
+
+[stage13_00_060]
+<Cena: 0 408>The park where a mysterious<Q>
+meteorite, Temsik, fell ten<Q>
+years ago. The stories of each<Q>
+of our fates began here.<FIM_BLOCO>
+
+[stage02_00_sub_010]
+<Cena: 0 409><texto_centro>
+(MHR)-4568<FIM_BLOCO>
+
+[stage02_00_sub2_010]
+<Cena: 0 410><texto_centro>
+Pigeon Man's Office<FIM_BLOCO>
+
+[stage02_00_010]
+<Cena: 0 411>The office of the junkyard's<Q>
+maintenance building. Lynne is<Q>
+apparently being detained by<Q>
+the police here.<FIM_BLOCO>
+
+[stage02_00_sub_020]
+<Cena: 0 412><texto_centro>
+(MHR)-4568<FIM_BLOCO>
+
+[stage02_00_sub2_020]
+<Cena: 0 413><texto_centro>
+Pigeon Man's Office<FIM_BLOCO>
+
+[stage02_00_020]
+<Cena: 0 414>The office of the junkyard's<Q>
+maintenance building. Lynne is<Q>
+being detained by the police here.<Q>
+The junkyard superintendent<Q>
+apparently lives here, too.<FIM_BLOCO>
+
+[stage02_00_sub_030]
+<Cena: 0 415><texto_centro>
+(MHR)-4568<FIM_BLOCO>
+
+[stage02_00_sub2_030]
+<Cena: 0 416><texto_centro>
+Pigeon Man's Office<FIM_BLOCO>
+
+[stage02_00_030]
+<Cena: 0 417>The office of the junkyard's<Q>
+maintenance building. Lynne was<Q>
+supposedly detained by the police<Q>
+here, but she's nowhere to be<Q>
+seen. The junkyard superintendent<Q>
+apparently lives here, too.<FIM_BLOCO>
+
+[stage02_00_sub_035]
+<Cena: 0 418><texto_centro>
+(MHR)-4568<FIM_BLOCO>
+
+[stage02_00_sub2_035]
+<Cena: 0 419><texto_centro>
+Pigeon Man's Office<FIM_BLOCO>
+
+[stage02_00_035]
+<Cena: 0 420>The office of the junkyard's<Q>
+maintenance building. It's filled<Q>
+with equipment I've never seen<Q>
+before. The junkyard super lives<Q>
+here, too. Lynne apparently<Q>
+escaped to the basement through<Q>
+the small cargo elevator.<FIM_BLOCO>
+
+[stage02_00_sub_040]
+<Cena: 0 421><texto_centro>
+(MHR)-4568<FIM_BLOCO>
+
+[stage02_00_sub2_040]
+<Cena: 0 422><texto_centro>
+Pigeon Man's Office<FIM_BLOCO>
+
+[stage02_00_040]
+<Cena: 0 423>The office of the junkyard's<Q>
+maintenance building. The old<Q>
+pigeon guy is nowhere to be seen.<Q>
+After making the threatening<Q>
+phone call, Inspector Cabanela lost<Q>
+his life here, killed by the other me.<FIM_BLOCO>
+
+[stage02_00_sub_050]
+<Cena: 0 424><texto_centro>
+(MHR)-4568<FIM_BLOCO>
+
+[stage02_00_sub2_050]
+<Cena: 0 425><texto_centro>
+Pigeon Man's Office<FIM_BLOCO>
+
+[stage02_00_050]
+<Cena: 0 426>The office of the junkyard's<Q>
+maintenance building. The<Q>
+junkyard superintendent was<Q>
+researching Temsik radiation<Q>
+and the ”manipulator” here.<FIM_BLOCO>
+
+[stage04_00_sub_010]
+<Cena: 0 427><texto_centro>
+(MKG)-6799<FIM_BLOCO>
+
+[stage04_00_sub2_010]
+<Cena: 0 428><texto_centro>
+The Chicken Kitchen<FIM_BLOCO>
+
+[stage04_00_010]
+<Cena: 0 429>A restaurant that specializes in<Q>
+chicken. It's called the ”Chicken<Q>
+Kitchen.”<FIM_BLOCO>
+
+[stage04_00_sub_020]
+<Cena: 0 430><texto_centro>
+(MKG)-6799<FIM_BLOCO>
+
+[stage04_00_sub2_020]
+<Cena: 0 431><texto_centro>
+The Chicken Kitchen<FIM_BLOCO>
+
+[stage04_00_020]
+<Cena: 0 432>A restaurant that specializes in<Q>
+chicken. It's called the ”Chicken<Q>
+Kitchen.” There's a jovial chef<Q>
+here.<FIM_BLOCO>
+
+[stage04_00_sub_040]
+<Cena: 0 433><texto_centro>
+(MKG)-6799<FIM_BLOCO>
+
+[stage04_00_sub2_040]
+<Cena: 0 434><texto_centro>
+The Chicken Kitchen<FIM_BLOCO>
+
+[stage04_00_040]
+<Cena: 0 435>A restaurant that specializes in<Q>
+chicken. It's called the ”Chicken<Q>
+Kitchen.” Lynne and the little<Q>
+lady are supposed to meet each<Q>
+other here.<FIM_BLOCO>
+
+[stage04_00_sub_050]
+<Cena: 0 436><texto_centro>
+(MKG)-6799<FIM_BLOCO>
+
+[stage04_00_sub2_050]
+<Cena: 0 437><texto_centro>
+The Chicken Kitchen<FIM_BLOCO>
+
+[stage04_00_050]
+<Cena: 0 438>A restaurant that specializes<Q>
+in chicken. Tonight, it's also<Q>
+”Point X,” a place the police are<Q>
+staking out. Something big has<Q>
+happened here. Lynne should be<Q>
+around here somewhere, too.<FIM_BLOCO>
+
+[stage04_00_sub_060]
+<Cena: 0 439><texto_centro>
+(MKG)-6799<FIM_BLOCO>
+
+[stage04_00_sub2_060]
+<Cena: 0 440><texto_centro>
+The Chicken Kitchen<FIM_BLOCO>
+
+[stage04_00_060]
+<Cena: 0 441>A restaurant that specializes<Q>
+in chicken. Tonight, it's also<Q>
+”Point X,” a place the police are<Q>
+staking out. A suspicious couple<Q>
+is waiting for the other party in<Q>
+their deal to show up.<FIM_BLOCO>
+
+[stage04_00_sub_070]
+<Cena: 0 442><texto_centro>
+(MKG)-6799<FIM_BLOCO>
+
+[stage04_00_sub2_070]
+<Cena: 0 443><texto_centro>
+The Chicken Kitchen<FIM_BLOCO>
+
+[stage04_00_070]
+<Cena: 0 444>A restaurant that specializes<Q>
+in chicken. Tonight, it's also<Q>
+”Point X,” a place the police are<Q>
+staking out. The suspicious<Q>
+couple is nowhere to be seen.<FIM_BLOCO>
+
+[stage03_00_sub_010]
+<Cena: 0 445><texto_centro>
+(KMR)-2675<FIM_BLOCO>
+
+[stage03_00_sub2_010]
+<Cena: 0 446><texto_centro>
+???<FIM_BLOCO>
+
+[stage03_00_010]
+<Cena: 0 447>No Data<FIM_BLOCO>
+
+[stage03_00_sub_020]
+<Cena: 0 448><texto_centro>
+(KMR)-2675<FIM_BLOCO>
+
+[stage03_00_sub2_020]
+<Cena: 0 449><texto_centro>
+Uniformed Men's Office<FIM_BLOCO>
+
+[stage03_00_020]
+<Cena: 0 450>Is this some kind of office? Men<Q>
+wearing uniforms appear to be<Q>
+working, or maybe not working,<Q>
+here.<FIM_BLOCO>
+
+[stage03_00_sub_030]
+<Cena: 0 451><texto_centro>
+(KMR)-2675<FIM_BLOCO>
+
+[stage03_00_sub2_030]
+<Cena: 0 452><texto_centro>
+Uniformed Men's Office<FIM_BLOCO>
+
+[stage03_00_030]
+<Cena: 0 453>The place where the uniformed<Q>
+men work. It's called a ”prison.”<Q>
+I promised Lynne I would check<Q>
+out tomorrow's work schedule for<Q>
+Prisoner D99.<FIM_BLOCO>
+
+[stage03_00_sub_040]
+<Cena: 0 454><texto_centro>
+(KMR)-2675<FIM_BLOCO>
+
+[stage03_00_sub2_040]
+<Cena: 0 455><texto_centro>
+Uniformed Men's Office<FIM_BLOCO>
+
+[stage03_00_040]
+<Cena: 0 456>The place where the uniformed<Q>
+men work. It's called a ”prison.”<Q>
+A strange tension fills the air.<Q>
+The phone line apparently<Q>
+connects to a place called the<Q>
+”death chamber.”<FIM_BLOCO>
+
+[stage02_01_sub_010]
+<Cena: 0 457><texto_centro>
+(MHR)-4481<FIM_BLOCO>
+
+[stage02_01_sub2_010]
+<Cena: 0 458><texto_centro>
+???<FIM_BLOCO>
+
+[stage02_01_010]
+<Cena: 0 459>No Data<FIM_BLOCO>
+
+[stage02_01_sub_020]
+<Cena: 0 460><texto_centro>
+(MHR)-4481<FIM_BLOCO>
+
+[stage02_01_sub2_020]
+<Cena: 0 461><texto_centro>
+Pigeon Man's Basement<FIM_BLOCO>
+
+[stage02_01_020]
+<Cena: 0 462>The basement of the junkyard's<Q>
+maintenance building.<Q>
+A mysterious, mechanical ”murder<Q>
+machine” shot and killed Lynne<Q>
+here. Did the junkyard super build<Q>
+that device?<FIM_BLOCO>
+
+[stage02_01_sub_030]
+<Cena: 0 463><texto_centro>
+(MHR)-4481<FIM_BLOCO>
+
+[stage02_01_sub2_030]
+<Cena: 0 464><texto_centro>
+Pigeon Man's Basement<FIM_BLOCO>
+
+[stage02_01_030]
+<Cena: 0 465>The basement of the junkyard's<Q>
+maintenance building.<Q>
+The mysterious, mechanical<Q>
+”murder machine” here looks just<Q>
+like the one in Kamila's old house...<FIM_BLOCO>
+
+[stage02_01_sub_040]
+<Cena: 0 466><texto_centro>
+(MHR)-4481<FIM_BLOCO>
+
+[stage02_01_sub2_040]
+<Cena: 0 467><texto_centro>
+Pigeon Man's Basement<FIM_BLOCO>
+
+[stage02_01_040]
+<Cena: 0 468>The basement of the junkyard's<Q>
+maintenance building. The<Q>
+mechanical ”murder machine”<Q>
+here that looked just like the<Q>
+one in Kamila's old house was<Q>
+blown up by the man in red.<FIM_BLOCO>
+
+[stage02_01_sub_050]
+<Cena: 0 469><texto_centro>
+(MHR)-4481<FIM_BLOCO>
+
+[stage02_01_sub2_050]
+<Cena: 0 470><texto_centro>
+Pigeon Man's Basement<FIM_BLOCO>
+
+[stage02_01_050]
+<Cena: 0 471>The basement of the junkyard's<Q>
+maintenance building. The ”murder<Q>
+machine” here was built by the<Q>
+junkyard super, based on reports<Q>
+of the case five years ago. The<Q>
+man in red blew it up.<FIM_BLOCO>
+
+[stage11_00_sub_010]
+<Cena: 0 472><texto_centro>
+(KCG)-1105<FIM_BLOCO>
+
+[stage11_00_sub2_010]
+<Cena: 0 473><texto_centro>
+???<FIM_BLOCO>
+
+[stage11_00_010]
+<Cena: 0 474>No Data<FIM_BLOCO>
+
+[stage11_00_sub_020]
+<Cena: 0 475><texto_centro>
+(KCG)-1105<FIM_BLOCO>
+
+[stage11_00_sub2_020]
+<Cena: 0 476><texto_centro>
+Special Investigation Unit<FIM_BLOCO>
+
+[stage11_00_020]
+<Cena: 0 477>The headquarters of the police's<Q>
+Special Investigation Unit. The<Q>
+inspector in white and the chief<Q>
+seem to be talking about<Q>
+something important.<FIM_BLOCO>
+
+[stage11_00_sub_030]
+<Cena: 0 478><texto_centro>
+(KCG)-1105<FIM_BLOCO>
+
+[stage11_00_sub2_030]
+<Cena: 0 479><texto_centro>
+Special Investigation Unit<FIM_BLOCO>
+
+[stage11_00_030]
+<Cena: 0 480>The headquarters of the police's<Q>
+Special Investigation Unit. The<Q>
+chief is wiggling his toes, as usual.<Q>
+The security tape I saw here<Q>
+showed the person who killed me...<FIM_BLOCO>
+
+[stage11_00_sub_040]
+<Cena: 0 481><texto_centro>
+(KCG)-1105<FIM_BLOCO>
+
+[stage11_00_sub2_040]
+<Cena: 0 482><texto_centro>
+Special Investigation Unit<FIM_BLOCO>
+
+[stage11_00_040]
+<Cena: 0 483>The headquarters of the police's<Q>
+Special Investigation Unit. The<Q>
+chief is wiggling his toes, as usual.<Q>
+Lynne, shown on the security<Q>
+tape, was apparently being<Q>
+controlled by somebody when<Q>
+she shot me.<FIM_BLOCO>
+
+[stage04_01_sub_010]
+<Cena: 0 484><texto_centro>
+(MKG)-1043<FIM_BLOCO>
+
+[stage04_01_sub2_010]
+<Cena: 0 485><texto_centro>
+???<FIM_BLOCO>
+
+[stage04_01_010]
+<Cena: 0 486>No Data<FIM_BLOCO>
+
+[stage04_01_sub_020]
+<Cena: 0 487><texto_centro>
+(MKG)-1043<FIM_BLOCO>
+
+[stage04_01_sub2_020]
+<Cena: 0 488><texto_centro>
+Kitchen of the Chicken Kitchen<FIM_BLOCO>
+
+[stage04_01_020]
+<Cena: 0 489>The kitchen of the restaurant,<Q>
+the Chicken Kitchen. The air is<Q>
+rather thick with smoke. There's<Q>
+an investigator here working<Q>
+undercover as a waitress.<FIM_BLOCO>
+
+[stage04_01_sub_030]
+<Cena: 0 490><texto_centro>
+(MKG)-1043<FIM_BLOCO>
+
+[stage04_01_sub2_030]
+<Cena: 0 491><texto_centro>
+Kitchen of the Chicken Kitchen<FIM_BLOCO>
+
+[stage04_01_030]
+<Cena: 0 492>The kitchen of the restaurant,<Q>
+the Chicken Kitchen. The<Q>
+meddlesome investigator is<Q>
+nowhere to be seen, and the<Q>
+restaurant seems to be peaceful<Q>
+again.<FIM_BLOCO>
+
+[stage03_07_sub_010]
+<Cena: 0 493><texto_centro>
+(KMR)-3243<FIM_BLOCO>
+
+[stage03_07_sub2_010]
+<Cena: 0 494><texto_centro>
+???<FIM_BLOCO>
+
+[stage03_07_010]
+<Cena: 0 495>No Data<FIM_BLOCO>
+
+[stage03_07_sub_020]
+<Cena: 0 496><texto_centro>
+(KMR)-3243<FIM_BLOCO>
+
+[stage03_07_sub2_020]
+<Cena: 0 497><texto_centro>
+Moonlit Courtyard<FIM_BLOCO>
+
+[stage03_07_020]
+<Cena: 0 498>Somewhere on the prison<Q>
+grounds. After escaping from<Q>
+his cell, Detective Jowd was<Q>
+caught here by Inspector<Q>
+Cabanela.<Q>
+There's nothing else here...<FIM_BLOCO>
+
+[stage07_00_sub_010]
+<Cena: 0 499><texto_centro>
+(YMT)-2369<FIM_BLOCO>
+
+[stage07_00_sub2_010]
+<Cena: 0 500><texto_centro>
+???<FIM_BLOCO>
+
+[stage07_00_010]
+<Cena: 0 501>The place the kidnapper called<Q>
+from. It's only dimly lit by candles,<Q>
+so I couldn't get a good look.<FIM_BLOCO>
+
+[stage07_00_sub_020]
+<Cena: 0 502><texto_centro>
+(YMT)-2369<FIM_BLOCO>
+
+[stage07_00_sub2_020]
+<Cena: 0 503><texto_centro>
+Kidnappers' Hideout<FIM_BLOCO>
+
+[stage07_00_020]
+<Cena: 0 504>A house the kidnappers are using<Q>
+as their hideout. I don't think I've<Q>
+ever been here before, but it looks<Q>
+oddly familiar...<FIM_BLOCO>
+
+[stage07_00_sub_030]
+<Cena: 0 505><texto_centro>
+(YMT)-2369<FIM_BLOCO>
+
+[stage07_00_sub2_030]
+<Cena: 0 506><texto_centro>
+Kamila's Old House<FIM_BLOCO>
+
+[stage07_00_030]
+<Cena: 0 507>A house the kidnappers are using<Q>
+as their hideout. Apparently,<Q>
+Kamila's family used to live here,<Q>
+but now it looks abandoned.<FIM_BLOCO>
+
+[stage07_00_sub_040]
+<Cena: 0 508><texto_centro>
+(YMT)-2369<FIM_BLOCO>
+
+[stage07_00_sub2_040]
+<Cena: 0 509><texto_centro>
+Kamila's Old House<FIM_BLOCO>
+
+[stage07_00_040]
+<Cena: 0 510>A house the kidnappers are using<Q>
+as their hideout. Five years ago,<Q>
+Kamila's mother was murdered<Q>
+here. The house has been empty<Q>
+ever since.<FIM_BLOCO>
+
+[stage07_00_sub_050]
+<Cena: 0 511><texto_centro>
+(YMT)-2369<FIM_BLOCO>
+
+[stage07_00_sub2_050]
+<Cena: 0 512><texto_centro>
+Kamila's Old House<FIM_BLOCO>
+
+[stage07_00_050]
+<Cena: 0 513>The place where Kamila's mother<Q>
+was murdered five years ago. The<Q>
+scorch marks Detective Jowd hid<Q>
+prove that a ”murder machine”<Q>
+was used in this room.<FIM_BLOCO>
+
+Y<UnknownB: 1>[_L$0000]
+0

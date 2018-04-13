@@ -8,10 +8,10 @@
 <Cena: 1 38><texto_centro>
 In the end, it looks like her<Q>
 <texto_centro>
-fate remains unchanged.<Unknown4><texto_centro>
+fate remains unchanged.<E><texto_centro>
 So what good are these<Q>
 <texto_centro>
-”ghost tricks” of mine?<Unknown4><texto_centro>
+”ghost tricks” of mine?<E><texto_centro>
 But just as I was thinking this...<FIM_BLOCO>
 
 [m01_0360]
@@ -73,17 +73,17 @@ Why am I so determined to<Q>
 <texto_centro>
 save this woman? After all,<Q>
 <texto_centro>
-it's not like I know her.<Unknown4><texto_centro>
+it's not like I know her.<E><texto_centro>
 But I guess I'll take the desk<Q>
 <texto_centro>
 lamp up on his invitation anyway.<FIM>
 <texto_centro>
-My reason is twofold.<Unknown4><texto_centro>
+My reason is twofold.<E><texto_centro>
 Number one, I'm not the type<Q>
 <texto_centro>
 to leave women lying around,<Q>
 <texto_centro>
-discarded like trash.<Unknown4><texto_centro>
+discarded like trash.<E><texto_centro>
 And number two, I don't have<Q>
 <texto_centro>
 anything else to lose at this point.<FIM_BLOCO>

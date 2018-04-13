@@ -18,7 +18,8 @@
 				</div>
 			</div>
 		</div>
-		<textarea class="form-control text-field" data-block="{{:blockNumber}}"
+		<textarea class="form-control text-field" data-order="{{:order}}"
+			data-section="{{:section}}" data-block="{{:blockNumber}}"
 			onkeyup="gtde.updatePreview(this, '{{:dialogId}}', event)"
 			onchange="gtde.updateRow(this)">{{:text}}</textarea>
 		<div class="text-without-tags hidden">{{:textWithoutTags}}</div>
@@ -35,6 +36,13 @@
 					<button class="btn btn-info show-preview-mobile" title="Mostrar prévia" onclick="gtde.showPreviewOnMobile(this)">
 						<span class="glyphicon glyphicon-search"></span>
 					</button>
+					<button class="btn btn-warning copy-clipboard">
+						<span class="glyphicon glyphicon-copy"></span>
+					</button>
+					<button class="btn btn-primary render-image" title="Gerar Imagem"
+							onclick="gtde.renderPreviewImageOnBrowser(this)">
+						<span class="glyphicon glyphicon-picture"></span>
+					</button>
 					<button class="btn btn-success add-new-block" tabindex="-1" title="Adicionar novo bloco de diálogo"
 						onclick="gtde.addNewDialogBlock(this)">
 						<span class="glyphicon glyphicon-plus"></span>
@@ -42,9 +50,16 @@
 				</div>
 			</div>
 		</div>
-		<div id="{{:dialogId}}" class="dialog-preview">
+		<div id="{{:dialogId}}" class="dialog-preview {{:blockType}}">
 			<div class="character-name" data-character-code="{{:characterCode}}"></div>
 			<div class="btn-group btn-group-xs hidden-xs" role="group" aria-label="Ações">
+				<button class="btn btn-warning copy-clipboard" tabindex="-1">
+					<span class="glyphicon glyphicon-copy"></span>
+				</button>
+				<button class="btn btn-primary render-image" tabindex="-1" title="Gerar Imagem"
+						onclick="gtde.renderPreviewImageOnBrowser(this)">
+					<span class="glyphicon glyphicon-picture"></span>
+				</button>
 				<button class="btn btn-success add-new-block" tabindex="-1" title="Adicionar novo bloco de diálogo"
 					onclick="gtde.addNewDialogBlock(this)">
 					<span class="glyphicon glyphicon-plus"></span>
@@ -52,5 +67,9 @@
 			</div>
 			<div class="text-window"></div>
 		</div>
+		<!--
+		<br />
+		<img src="images/big_block_filled.png?a=b" />
+		-->
 	</td>
 </tr>
