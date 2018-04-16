@@ -118,10 +118,10 @@ td.form-fields textarea.text-field{
 	width: 256px;
 	height: 48px;
 	margin-top: 22px;
-	background: url('../images/big_block.png?v=0.1a');
+	background: url('../images/big_block.png?v=0.1b');
 }
 .dialog-preview.block.invalid{
-	background: url('../images/big_block_invalid.png?v=0.1a');
+	background: url('../images/big_block_invalid.png?v=0.1b');
 }
 .dialog-preview.block div.text-window{
 	position: relative;
@@ -133,10 +133,10 @@ td.form-fields textarea.text-field{
 	width: 208px;
 	height: 51px;
 	margin-top: 22px;
-	background: url('../images/block.png?v=0.1a');
+	background: url('../images/block.png?v=0.1b');
 }
 .dialog-preview.medium-block.invalid{
-	background: url('../images/block_invalid.png?v=0.1a');
+	background: url('../images/block_invalid.png?v=0.1b');
 }
 
 .dialog-preview.medium-block div.character-name,

@@ -244,8 +244,8 @@ function gtde(){
 						sectionBlocks[sectionCode][blockNumber]['hasEndTag'] = true;
 					}
 					
-					// Checking if block has <FIM> tag
-					var checkBreakDetected = (tagText == 'FIM');
+					// Checking if block has <FIM> or <Algo: 0> tag
+					var checkBreakDetected = ((tagText == 'FIM') || (tagText.startsWith('Algo')));
 					if(checkBreakDetected){
 						blockNumber++;
 					}
@@ -643,13 +643,13 @@ function gtde(){
 			$textarea.highlightWithinTextarea({
 				'highlight': [
 					{
-						'highlight': /<(.+?)[^Q][^E][^FIM]>/g,
+						'highlight': /<(.+?)[^Q][^E][^FIM][^Algo: 0]>/g,
 						'className': 'red'
 					}, {
 						'highlight': ['<Q>', '<E>'],
 						'className': 'blue'
 					}, {
-						'highlight': '<FIM>',
+						'highlight': ['<FIM>', '<Algo: 0>'],
 						'className': 'yellow'
 					}, {
 						'highlight': '<FIM_BLOCO>',
@@ -1032,11 +1032,13 @@ function gtde(){
 		var $divDialogPreview = $button.closest('div.dialog-preview');
 		var $divCharacterName = $divDialogPreview.children('div.character-name');
 		var $dialogParserTable = $('#dialog-parser-table');
+		var $textarea = $tr.find('textarea.text-field');
 		
 		var tableObject = $dialogParserTable.DataTable();
 		
 		var that = this;
 		var characterCode = $divCharacterName.attr('data-character-code');
+		var text = $textarea.val();
 		
 		var currentOrder = parseFloat( $tr.find('.order').first().html() );
 		var currentSection = $tr.find('.section').first().html();
@@ -1072,8 +1074,16 @@ function gtde(){
 			that.dialogParserTableTextareas = $( tableObject.rows().nodes() ).find("textarea.text-field");
 			tableObject.draw(false);
 			
-			// Adding end block tag in the new block
-			$newTextarea.val('\n<FIM>');
+			// Adding end block tag in the new block.
+			// If the text field contains <Algo: 0> tag, it is appended.
+			// Otherwise, the <FIM> tag is appended.
+			var regexAlternativeEndTag = text.match(/<Algo:( )*0>/g);
+			var checkAlternativeEndTag = (regexAlternativeEndTag != null && regexAlternativeEndTag.length > 0);
+			if(checkAlternativeEndTag){
+				$newTextarea.val('\n<Algo: 0>');
+			} else {
+				$newTextarea.val('\n<FIM>');
+			}
 			
 			// Adding remove button
 			var $newButtonGroups = $newTdPreviewConteiners.find('div.btn-group');
@@ -1184,15 +1194,8 @@ function gtde(){
 			var scriptText = that.generateScriptText();
 			var filename = $saveNameField.val() + '.txt';
 			
-			// Saving script in ANSI encoding
-			var scriptBinary = new Uint8Array(scriptText.length);
-			for(var i = 0; i < scriptBinary.length; i++) {
-				var charCode = scriptText.charCodeAt(i);
-
-				scriptBinary[i] = charCode;
-			}
-
-			safeSave(filename, scriptBinary);
+			// Saving script in UTF-8 without BOM
+			saveAs(new Blob([scriptText], {type: 'text/plain;charset=utf-8'}), filename, true);
 			
 			that.hideLoadingIndicator();
 		}, 500);

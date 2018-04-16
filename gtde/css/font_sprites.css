@@ -2,21 +2,21 @@ div.text-window span.letter{
 	display: inline-block;
 	width: 8px;
 	height: 14px;
-	background: url('../images/font.png?v=0.1a');
+	background: url('../images/font.png?v=0.1b');
 	background-position: 0 0;
 }
 
 div.text-window span.letter.color-red{
-	background-image: url('../images/font_red.png?v=0.1a');
+	background-image: url('../images/font_red.png?v=0.1b');
 }
 div.text-window span.letter.color-green{
-	background-image: url('../images/font_green.png?v=0.1a');
+	background-image: url('../images/font_green.png?v=0.1b');
 }
 div.text-window span.letter.color-blue{
-	background-image: url('../images/font_blue.png?v=0.1a');
+	background-image: url('../images/font_blue.png?v=0.1b');
 }
 div.text-window span.letter.color-white{
-	background-image: url('../images/font_white.png?v=0.1a');
+	background-image: url('../images/font_white.png?v=0.1b');
 }
 
 

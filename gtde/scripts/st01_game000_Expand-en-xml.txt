@@ -1,0 +1,288 @@
+[m01_0000]
+<Cena: 1 0><Unknown2: 190><Unknown5: 25><texto_centro>
+Must've been unconscious for a while...<E><Unknown2: 96><texto_centro>
+My head feels ”fuzzy,” kind of like I'm<Q>
+<Unknown2: 96><texto_centro>
+swimming through darkness...<Unknown3: 26><FIM_BLOCO>
+
+[m01_0010]
+<Cena: 1 1><Unknown5: 25><texto_centro>
+When I came to, there was a woman<Q>
+<texto_centro>
+standing there. A woman I don't know.<E><texto_centro>
+At least... I don't think I know her.<Unknown3: 80><FIM_BLOCO>
+
+[m01_0020]
+<Cena: 1 2><Unknown5: 25><texto_centro>
+And then there was a man with a gun.<E><texto_centro>
+I don't know him, either...<Q>
+<texto_centro>
+Well, probably not, anyway.<Unknown3: 102><FIM_BLOCO>
+
+[m01_0030]
+<Cena: 1 3><Unknown5: 15><texto_centro>
+Now, I'm not the kind of guy who<Q>
+<texto_centro>
+can just stand back and watch a<Q>
+<texto_centro>
+poor woman get shot...<E><texto_centro>
+But I have just one little problem...<Unknown3: 158><FIM_BLOCO>
+
+[m01_0040]
+<Cena: 1 4><Unknown8: 3><Unknown5: 35><texto_centro>
+I'm already dead myself.<Unknown3: 140><FIM_BLOCO>
+
+[m01_0041]
+<Cena: 1 5><Unknown5: 25><texto_centro>
+This has gotta be me.<Q>
+<texto_centro>
+No question about that.<E><texto_centro>
+After all, do you see any other<Q>
+<texto_centro>
+dead bodies lying around here?<Unknown3: 195><FIM_BLOCO>
+
+[m01_0050]
+<Cena: 1 6>So long, sister.<FIM_BLOCO>
+
+[m01_0060]
+<Cena: 1 7><Unknown8: 2><Unknown5: 15><texto_centro>
+I feel bad for her, sure.<Q>
+<texto_centro>
+But what can I do?<E><texto_centro>
+I'm dead.<E><texto_centro>
+But just as I was thinking this...<Unknown3: 165><FIM_BLOCO>
+
+[m01_0070]
+<Cena: 1 8><Unknown8: 3><Unknown5: 75><texto_centro>
+This is no time to be<Q>
+<texto_centro>
+lolling around dead!<Unknown3: 160><FIM_BLOCO>
+
+[m01_0071]
+<Cena: 1 9><Unknown8: 1><Unknown5: 75><texto_centro>
+You're the only one who can save her!<Unknown3: 120><FIM_BLOCO>
+
+[m01_0090]
+<Cena: 1 10><RETRATO: 45>Wh-What the...?!<Q>
+<COR: 9>(The whole world<Q>
+just changed on me!)<COR: 15><FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Welcome to the Ghost<Q>
+World, the land of the<Q>
+dead.<FIM>
+<RETRATO: 45><COR: 9>(A voice in my head?!)<COR: 15><Q>
+Who are you?!<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>No time for introductions<Q>
+now. You have to save her!<FIM>
+<Unknown12: 60>I know you can do it!<Q>
+All you have to do is<Q>
+use your powers.<FIM>
+<RETRATO: 41>Huh?<Q>
+<COR: 9>(Me? Save her? Uh, how?)<COR: 15><FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Take a look at your corpse.<FIM_BLOCO>
+
+[m01_0099]
+<Cena: 1 11><Mini_RETRATO: 6><Unknown12: 60>Do you see that blue flame?<Q>
+That's your <COR: 6>soul<COR: 15>.<FIM_BLOCO>
+
+[m01_0100]
+<Cena: 1 12><Mini_RETRATO: 6><Unknown12: 60>And do you see that<Q>
+bright white spot<Q>
+nearby? That's a <COR: 6>core<COR: 15>.<FIM_BLOCO>
+
+[m01_0110]
+<Cena: 1 13><RETRATO: 43>A core...?<Q>
+<COR: 9>(Hmm. Just looks like a<Q>
+railway crossing gate to me.)<COR: 15><FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Look, the best way to<Q>
+understand is to just try it.<FIM>
+<Unknown12: 60><Algo: 0>First of all, try<Q>
+touching your soul.<Unknown13><Unknown3: 0><Algo: 0>Next, <COR: 6>with your finger still<Q>
+on it<COR: 15>, slide your soul across<Q>
+to connect it with the core.<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0130]
+<Cena: 1 14><Mini_RETRATO: 6><Unknown12: 60>Congratulations!<FIM>
+<Unknown12: 60>Your soul has now possessed<Q>
+the crossing gate.<FIM>
+<RETRATO: 54>So... what?<Q>
+Now I'm a crossing gate...?<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Ahem. Now, then.<Q>
+Use the crossing gate<Q>
+to save the woman!<FIM>
+<RETRATO: 41><Unknown15: 21><Unknown16>What? But how?<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>In a moment, time will start<Q>
+to flow normally again.<Q>
+That will be your chance.<FIM>
+<Unknown12: 60>Listen, when the man pulls<Q>
+the trigger, the woman dies,<Q>
+right?<FIM>
+<Unknown12: 60>So before that happens,<Q>
+you have to use your<Q>
+powers to stop it!<FIM>
+<RETRATO: 54><Unknown16><Unknown17: 1 40>H-Hey! Wait a second!<Q>
+I still don't know what<Q>
+you're talking about!<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Heh heh.<FIM>
+<Unknown12: 60>You'll see. You'll see.<FIM>
+<Unknown12: 60>Now, then. Time will<Q>
+start to flow again...<FIM_BLOCO>
+
+[m01_0150]
+<Cena: 1 15><Mini_RETRATO: 6>Now is your chance!<Q>
+Touch the <TRICK: 255>button!<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0160]
+<Cena: 1 16><texto_centro>
+Oof!<FIM_BLOCO>
+
+[m01_0170]
+<Cena: 1 17><texto_centro>
+Hold it!<FIM_BLOCO>
+
+[m01_0180]
+<Cena: 1 18><Mini_RETRATO: 6><Unknown12: 60>Well played.<FIM>
+<RETRATO: 54>Uh, what just happened?<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>That was one of your<Q>
+<COR: 6>powers <COR: 15>at work,<Q>
+a ”<COR: 6>ghost trick<COR: 15>.”<FIM>
+<RETRATO: 43>You mean, I made that<Q>
+crossing gate move?<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>That's right. You <COR: 6>manipulated<Q>
+<COR: 15>that object with a <COR: 6>power of<Q>
+the dead<COR: 15>, a <COR: 6>ghost trick<COR: 15>.<FIM>
+<Unknown12: 60>And all you have to do to<Q>
+perform a trick like that is<Q>
+touch the <TRICK: 255>button.<FIM>
+<Unknown12: 60>Now the woman's<Q>
+fate has changed!<Q>
+Albeit, just a little...<FIM>
+<RETRATO: 52>Yeah. She still kind of has<Q>
+a gun pointed at her...<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Yes. Hmm... That's<Q>
+not good, is it?<FIM>
+<Unknown12: 60>But at least now you're<Q>
+starting to figure out<COR: 6> how<Q>
+to use<COR: 15> your powers.<FIM>
+<RETRATO: 43>So I enter the Ghost World with<Q>
+”<COR: 6>Ghost<COR: 15>,” possess an object, and<Q>
+then perform a ”<COR: 6>Trick<COR: 15>” with it, eh?<FIM_BLOCO>
+
+[m01_0190]
+<Cena: 1 19><Mini_RETRATO: 6><Unknown12: 60>Now you're getting it!<Q>
+Let's move on to the<Q>
+next step.<FIM>
+<Unknown12: 60>Try possessing a<Q>
+different core.<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0191]
+<Cena: 1 20><Mini_RETRATO: 6><Unknown12: 60>I see... A guitar, then, is it?<Q>
+Ahem.<FIM>
+<RETRATO: 52>Hey, what do you want from me?<FIM>
+I would've preferred that giant<Q>
+wrecking ball -- that would solve<Q>
+the problem real quick, I bet!<FIM>
+<Unknown14: 43 65535>But I guess I can't reach cores<Q>
+that are too far away.<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Well, I guess we'll see what<Q>
+you can do with that guitar.<FIM>
+<Unknown12: 60>Let's set time in motion<Q>
+again and find out.<FIM_BLOCO>
+
+[m01_0200]
+<Cena: 1 21>Lemme try that again.<FIM_BLOCO>
+
+[m01_0210]
+<Cena: 1 22>So long, sister.<FIM_BLOCO>
+
+[m01_0220]
+<Cena: 1 23><Mini_RETRATO: 6>All right, touch the<Q>
+<TRICK: 255>button!<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0230]
+<Cena: 1 24><texto_centro>
+Who's there?!<FIM_BLOCO>
+
+[m01_0240]
+<Cena: 1 25><RETRATO: 52>Uh, that's gotta be some of<Q>
+the slowest ”running away”<Q>
+I've ever seen...<FIM>
+<Unknown14: 43 65535>Hmm. Looks like I'm gonna have<Q>
+to come up with something more.<FIM_BLOCO>
+
+[m01_0241]
+<Cena: 1 26><RETRATO: 41>Let's see. What core is close<Q>
+enough to possess from here?<FIM>
+<Unknown14: 39 65535><Unknown15: 22>I guess all there is... is <COR: 6>me<COR: 15>.<FIM>
+No time to be picky.<Q>
+I've got a woman to save!<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>I like your attitude.<Q>
+It's admirable, truly. But...<FIM>
+<RETRATO: 41><Unknown15: 21><Unknown16>But what?<FIM>
+If I can manipulate objects...<FIM>
+<Unknown14: 39 65535>...then I oughta be able to<Q>
+manipulate my own corpse, right?<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Well... Tell you what.<Q>
+Why don't you just try it<Q>
+and see?<FIM>
+<Unknown12: 60>Go ahead and <COR: 6>possess<Q>
+<COR: 15>your corpse.<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0250]
+<Cena: 1 27><Mini_RETRATO: 6><Unknown12: 60>All right. Now we'll<Q>
+set time in motion.<FIM_BLOCO>
+
+[m01_0251]
+<Cena: 1 28><Mini_RETRATO: 6><Unknown12: 60>Okay, go ahead and<Q>
+try the <TRICK: 255>button.<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0260]
+<Cena: 1 29><RETRATO: 54><Unknown15: 21><Unknown16>Huh? Nothing's happening.<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Exactly. Sad but true,<Q>
+I'm afraid...<FIM>
+<Unknown12: 60>You can only manipulate<Q>
+non-living <COR: 6>things<COR: 15>.<FIM>
+<Unknown15: 22>Corpses, even if they aren't<Q>
+alive anymore, aren't really<Q>
+just ordinary ”things.”<Unknown2: 90><Unknown19: 10><FIM>
+<RETRATO: 47><Unknown15: 21><Unknown16>You've gotta be kidding!<FIM>
+<Unknown14: 58 65535><Unknown15: 24><Unknown17: 1 40>Wait, what about the woman?!<Q>
+What's happening to her?!<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Let's take a look, shall we?<FIM>
+<Unknown12: 60>If you want to take a<Q>
+look around, you can<Q>
+slide the screen.<FIM>
+<RETRATO: 43>Slide the screen?<FIM>
+<Mini_RETRATO: 6><Unknown12: 60>It's easy. Here, give it a try.<FIM_BLOCO>
+
+[m01_0262]
+<Cena: 1 31><Mini_RETRATO: 6><Unknown12: 60><COR: 6>Touch<COR: 15> the screen and <COR: 6>slide<Q>
+<COR: 15>it in any direction you want.<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0264]
+<Cena: 1 32><Mini_RETRATO: 6><Unknown12: 60>How was that?<FIM>
+<Unknown12: 60>Whenever you want to see<Q>
+what's going on somewhere<Q>
+else, just <COR: 6>slide <COR: 15>the screen.<FIM>
+<RETRATO: 39>Okay. I got it.<FIM>
+<Unknown14: 43 65535><COR: 9>(Right now, I want to see what's<Q>
+happening to that woman!)<COR: 15><FIM>
+<Mini_RETRATO: 6><Unknown12: 60>Of course. Well, you<Q>
+know what to do, then!<FIM>
+<Unknown12: 60>Slide the screen and see<Q>
+if you can find her.<Unknown13><Unknown18><FIM_BLOCO>
+
+[m01_0279]
+<Cena: 1 33><RETRATO: 1>Well, sister. This is it.<FIM>
+Two things are looking<Q>
+pretty dim right now...<FIM_BLOCO>
+
+[m01_0280]
+<Cena: 1 34><texto_centro>
+My eyesight...<Q>
+<texto_centro>
+and your future!<FIM_BLOCO>
+
+[m01_0281]
+<Cena: 1 35>Outta my way!<FIM_BLOCO>
+
+0
