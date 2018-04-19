@@ -241,6 +241,7 @@ function gtde(){
 					var checkHasEndTag = (tagText == 'FIM_BLOCO');
 					if(checkHasEndTag){
 						color = '';
+						characterCode = '';
 						sectionBlocks[sectionCode][blockNumber]['hasEndTag'] = true;
 					}
 					
@@ -279,13 +280,21 @@ function gtde(){
 					totalSections++;
 					
 					var section = sectionBlocks[sectionCode];
+					var totalDialogBlocksInSection = 0;
+					
+					// Obtaining total of dialog blocks inside that section
+					for(var blockNumber in section){
+						totalDialogBlocksInSection++;
+					}
+					
+					// Iterating through all section blocks, in order to mount the table rows.
 					for(var blockNumber in section){
 						totalDialogBlocks++;
 						
 						var block = section[blockNumber];
 						var text = $.trim( block['text'] );
 						var characterCode = block['characterCode'];
-						var blockType = that.getBlockType(text, totalDialogBlocks, sectionCode, filename);
+						var blockType = that.getBlockType(text, characterCode, totalDialogBlocksInSection, sectionCode, filename);
 						if(blockType != false){
 							lastValidBlockType = blockType;
 						} else {
@@ -293,6 +302,10 @@ function gtde(){
 						}
 						var textWithoutTags = that.getTextWithoutTags(text);
 						var dialogId = 's-' + sectionCode + '-b-' + blockNumber + '-dialog';
+						
+						var checkHasCharacterName = ($.inArray(lastValidBlockType, ['block', 'medium-block']) !== -1);
+						var checkIsBoldBlock = (blockType == 'bold-block');
+						var checkIsEncyclopediaSubtitle = (blockType == 'encyclopedia-subtitle');
 						var checkHasEndTag = block['hasEndTag'];
 
 						var rowInfo = {
@@ -306,17 +319,28 @@ function gtde(){
 						}
 						var $tr = $( template.render(rowInfo) );
 						var $textarea = $tr.find('textarea.text-field');
+						var $divTextWindow = $tr.find('div.text-window');
 						
-						var checkHasCharacterName = ($.inArray(lastValidBlockType, ['block', 'medium-block']) !== -1);
-
 						$tbody.append($tr);
 						$textarea.val(text);
-
-						if(checkHasEndTag){
-							$tr.find('button.add-new-block').remove();
-						}
+						
 						if(!checkHasCharacterName){
 							$tr.find('div.character-name').remove();
+						}
+						if(checkIsBoldBlock){
+							$divTextWindow.prepend(
+								$('<div />').addClass('bold-block-arrow')
+							).append(
+								$('<div />').addClass('text-container')
+							);
+						}
+						if(checkIsEncyclopediaSubtitle){
+							$divTextWindow.append(
+								$('<div />').addClass('text-container')
+							);
+						}
+						if(checkHasEndTag){
+							$tr.find('button.add-new-block').remove();
 						}
 						
 						order++;
@@ -334,13 +358,15 @@ function gtde(){
 		});
 	}
 	
-	this.getBlockType = function(textBlock, totalDialogBlocksInSection, sectionCode, scriptFilename){
+	this.getBlockType = function(textBlock, characterCode, totalDialogBlocksInSection, sectionCode, scriptFilename){
 		var checkBlockContainCenterTextTag = (textBlock.indexOf('<texto_centro>') !== -1);
 		var checkBlockContainLineBreakTag = (textBlock.indexOf('<Q>') !== -1);
-		var checkBlockContainStanzaTag = (textBlock.indexOf('<E>') !== -1);
+		//var checkBlockContainStanzaTag = (textBlock.indexOf('<E>') !== -1);
 		var checkScriptIsDatabase = (scriptFilename.indexOf('database_') !== -1);
-		var checkIsEncyclopediaSubtitle = (sectionCode.indexOf('_sub_') !== -1);
-		var checkIsPrelude = (checkBlockContainCenterTextTag && checkBlockContainLineBreakTag && checkBlockContainStanzaTag);
+		var checkIsEncyclopediaSubtitle = ((sectionCode.indexOf('_sub_') !== -1) || (sectionCode.indexOf('_sub2_') !== -1));
+		var checkCharacterCodeNull = ($.trim(characterCode) == '');
+		var checkIsPreludeException = this.checkIsPreludeException(sectionCode);
+		var checkIsPrelude = (checkCharacterCodeNull && checkBlockContainCenterTextTag && checkBlockContainLineBreakTag);
 		
 		if(checkScriptIsDatabase){
 			if(checkIsEncyclopediaSubtitle){
@@ -357,7 +383,7 @@ function gtde(){
 				} else {
 					return 'block';
 				}
-			} else if(checkIsPrelude){
+			} else if(checkIsPrelude || checkIsPreludeException){
 				return 'prelude';
 			} else {
 				if(totalDialogBlocksInSection == 1){
@@ -367,6 +393,11 @@ function gtde(){
 				}
 			}
 		}
+	}
+	
+	this.checkIsPreludeException = function(sectionCode){
+		var preludeExceptionSection = ['m01_0040', 'm01_0071'];
+		return ($.inArray(sectionCode, preludeExceptionSection) !== -1);
 	}
 	
 	this.getCharacterCode = function(characterCodeTag){
@@ -643,17 +674,26 @@ function gtde(){
 			$textarea.highlightWithinTextarea({
 				'highlight': [
 					{
-						'highlight': /<(.+?)[^Q][^E][^FIM][^Algo: 0]>/g,
-						'className': 'red'
-					}, {
+						// Line break tags
 						'highlight': ['<Q>', '<E>'],
 						'className': 'blue'
 					}, {
+						// End block tags
 						'highlight': ['<FIM>', '<Algo: 0>'],
 						'className': 'yellow'
 					}, {
+						// End section tag
 						'highlight': '<FIM_BLOCO>',
 						'className': 'gray'
+					}, {
+						// All other tags, except for <Q>, <E>, <FIM> e <Algo: 0>
+						'highlight': [
+							/<Cena:[( 0-9)]*>/g, '<texto_centro>', /<(Mini_)*RETRATO:[( 0-9)]*>/g,
+							/<Unknown[A-z0-9]:[( 0-9)]*>/g, /<COR:[( 0-9)]*>/g, /<TRICK:[( 0-9)]*>/g,
+							'<GHOST>', '<BACK>', '<BOTAO_0>', '<BOTAO_1>', '<BOTAO_2>', '<BOTAO_3>',
+							'<ICONE_0>', '<ICONE_1>'
+						],
+						'className': 'red'
 					}
 				]
 			}).attr('data-highlight-instantiated', 'true');
@@ -730,14 +770,25 @@ function gtde(){
 		var tag = false;
 		var hasNameTag = false;
 		var tagText = '';
+		var blockType = $divPreview.attr('data-block-type');
 		
 		var checkFirstField = ($previousField.length == 0);
+		var checkCentered = false;
+		var checkIsDefaultBlock = ($.inArray(blockType, ['block', 'medium-block']) !== -1);
 		var fieldSection = parseInt($field.attr('data-section'), 10);
 		var previousFieldSection = parseInt($previousField.attr('data-section'), 10);
 		
 		var $divTextWindow = $divPreview.children('div.text-window');
+		var $divTextContainer = $divTextWindow.children('div.text-container');
 		var $divCharacterName = $divPreview.children('div.character-name');
-		$divTextWindow.html('');
+		
+		var $divTextTarget;
+		if($.inArray(blockType, ['encyclopedia-subtitle', 'bold-block']) !== -1){
+			$divTextTarget = $divTextContainer;
+		} else {
+			$divTextTarget = $divTextWindow;
+		}
+		$divTextTarget.html('');
 
 		// Inserting <Q> when user presses enter
 		if(keyCode == 13){
@@ -780,15 +831,19 @@ function gtde(){
 			} else {
 				// Tags for all contexts
 				if(tagText == 'Q'){
-					$divTextWindow.append('<br />');
+					$divTextTarget.append('<br />');
 				} else if(tagText == 'E'){
-					$divTextWindow.append('<br /><br />');
+					$divTextTarget.append('<br /><br />');
 				} else if(char != '>' && char != '\n'){
-					var newChar = this.formatChar(char);
+					if($.inArray(blockType, ['encyclopedia-subtitle', 'bold-block']) !== -1){
+						$divTextTarget.append(char);
+					} else {
+						var newChar = this.formatChar(char);
 
-					$divTextWindow.append(
-						$('<span />').addClass('letter ' + newChar + ' ' + this.lastColor).html('&nbsp;')
-					);
+						$divTextTarget.append(
+							$('<span />').addClass('letter ' + newChar + ' ' + this.lastColor).html('&nbsp;')
+						);
+					}
 				} else {
 					// Specific tags for dialog parsing
 					if(tagText.startsWith('RETRATO:') || tagText.startsWith('Mini_RETRATO:')){
@@ -805,9 +860,15 @@ function gtde(){
 
 						this.lastColor = this.getColorClass(colorCode);
 					} else if(tagText == 'texto_centro'){
+						checkCentered = true;
+						
 						this.lastColor = 'color-white';
 						
-						$divTextWindow.addClass('centered');
+						$divTextTarget.addClass('centered');
+					} else if(checkIsDefaultBlock && (tagText == 'FIM' || tagText == 'FIM_BLOCO')){
+						$divTextTarget.remove('span.caret').append(
+							$('<span />').addClass('caret').html('&nbsp;')
+						);
 					}
 				}
 				tagText = '';
@@ -822,11 +883,21 @@ function gtde(){
 		
 		$divCharacterName.html(this.lastName);
 		
+		// Updating element containing text without tags
 		var textWithoutTags = this.getTextWithoutTags(text);
 		$divTextWithoutTags.html(textWithoutTags);
+		
+		// Centering blocks of type 'bold-block', if necessary
+		if(blockType == 'bold-block' && checkCentered){
+			var textWindowWidth = $divTextWindow.outerWidth();
+			var previewWidth = $divPreview.outerWidth();
+
+			var leftPosition = (previewWidth - textWindowWidth) / 2;
+			$divTextWindow.css('left', leftPosition);
+		}
 
 		// Analysing current block
-		var returnAnalysis = this.analyseScriptBlock($divTextWindow);
+		var returnAnalysis = this.analyzeScriptBlock($divTextWindow);
 		if(returnAnalysis !== true){
 			$divTextWindow.closest('div.dialog-preview').addClass('invalid').attr('title', returnAnalysis.message);
 		} else {
@@ -1262,7 +1333,7 @@ function gtde(){
 				tableObject.page(page).draw(false);
 				$dialogParserTable.find('div.text-window').each(function(){
 					var $divTextWindow = $(this);
-					returnAnalysis = that.analyseScriptBlock($divTextWindow);
+					returnAnalysis = that.analyzeScriptBlock($divTextWindow);
 					
 					if(returnAnalysis !== true){
 						$divInvalidTextWindow = returnAnalysis.invalidBlock;
@@ -1288,16 +1359,34 @@ function gtde(){
 		}, 500);
 	}
 	
-	this.analyseScriptBlock = function(divTextWindow){
+	this.analyzeScriptBlock = function(divTextWindow){
 		var $divTextWindow = $(divTextWindow);
+		var $divPreview = $divTextWindow.closest('div.dialog-preview');
 		
 		var block_width = $divTextWindow.outerWidth();
+		var blockType = $divPreview.attr('data-block-type');
 		var line_number = 1;
-		var line_width = 0;
+		var line_width, max_lines, caret_right_padding;
+		if(blockType == 'encyclopedia-description'){
+			line_width = 12;
+			max_lines = 8;
+			caret_right_padding = 0;
+		} else if(blockType == 'prelude'){
+			line_width = 7;
+			max_lines = 8;
+			caret_right_padding = 0;
+		} else {
+			line_width = 7;
+			max_lines = 3;
+			caret_right_padding = 9;
+		}
 		var characters_per_line = 0;
 		var message = '';
 		
 		var checkValidBlock = true;
+		var checkBlockWidthLastLineReduced = false;
+		var checkCenteredBlock = $divTextWindow.hasClass('centered');
+		var checkHasCaret = ($divTextWindow.children('span.caret').length > 0);
 
 		$divTextWindow.children('*').each(function(){
 			var $elem = $(this);
@@ -1312,16 +1401,43 @@ function gtde(){
 			} else if($elem.is('br')){
 				// Counting each line break
 				line_number++;
-				line_width = 0;
+				line_width = 7;
 				characters_per_line = 0;
 				checkAtLeastOneCharacterInLine = false;
 			}
 			
+			// For blocks with three lines, defining caret right padding
+			// and reducing block width with its value
+			if((checkHasCaret) && ($.inArray(blockType, ['block', 'medium-block']) !== -1) && (!checkBlockWidthLastLineReduced)){
+				block_width -= caret_right_padding;
+				checkBlockWidthLastLineReduced = true;
+			}
+			
 			// Validating block
-			if(line_number > 3 && checkAtLeastOneCharacterInLine){
+			if(line_number > max_lines && checkAtLeastOneCharacterInLine){
+				var checkInsideCaretArea;
+				if((checkHasCaret) && (line_number == max_lines)){
+					var caret_start = block_width;
+					var caret_ending = (block_width + caret_right_padding);
+					if(checkCenteredBlock){
+						caret_ending += 5;
+					}
+					
+					if((line_width >= caret_start) && (line_width <= caret_ending)){
+						checkInsideCaretArea = true;
+					} else {
+						checkInsideCaretArea = false;
+					}
+				} else {
+					checkInsideCaretArea = false;
+				}
+				
 				checkValidBlock = false;
-				message = 'Bloco com mais de 3 linhas!';
-				return false; // Exit $.each
+				if(checkInsideCaretArea){
+					message = 'Texto sobrepondo a área do cursor da terceira linha!';
+				} else {
+					message = 'Largura da linha ultrapassa limite do bloco!';
+				}
 			}
 			if(line_width > block_width){
 				checkValidBlock = false;

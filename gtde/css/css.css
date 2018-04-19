@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url('../fonts/MyFont-Regular.eot');
+	src: local('☺'), url('../fonts/MyFont-Regular.woff') format('woff'), url('../fonts/MyFont-Regular.ttf') format('truetype'), url('../fonts/MyFont-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a.navbar-brand{
 	padding: 10px 15px;
 }
@@ -118,12 +126,14 @@ td.form-fields textarea.text-field{
 	width: 256px;
 	height: 48px;
 	margin-top: 22px;
-	background: url('../images/big_block.png?v=0.1b');
+	background: url('../images/big_block.png?v=0.1c');
 }
 .dialog-preview.block.invalid{
-	background: url('../images/big_block_invalid.png?v=0.1b');
+	background: url('../images/big_block_invalid.png?v=0.1c');
 }
 .dialog-preview.block div.text-window{
+	width: 256px;
+	height: 48px;
 	position: relative;
 	top: -20px;
 	left: 6px;
@@ -133,10 +143,10 @@ td.form-fields textarea.text-field{
 	width: 208px;
 	height: 51px;
 	margin-top: 22px;
-	background: url('../images/block.png?v=0.1b');
+	background: url('../images/block.png?v=0.1c');
 }
 .dialog-preview.medium-block.invalid{
-	background: url('../images/block_invalid.png?v=0.1b');
+	background: url('../images/block_invalid.png?v=0.1c');
 }
 
 .dialog-preview.medium-block div.character-name,
@@ -162,6 +172,8 @@ td.form-fields textarea.text-field{
 	left: 100px;
 }
 .dialog-preview.medium-block div.text-window{
+	width: 208px;
+	height: 51px;
 	position: relative;
 	top: -20px;
 	left: 8px;
@@ -182,7 +194,72 @@ td.form-fields textarea.text-field{
 .dialog-preview.prelude.invalid div.text-window{
 	border-color: red;
 }
-.dialog-preview div.text-window.centered{
+.dialog-preview.bold-block{
+	position: relative;
+	width: 248px;
+}
+.dialog-preview.bold-block div.btn-group{
+	top: 0;
+	left: 260px;
+}
+.dialog-preview.bold-block div.text-window{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	border: 1px solid #222222;
+	border-radius: 20px;
+	color: black;
+	background: #F0F0F0;
+	display: inline-block;
+	padding: 10px 15px;
+}
+.dialog-preview.bold-block div.text-window div.bold-block-arrow{
+	background: url('../images/bold_block_arrow.png?v=0.1c');
+	width: 25px;
+	height: 9px;
+	position: absolute;
+	bottom: -9px;
+	left: 40%;
+}
+.dialog-preview.encyclopedia-subtitle div.btn-group{
+	top: 0;
+	left: 252px;
+}
+.dialog-preview.encyclopedia-subtitle div.text-window{
+	font-family: 'MyFont';
+	color: #F98100;
+	background: #150000;
+	font-size: 16px;
+	margin-top: -22px;
+	border-top: 1px solid #4F0C0A;
+	border-bottom: 1px solid #540B09;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	width: 248px;
+}
+.dialog-preview.encyclopedia-description{
+	position: relative;
+	width: 248px;
+	height: 140px;
+	background: url('../images/encyclopedia_block.png?v=0.1c');
+}
+.dialog-preview.encyclopedia-description.invalid{
+	background: url('../images/encyclopedia_block_invalid.png?v=0.1c');
+}
+.dialog-preview.encyclopedia-description div.btn-group{
+	top: 0;
+	left: 252px;
+}
+.dialog-preview.encyclopedia-description div.text-window{
+	position: relative;
+	top: -15px;
+	left: 12px;
+	line-height: 1.1;
+}
+.dialog-preview div.text-window.centered,
+.dialog-preview div.text-container.centered{
 	text-align: center;
 }
 #text-preview textarea{
