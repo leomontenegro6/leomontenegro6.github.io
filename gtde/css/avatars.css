@@ -1,0 +1,25 @@
+/* Element containing the character name (currently only shows the charCode value) */
+div.character-avatar span.name{
+	display: inline-block;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	font-size: 10px;
+	color: black;
+}
+
+/* Avatar list */
+div.character-avatar.sissel{ background: url('../images/avatars/Sissel.png'); background-position: -26px -37px; }
+div.character-avatar.lampada{ background: url('../images/avatars/Lampada.png'); background-position: -26px -37px; }
+div.character-avatar.jeego{ background: url('../images/avatars/Jeego.png'); background-position: -26px -37px; }
+div.character-avatar.soul{ background: url('../images/avatars/Soul.png'); background-position: -59px -94px; background-size: 100% }
+div.character-avatar.lynne{ background: url('../images/avatars/Lynne.png'); background-position: -43px -46px; }
+div.character-avatar.cabanela{ background: url('../images/avatars/Cabanela.png'); background-position: -27px -5px; }
+div.character-avatar.doutor-azul{ background: url('../images/avatars/Doutor_Azul.png'); background-position: -64px -38px; }
+div.character-avatar.detetive-de-azul{ background: url('../images/avatars/Detetive_de_Azul.png'); background-position: -34px -21px; }
+div.character-avatar.detetive-de-verde{ background: url('../images/avatars/Detetive_de_Verde.png'); background-position: -34px -21px; }
+div.character-avatar.tengo{ background: url('../images/avatars/Tengo.png'); background-position: -30px -30px; }
+div.character-avatar.policial-1{ background: url('../images/avatars/Policial_1.png'); background-position: -23px -27px; }
+div.character-avatar.policial-2{ background: url('../images/avatars/Policial_2.png'); background-position: -30px -30px; }
+div.character-avatar.policial-3{ background: url('../images/avatars/Policial_1.png'); background-position: -29px -27px; }
+div.character-avatar.none{ background: khaki }

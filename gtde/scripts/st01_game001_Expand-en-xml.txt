@@ -21,7 +21,7 @@ Not very well, I imagine.<Q>
 A terrible tragedy, what<Q>
 happened tonight...<FIM>
 <RETRATO: 41>.........<FIM>
-<RETRATO: 129><Unknown15: 21><Unknown16>Ah, ignoring me, are you? It's<Q>
+<RETRATO: 129><SFX: 21><Flash>Ah, ignoring me, are you? It's<Q>
 a little too early for you to be<Q>
 so stiff and cold, I'd say.<FIM>
 <RETRATO: 39>Ah, so it was you. You were<Q>
@@ -41,7 +41,7 @@ didn't do much good...<FIM_BLOCO>
 <Cena: 1 40><RETRATO: 43><COR: 9>(She still ended up just<Q>
 as dead as before.)<COR: 15><FIM>
 <RETRATO: 131>That's true. For now.<FIM>
-<RETRATO: 43><Unknown15: 22>”For now”?<FIM_BLOCO>
+<RETRATO: 43><SFX: 22>”For now”?<FIM_BLOCO>
 
 [m01_0381]
 <Cena: 1 41><RETRATO: 129>I still have more to teach<Q>
@@ -61,7 +61,7 @@ She's already dead.<FIM_BLOCO>
 [m01_0420]
 <Cena: 1 44><RETRATO: 131>Time for more ghost lessons<Q>
 for you, my friend.<FIM>
-<Unknown15: 22>First of all, I'll have<Q>
+<SFX: 22>First of all, I'll have<Q>
 you possess <COR: 6>me<COR: 15>.<FIM>
 <RETRATO: 43>Possess you, eh?<FIM>
 <RETRATO: 131>Once you've done that, I'll tell you<Q>
@@ -91,7 +91,7 @@ anything else to lose at this point.<FIM_BLOCO>
 [m01_0450]
 <Cena: 1 46><Mini_RETRATO: 4>That <COR: 6>thought bubble<COR: 15><Q>
 you just touched...<FIM>
-<Unknown15: 22>Those are your <COR: 6>thoughts<COR: 15>,<Q>
+<SFX: 22>Those are your <COR: 6>thoughts<COR: 15>,<Q>
 what you're saying to<Q>
 yourself in your head.<FIM>
 <Mini_RETRATO: 1>My thoughts, eh?<FIM>
@@ -122,7 +122,7 @@ Guess I'll give it a little<Q>
 <COR: 6>touch<COR: 9>.)<COR: 15><FIM_BLOCO>
 
 [m01_0460]
-<Cena: 1 47><Mini_RETRATO: 4><Unknown15: 21><Unknown16>By the way, have you taken<Q>
+<Cena: 1 47><Mini_RETRATO: 4><SFX: 21><Flash>By the way, have you taken<Q>
 a look at the <COR: 6>top screen<COR: 15>?<FIM>
 <Mini_RETRATO: 1>What about it?<FIM>
 <Mini_RETRATO: 4>It tells you what ”<COR: 6>trick<COR: 15>” you<Q>
@@ -148,7 +148,7 @@ We're counting on you.<Unknown13><FIM>
 <Mini_RETRATO: 1><COR: 9>(Huh? Who's this ”we”?)<COR: 15><FIM_BLOCO>
 
 [m01_0470]
-<Cena: 1 48><RETRATO: 43><Unknown15: 22><Unknown16>Huh. That's funny...<FIM>
+<Cena: 1 48><RETRATO: 43><SFX: 22><Flash>Huh. That's funny...<FIM>
 <RETRATO: 131>What is?<FIM_BLOCO>
 
 [m01_0480]
@@ -170,7 +170,7 @@ of my ”<COR: 6>powers of the dead<COR: 9>,” eh?)<COR: 15><FIM>
 <Cena: 1 50><RETRATO: 131>Congratulations, you passed.<FIM>
 <RETRATO: 39>Well, what do you know.<Q>
 What prize do I get?<FIM>
-<RETRATO: 131><Unknown15: 22>A <COR: 6>new power<COR: 15>. What else?<FIM>
+<RETRATO: 131><SFX: 22>A <COR: 6>new power<COR: 15>. What else?<FIM>
 <RETRATO: 54>Another one?<FIM>
 <RETRATO: 131>Now, let's review. You can possess<Q>
 objects and manipulate them, right?<FIM_BLOCO>
@@ -186,18 +186,18 @@ happened at all.<FIM>
 
 [m01_0511]
 <Cena: 1 52><RETRATO: 134>However...<FIM>
-<Unknown15: 21><Unknown16>There is <COR: 6>something else<COR: 15> you can do.<FIM>
+<SFX: 21><Flash>There is <COR: 6>something else<COR: 15> you can do.<FIM>
 <RETRATO: 43>Oh, yeah? What's that?<FIM_BLOCO>
 
 [m01_0515]
 <Cena: 1 53><RETRATO: 134>Why don't you try it and see?<FIM_BLOCO>
 
 [m01_0520]
-<Cena: 1 54><Unknown14: 268 30><Unknown3: 120><RETRATO: 54>What's this?<FIM>
-<RETRATO: 268><Unknown15: 0>.........<FIM>
+<Cena: 1 54><RETRATO_2: 268 30><FIM_AUTO: 120><RETRATO: 54>What's this?<FIM>
+<RETRATO: 268><SFX: 0>.........<FIM>
 <RETRATO: 41>Can you hear me?<FIM>
-<RETRATO: 268><Unknown15: 0>.........<FIM>
-<RETRATO: 58><Unknown16><Unknown17: 1 40>Wait a minute.<Q>
+<RETRATO: 268><SFX: 0>.........<FIM>
+<RETRATO: 58><Flash><Tremer_RETRATO: 1 40>Wait a minute.<Q>
 What's going on here?<FIM>
 <RETRATO: 131>Hmm...<FIM>
 It looks like she's<Q>
@@ -218,7 +218,7 @@ the desk lamp is right.)<COR: 15><FIM_BLOCO>
 I was already dead.)<COR: 15><FIM_BLOCO>
 
 [m01_0535]
-<Cena: 1 57><Unknown20><Unknown14: 133 60><Unknown2: 120><Unknown21>Let's leave her like this for now.<FIM>
+<Cena: 1 57><Unknown20><RETRATO_2: 133 60><Unknown2: 120><Unknown21>Let's leave her like this for now.<FIM>
 <RETRATO: 131>And while she's resting,<Q>
 we can save her life.<FIM>
 <RETRATO: 43>Oh, sure. You make it<Q>
@@ -226,10 +226,10 @@ sound so easy.<FIM>
 <RETRATO: 131>And it IS easy.<FIM>
 When you use your<Q>
 powers on a corpse...<FIM>
-<Unknown15: 22><Unknown16>...you can go back to the past,<Q>
+<SFX: 22><Flash>...you can go back to the past,<Q>
 to a time <COR: 6>four minutes before<COR: 15><Q>
 that person's death.<FIM>
-<RETRATO: 47><Unknown15: 21><Unknown16>Are you serious?!<Q>
+<RETRATO: 47><SFX: 21><Flash>Are you serious?!<Q>
 Back through time?!<FIM>
 <RETRATO: 131>That's right. But there's a catch.<FIM>
 It only works on ”new corpses,”<Q>
@@ -239,17 +239,17 @@ And she's still well<Q>
 within that limit.<FIM>
 You might want to give it<Q>
 a try, before it's too late.<FIM>
-<RETRATO: 45><Unknown16><Unknown17: 1 40>But this is crazy!<Q>
+<RETRATO: 45><Flash><Tremer_RETRATO: 1 40>But this is crazy!<Q>
 None of it makes any sense!<FIM>
 <RETRATO: 131>We're talking about the<Q>
 powers of the dead, here.<Q>
 It doesn't have to make sense.<FIM>
 Now, then. Let's go, shall we?<FIM>
-<Unknown15: 23><Unknown16><Unknown17: 1 40>To the time four minutes before<Q>
+<SFX: 23><Flash><Tremer_RETRATO: 1 40>To the time four minutes before<Q>
 this woman was murdered!<FIM>
-<RETRATO: 54><Unknown15: 21><Unknown16><Unknown17: 1 40>H-Hey! Wait a second!<Q>
+<RETRATO: 54><SFX: 21><Flash><Tremer_RETRATO: 1 40>H-Hey! Wait a second!<Q>
 I still don't know what<Q>
 you're talking about!<FIM>
-<RETRATO: 131><Unknown12: 60>Heh heh.<FIM>
-<Unknown15: 22>You'll see. You'll see.<FIM_BLOCO>
+<RETRATO: 131><fade_in_dlg: 60>Heh heh.<FIM>
+<SFX: 22>You'll see. You'll see.<FIM_BLOCO>
 

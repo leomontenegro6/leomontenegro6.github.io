@@ -7,7 +7,8 @@ function gtde(){
 	// Properties
 	this.equivalenceTable = {};
 	this.dialogParserTableTextareas = $();
-	this.lastName = '';
+	this.lastAvatar = 'none';
+	this.lastAvatarType = '';
 	this.lastColor = '';
 	this.automaticPageChange = false;
 	this.configs = {};
@@ -214,16 +215,18 @@ function gtde(){
 				
 				if(tag){
 					if(char != '<'){
-						tagText += $.trim(char);
+						tagText += char;
 					}
 				} else {
+					tagText = $.trim( tagText );
+					
 					// Adding line break after <Q> or <E>
 					if((tagText == 'Q') || (tagText == 'E')){
 						sectionBlocks[sectionCode][blockNumber]['text'] += '\n';
 					}
 
-					// Obtaining character code and block type from <RETRATO> and <Mini_RETRATO> tags
-					if(tagText.startsWith('RETRATO') || tagText.startsWith('Mini_RETRATO')){
+					// Obtaining character code and block type from <RETRATO>, <RETRATO_2> and <Mini_RETRATO> tags
+					if(tagText.startsWith('RETRATO') || tagText.startsWith('RETRATO_2') || tagText.startsWith('Mini_RETRATO')){
 						var tmp = tagText.split(':');
 						var characterCode = $.trim( tmp.pop() );
 						sectionBlocks[sectionCode][blockNumber]['characterCode'] = characterCode;
@@ -245,8 +248,8 @@ function gtde(){
 						sectionBlocks[sectionCode][blockNumber]['hasEndTag'] = true;
 					}
 					
-					// Checking if block has <FIM> or <Algo: 0> tag
-					var checkBreakDetected = ((tagText == 'FIM') || (tagText.startsWith('Algo')));
+					// Checking if block has <FIM> or <Acao: 0> tag
+					var checkBreakDetected = ((tagText == 'FIM') || (tagText.startsWith('Acao')));
 					if(checkBreakDetected){
 						blockNumber++;
 					}
@@ -303,9 +306,7 @@ function gtde(){
 						var textWithoutTags = that.getTextWithoutTags(text);
 						var dialogId = 's-' + sectionCode + '-b-' + blockNumber + '-dialog';
 						
-						var checkHasCharacterName = ($.inArray(lastValidBlockType, ['block', 'medium-block']) !== -1);
-						var checkIsBoldBlock = (blockType == 'bold-block');
-						var checkIsEncyclopediaSubtitle = (blockType == 'encyclopedia-subtitle');
+						var checkHasCharacterAvatar = ($.inArray(lastValidBlockType, ['block', 'medium-block']) !== -1);
 						var checkHasEndTag = block['hasEndTag'];
 
 						var rowInfo = {
@@ -318,27 +319,59 @@ function gtde(){
 							'textWithoutTags': textWithoutTags
 						}
 						var $tr = $( template.render(rowInfo) );
+						var $blockTypeChangerLabels = $tr.find('button.block-type-changer span.label');
+						var $ulDropdownBlockTypeChanger = $tr.find('ul.dropdown-menu');
 						var $textarea = $tr.find('textarea.text-field');
 						var $divTextWindow = $tr.find('div.text-window');
 						
 						$tbody.append($tr);
 						$textarea.val(text);
 						
-						if(!checkHasCharacterName){
-							$tr.find('div.character-name').remove();
+						// Removing avatar html tag for blocks without avatars
+						if(!checkHasCharacterAvatar){
+							$tr.find('div.character-avatar').remove();
 						}
-						if(checkIsBoldBlock){
+						
+						// Doing a few markup customizations for each block type
+						if(blockType == 'prelude'){
+							$blockTypeChangerLabels.html('Prelúdio');
+						} else if(blockType == 'block'){
+							$blockTypeChangerLabels.html('Bloco Padrão');
+						} else if(blockType == 'medium-block'){
+							$blockTypeChangerLabels.html('Bloco Médio');
+						} else if(blockType == 'bold-block'){
+							$blockTypeChangerLabels.html('Balão Negritado');
+							
 							$divTextWindow.prepend(
 								$('<div />').addClass('bold-block-arrow')
 							).append(
 								$('<div />').addClass('text-container')
 							);
-						}
-						if(checkIsEncyclopediaSubtitle){
+						} else if(blockType == 'encyclopedia-subtitle'){
+							$blockTypeChangerLabels.html('Enciclopédia - Subtítulo');
+							
 							$divTextWindow.append(
 								$('<div />').addClass('text-container')
 							);
+						} else if(blockType == 'encyclopedia-description'){
+							$blockTypeChangerLabels.html('Enciclopédia - Descrição');
 						}
+						
+						// Adding active class for current block type in dropdown
+						$ulDropdownBlockTypeChanger.each(function(){
+							var $ul = $(this);
+							$ul.children('li').not('.dropdown-header').not('.divider').each(function(){
+								var $li = $(this);
+								
+								if($li.hasClass(blockType)){
+									$li.addClass('active');
+								} else {
+									$li.removeClass('active');
+								}
+							})
+						})
+						
+						// Removing "add new block" button if there's an end tag inside the block
 						if(checkHasEndTag){
 							$tr.find('button.add-new-block').remove();
 						}
@@ -375,9 +408,9 @@ function gtde(){
 				return 'encyclopedia-description';
 			}
 		} else {
-			var regexPortraits = textBlock.match(/<(Mini_)*RETRATO:[( 0-9)]*>/g);
+			var regexPortraits = textBlock.match(/<(Mini_)*RETRATO(_2)*:[( 0-9)]*>/g);
 			if(regexPortraits != null && regexPortraits.length > 0){
-				var regexMiniPortrait = textBlock.match(/<Mini_RETRATO:[( 0-9)]*>/g);
+				var regexMiniPortrait = textBlock.match(/<Mini_RETRATO(_2)*:[( 0-9)]*>/g);
 				if(regexMiniPortrait != null && regexMiniPortrait.length > 0){
 					return 'medium-block';
 				} else {
@@ -398,6 +431,63 @@ function gtde(){
 	this.checkIsPreludeException = function(sectionCode){
 		var preludeExceptionSection = ['m01_0040', 'm01_0071'];
 		return ($.inArray(sectionCode, preludeExceptionSection) !== -1);
+	}
+	
+	this.changeBlockType = function(anchor, blockType, event){
+		var $anchor = $(anchor);
+		var $li = $anchor.closest('li');
+		var $tr = $li.closest('tr');
+		var $textarea = $tr.children('td.form-fields').find('textarea.text-field');
+		var $divDialogPreview = $anchor.closest('div.dialog-preview');
+		var $divTextWindow = $divDialogPreview.find('div.text-window');
+		var $blockTypeChangerLabels = $divDialogPreview.find('button.block-type-changer span.label');
+		
+		// Changing needed element classes and attributes
+		$divDialogPreview.attr({
+			'class': 'dialog-preview ' + blockType,
+			'data-block-type': blockType
+		});
+		$li.addClass('active').siblings().removeClass('active');
+		
+		// Changing block type changer button labels
+		var labelText = '';
+		if(blockType == 'prelude'){
+			labelText = 'Prelúdio';
+		} else if (blockType == 'block') {
+			labelText = 'Bloco Padrão';
+		} else if (blockType == 'medium-block') {
+			labelText = 'Bloco Médio';
+		} else if (blockType == 'bold-block') {
+			labelText = 'Balão Negritado';
+		} else if (blockType == 'encyclopedia-subtitle') {
+			labelText = 'Enciclopédia - Subtítulo';
+		} else if (blockType == 'encyclopedia-description') {
+			labelText = 'Enciclopédia - Descrição';
+		}
+		$blockTypeChangerLabels.html(labelText);
+		
+		// Forcing text centralization for prelude blocks
+		if(blockType == 'prelude'){
+			$divTextWindow.addClass('centered');
+		} else {
+			$divTextWindow.removeClass('centered');
+		}
+		
+		// Adding or removing needed elements for bold blocks or encyclopedia subtitles
+		if (blockType == 'bold-block' || blockType == 'encyclopedia-subtitle') {
+			$divTextWindow.html(
+				$('<div />').addClass('bold-block-arrow')
+			).append(
+				$('<div />').addClass('text-container')
+			);
+		} else {
+			$divTextWindow.html('');
+		}
+		
+		// Updating preview from current field
+		$textarea.trigger('keyup');
+		
+		event.preventDefault();
 	}
 	
 	this.getCharacterCode = function(characterCodeTag){
@@ -679,19 +769,20 @@ function gtde(){
 						'className': 'blue'
 					}, {
 						// End block tags
-						'highlight': ['<FIM>', '<Algo: 0>'],
+						'highlight': ['<FIM>', '<Acao: 0>'],
 						'className': 'yellow'
 					}, {
 						// End section tag
 						'highlight': '<FIM_BLOCO>',
 						'className': 'gray'
 					}, {
-						// All other tags, except for <Q>, <E>, <FIM> e <Algo: 0>
+						// All other tags, except for <Q>, <E>, <FIM> e <Acao: 0>
 						'highlight': [
-							/<Cena:[( 0-9)]*>/g, '<texto_centro>', /<(Mini_)*RETRATO:[( 0-9)]*>/g,
-							/<Unknown[A-z0-9]:[( 0-9)]*>/g, /<COR:[( 0-9)]*>/g, /<TRICK:[( 0-9)]*>/g,
-							'<GHOST>', '<BACK>', '<BOTAO_0>', '<BOTAO_1>', '<BOTAO_2>', '<BOTAO_3>',
-							'<ICONE_0>', '<ICONE_1>'
+							/<Cena:[( 0-9)]*>/g, '<texto_centro>', /<(Mini_)*RETRATO(_2)*:[( 0-9)]*>/g,
+							/<Unknown[(A-z0-9)]*>/g, /<Unknown[(A-z0-9)]*:[( 0-9)]*>/g, /<COR:[( 0-9)]*>/g,
+							/<TRICK:[( 0-9)]*>/g, /<fade_in_dlg:[( 0-9)]*>/g, /<FIM_AUTO:[( 0-9)]*>/g,
+							/<SFX:[( 0-9)]*>/g, '<Flash>', '<GHOST>', '<BACK>', '<BOTAO_0>', '<BOTAO_1>',
+							'<BOTAO_2>', '<BOTAO_3>', '<ICONE_0>', '<ICONE_1>'
 						],
 						'className': 'red'
 					}
@@ -768,7 +859,8 @@ function gtde(){
 		
 		var text = $field.val();
 		var tag = false;
-		var hasNameTag = false;
+		var hasAvatarTag = false;
+		var avatarType = '';
 		var tagText = '';
 		var blockType = $divPreview.attr('data-block-type');
 		
@@ -780,7 +872,8 @@ function gtde(){
 		
 		var $divTextWindow = $divPreview.children('div.text-window');
 		var $divTextContainer = $divTextWindow.children('div.text-container');
-		var $divCharacterName = $divPreview.children('div.character-name');
+		var $divCharacterAvatar = $divPreview.children('div.character-avatar');
+		var $spanCharacterName = $divCharacterAvatar.children('span.name');
 		
 		var $divTextTarget;
 		if($.inArray(blockType, ['encyclopedia-subtitle', 'bold-block']) !== -1){
@@ -846,14 +939,25 @@ function gtde(){
 					}
 				} else {
 					// Specific tags for dialog parsing
-					if(tagText.startsWith('RETRATO:') || tagText.startsWith('Mini_RETRATO:')){
-						hasNameTag = true;
+					if(tagText.startsWith('RETRATO:') || tagText.startsWith('RETRATO_2:') || tagText.startsWith('Mini_RETRATO:')){
+						hasAvatarTag = true;
 						
-						// Setting character name by character code
+						// Obtaining avatar type
+						var avatarType;
+						if(tagText.startsWith('Mini_RETRATO:')){
+							avatarType = 'mini';
+						} else if(tagText.startsWith('RETRATO_2:')){
+							avatarType = 'retrato-2';
+						} else {
+							avatarType = 'retrato';
+						}
+						
+						// Setting character avatar by character code and avatar type
 						var tmp = tagText.split(':');
 						var characterCode = $.trim( tmp.pop() );
-						this.lastName = this.getName(characterCode);
-						$divCharacterName.html(this.lastName);
+						this.lastAvatarType = avatarType;
+						this.lastAvatar = this.getAvatar(characterCode, avatarType);
+						$spanCharacterName.html(characterCode + '_' + avatarType);
 					} else if(tagText.startsWith('COR:')){
 						var tmp = tagText.split(':');
 						var colorCode = parseInt(tmp.pop(), 10);
@@ -874,14 +978,27 @@ function gtde(){
 				tagText = '';
 			}
 		}
-
-		if(!hasNameTag){
-			var characterCode = $divCharacterName.attr('data-character-code');
-			this.lastName = this.getName(characterCode);
-			$divCharacterName.html(this.lastName);
+		
+		// If no avatar is detected in this block, get it from the last block with avatar
+		if(!hasAvatarTag){
+			var characterCode = $divCharacterAvatar.attr('data-character-code');
+			var avatarType = this.lastAvatarType;
+			
+			this.lastAvatar = this.getAvatar(characterCode, avatarType);
+			$spanCharacterName.html(characterCode + '_' + avatarType);
 		}
 		
-		$divCharacterName.html(this.lastName);
+		// Setting character avatar
+		$divCharacterAvatar.attr('class', 'character-avatar');
+		if(this.lastAvatar != 'none'){
+			var avatar = this.lastAvatar;
+			var avatarType = this.lastAvatarType;
+			
+			$divCharacterAvatar.addClass(avatar, avatarType);
+			$spanCharacterName.html('');
+		} else {
+			$divCharacterAvatar.addClass('none');
+		}
 		
 		// Updating element containing text without tags
 		var textWithoutTags = this.getTextWithoutTags(text);
@@ -914,10 +1031,15 @@ function gtde(){
 		tableObject.row($trField).invalidate();
 	}
 	
-	this.getName = function(code){
-		var name = this.equivalenceTable[code];
-		if(typeof name == 'undefined' || name == '') name = '---';
-		return name;
+	this.getAvatar = function(characterCode, avatarType){
+		var avatarsByType = this.avatars[avatarType];
+		if(typeof avatarsByType != 'undefined'){
+			var avatar = avatarsByType[characterCode];
+			if(typeof avatar == 'undefined') avatar = 'none';
+			return avatar;
+		} else {
+			return 'none';
+		}
 	}
 	
 	this.showTextPreview = function(scriptText){
@@ -1146,12 +1268,12 @@ function gtde(){
 			tableObject.draw(false);
 			
 			// Adding end block tag in the new block.
-			// If the text field contains <Algo: 0> tag, it is appended.
+			// If the text field contains <Acao: 0> tag, it is appended.
 			// Otherwise, the <FIM> tag is appended.
-			var regexAlternativeEndTag = text.match(/<Algo:( )*0>/g);
+			var regexAlternativeEndTag = text.match(/<Acao:( )*0>/g);
 			var checkAlternativeEndTag = (regexAlternativeEndTag != null && regexAlternativeEndTag.length > 0);
 			if(checkAlternativeEndTag){
-				$newTextarea.val('\n<Algo: 0>');
+				$newTextarea.val('\n<Acao: 0>');
 			} else {
 				$newTextarea.val('\n<FIM>');
 			}
@@ -1535,7 +1657,7 @@ function gtde(){
 				checkRowFound = !isNaN(destinationPage);
 				if(checkRowFound){
 					tableObject.page(destinationPage).draw(false);
-					$trFound = $dialogParserTable.find('td.block-number:contains("' + blockNumber + '")').closest('tr');
+					$trFound = $dialogParserTable.find('td.order:contains("' + blockNumber + '")').closest('tr');
 					
 					$('html, body').animate({
 						scrollTop: $trFound.offset().top
@@ -1681,13 +1803,13 @@ function gtde(){
 		var $button = $(button);
 		var $tdPreviewConteiners = $button.closest('td.preview-conteiners');
 		var $previewField = $tdPreviewConteiners.children('div.dialog-preview');
-		var $btnGroup = $previewField.children('div.btn-group');
+		var $btnToolbars = $previewField.children('div.btn-toolbar');
 		var $td = $button.closest('td.preview-conteiners');
 		
 		var previewFieldId = $previewField.attr('id');
 		var filename = 'preview-' + previewFieldId;
 		
-		$btnGroup.hide();
+		$btnToolbars.hide();
 		html2canvas($td, {
 			'onrendered': function(canvas) {
 				var width = 320, height = 104;
@@ -1706,7 +1828,7 @@ function gtde(){
 				a.click();
 				$a.remove();
 				
-				$btnGroup.show();
+				$btnToolbars.show();
 			}
 		});
 	}

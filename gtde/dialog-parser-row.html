@@ -32,14 +32,67 @@
 				<b>Número:</b> <span class="block-number">{{:blockNumber}}</span>
 			</div>
 			<div class="col-xs-8">
-				<div class="btn-group btn-group-sm" role="group" aria-label="Ações Mobile">
-					<button class="btn btn-info show-preview-mobile" title="Mostrar prévia" onclick="gtde.showPreviewOnMobile(this)">
-						<span class="glyphicon glyphicon-search"></span>
+				<div class="btn-toolbar" role="toolbar" aria-label="Ações Mobile">
+					<div class="btn-group btn-group-sm" role="group">
+						<button type="button" class="btn btn-default dropdown-toggle block-type-changer" title="Alterar o tipo de bloco da prévia"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="label">Tipo de Bloco</span>
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Escolha o tipo de bloco</li>
+							<li class="divider"></li>
+							<li class="block"><a href="#" onclick="gtde.changeBlockType(this, 'block', event)">Bloco Padrão</a></li>
+							<li class="prelude"><a href="#" onclick="gtde.changeBlockType(this, 'prelude', event)">Prelúdio</a></li>
+							<li class="medium-block"><a href="#" onclick="gtde.changeBlockType(this, 'medium-block', event)">Bloco Médio</a></li>
+							<li class="bold-block"><a href="#" onclick="gtde.changeBlockType(this, 'bold-block', event)">Balão Negritado</a></li>
+							<li class="encyclopedia-subtitle"><a href="#" onclick="gtde.changeBlockType(this, 'encyclopedia-subtitle', event)">Enciclopédia - Subtítulo</a></li>
+							<li class="encyclopedia-description"><a href="#" onclick="gtde.changeBlockType(this, 'encyclopedia-description', event)">Enciclopédia - Descrição</a></li>
+						</ul>
+					</div>
+					<div class="btn-group btn-group-sm" role="group">
+						<button class="btn btn-info show-preview-mobile" title="Mostrar prévia" onclick="gtde.showPreviewOnMobile(this)">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+						<button class="btn btn-warning copy-clipboard">
+							<span class="glyphicon glyphicon-copy"></span>
+						</button>
+						<button class="btn btn-primary render-image" title="Gerar Imagem"
+								onclick="gtde.renderPreviewImageOnBrowser(this)">
+							<span class="glyphicon glyphicon-picture"></span>
+						</button>
+						<button class="btn btn-success add-new-block" tabindex="-1" title="Adicionar novo bloco de diálogo"
+							onclick="gtde.addNewDialogBlock(this)">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="{{:dialogId}}" class="dialog-preview {{:blockType}}" data-block-type="{{:blockType}}">
+			<div class="btn-toolbar" role="toolbar" aria-label="Ações">
+				<div class="btn-group btn-group-xs hidden-xs" role="group">
+					<button type="button" class="btn btn-default dropdown-toggle block-type-changer" title="Alterar o tipo de bloco da prévia"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="label">Tipo de Bloco</span>
+						<span class="caret"></span>
 					</button>
-					<button class="btn btn-warning copy-clipboard">
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Escolha o tipo de bloco</li>
+						<li class="divider"></li>
+						<li class="block"><a href="#" onclick="gtde.changeBlockType(this, 'block', event)">Bloco Padrão</a></li>
+						<li class="prelude"><a href="#" onclick="gtde.changeBlockType(this, 'prelude', event)">Prelúdio</a></li>
+						<li class="medium-block"><a href="#" onclick="gtde.changeBlockType(this, 'medium-block', event)">Bloco Médio</a></li>
+						<li class="bold-block"><a href="#" onclick="gtde.changeBlockType(this, 'bold-block', event)">Balão Negritado</a></li>
+						<li class="encyclopedia-subtitle"><a href="#" onclick="gtde.changeBlockType(this, 'encyclopedia-subtitle', event)">Enciclopédia - Subtítulo</a></li>
+						<li class="encyclopedia-description"><a href="#" onclick="gtde.changeBlockType(this, 'encyclopedia-description', event)">Enciclopédia - Descrição</a></li>
+					</ul>
+				</div>
+				<div class="btn-group btn-group-xs hidden-xs" role="group">
+					<button class="btn btn-warning copy-clipboard" tabindex="-1">
 						<span class="glyphicon glyphicon-copy"></span>
 					</button>
-					<button class="btn btn-primary render-image" title="Gerar Imagem"
+					<button class="btn btn-primary render-image" tabindex="-1" title="Gerar Imagem"
 							onclick="gtde.renderPreviewImageOnBrowser(this)">
 						<span class="glyphicon glyphicon-picture"></span>
 					</button>
@@ -49,27 +102,10 @@
 					</button>
 				</div>
 			</div>
-		</div>
-		<div id="{{:dialogId}}" class="dialog-preview {{:blockType}}" data-block-type="{{:blockType}}">
-			<div class="character-name" data-character-code="{{:characterCode}}"></div>
-			<div class="btn-group btn-group-xs hidden-xs" role="group" aria-label="Ações">
-				<button class="btn btn-warning copy-clipboard" tabindex="-1">
-					<span class="glyphicon glyphicon-copy"></span>
-				</button>
-				<button class="btn btn-primary render-image" tabindex="-1" title="Gerar Imagem"
-						onclick="gtde.renderPreviewImageOnBrowser(this)">
-					<span class="glyphicon glyphicon-picture"></span>
-				</button>
-				<button class="btn btn-success add-new-block" tabindex="-1" title="Adicionar novo bloco de diálogo"
-					onclick="gtde.addNewDialogBlock(this)">
-					<span class="glyphicon glyphicon-plus"></span>
-				</button>
+			<div class="character-avatar" data-character-code="{{:characterCode}}">
+				<span class="name"></span>
 			</div>
 			<div class="text-window"></div>
 		</div>
-		<!--
-		<br />
-		<img src="images/big_block_filled.png?a=b" />
-		-->
 	</td>
 </tr>

@@ -117,6 +117,17 @@ td.form-fields textarea.text-field{
 	width: 640px;
 	height: 90px;
 }
+.dialog-preview div.btn-toolbar{
+	margin-bottom: 3px;
+}
+.dialog-preview div.btn-toolbar button.block-type-changer>span.label{
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
 .dialog-preview div.text-window{
 	white-space: nowrap;
 	line-height: 1;
@@ -125,67 +136,50 @@ td.form-fields textarea.text-field{
 	position: relative;
 	width: 256px;
 	height: 48px;
-	margin-top: 22px;
-	background: url('../images/big_block.png?v=0.1c');
-}
-.dialog-preview.block.invalid{
-	background: url('../images/big_block_invalid.png?v=0.1c');
 }
 .dialog-preview.block div.text-window{
 	width: 256px;
 	height: 48px;
 	position: relative;
-	top: -20px;
 	left: 6px;
+	margin-left: 43px;
+	margin-top: 4px;
+	padding-left: 6px;
+	padding-top: 2px;
+	background: url('../images/big_block.png?v=0.1d');
+}
+.dialog-preview.block.invalid div.text-window{
+	background: url('../images/big_block_invalid.png?v=0.1d');
 }
 .dialog-preview.medium-block{
 	position: relative;
 	width: 208px;
 	height: 51px;
-	margin-top: 22px;
-	background: url('../images/block.png?v=0.1c');
-}
-.dialog-preview.medium-block.invalid{
-	background: url('../images/block_invalid.png?v=0.1c');
 }
 
-.dialog-preview.medium-block div.character-name,
-.dialog-preview.block div.character-name{
+.dialog-preview.medium-block div.character-avatar,
+.dialog-preview.block div.character-avatar{
 	position: absolute;
-	left: 10px;
-	text-align: center;
-	font-size: 11px;
-	border: 1px solid black;
-	border-bottom: 0;
-	border-radius: 3px;
-	padding: 0 3px;
-}
-.dialog-preview.block div.character-name{
-	bottom: 47px;
-}
-.dialog-preview.medium-block div.character-name{
-	bottom: 50px;
-}
-.dialog-preview.block div.btn-group,
-.dialog-preview.medium-block div.btn-group{
-	top: -22px;
-	left: 100px;
+	width: 56px;
+	height: 51px;
 }
 .dialog-preview.medium-block div.text-window{
 	width: 208px;
 	height: 51px;
 	position: relative;
-	top: -20px;
-	left: 8px;
+	left: 6px;
+	margin-left: 43px;
+	margin-top: 3px;
+	padding-left: 6px;
+	padding-top: 2px;
+	background: url('../images/block.png?v=0.1d');
+}
+.dialog-preview.medium-block.invalid div.text-window{
+	background: url('../images/block_invalid.png?v=0.1d');
 }
 .dialog-preview.prelude{
 	width: 252px;
-	margin-top: -20px;
 	display: inline-block;
-}
-.dialog-preview.prelude div.btn-group{
-	top: 22px;
-	left: 260px;
 }
 .dialog-preview.prelude div.text-window{
 	background: black;
@@ -196,15 +190,14 @@ td.form-fields textarea.text-field{
 }
 .dialog-preview.bold-block{
 	position: relative;
-	width: 248px;
 }
-.dialog-preview.bold-block div.btn-group{
+.dialog-preview.bold-block div.btn-toolbar{
 	top: 0;
 	left: 260px;
 }
 .dialog-preview.bold-block div.text-window{
 	position: absolute;
-	top: 0;
+	top: 25px;
 	left: 0;
 	font-family: Arial, sans-serif;
 	font-weight: bold;
@@ -216,23 +209,18 @@ td.form-fields textarea.text-field{
 	padding: 10px 15px;
 }
 .dialog-preview.bold-block div.text-window div.bold-block-arrow{
-	background: url('../images/bold_block_arrow.png?v=0.1c');
+	background: url('../images/bold_block_arrow.png?v=0.1d');
 	width: 25px;
 	height: 9px;
 	position: absolute;
 	bottom: -9px;
 	left: 40%;
 }
-.dialog-preview.encyclopedia-subtitle div.btn-group{
-	top: 0;
-	left: 252px;
-}
 .dialog-preview.encyclopedia-subtitle div.text-window{
 	font-family: 'MyFont';
 	color: #F98100;
 	background: #150000;
 	font-size: 16px;
-	margin-top: -22px;
 	border-top: 1px solid #4F0C0A;
 	border-bottom: 1px solid #540B09;
 	padding-top: 1px;
@@ -242,21 +230,18 @@ td.form-fields textarea.text-field{
 .dialog-preview.encyclopedia-description{
 	position: relative;
 	width: 248px;
-	height: 140px;
-	background: url('../images/encyclopedia_block.png?v=0.1c');
-}
-.dialog-preview.encyclopedia-description.invalid{
-	background: url('../images/encyclopedia_block_invalid.png?v=0.1c');
-}
-.dialog-preview.encyclopedia-description div.btn-group{
-	top: 0;
-	left: 252px;
+	height: 165px;
 }
 .dialog-preview.encyclopedia-description div.text-window{
-	position: relative;
-	top: -15px;
-	left: 12px;
+	width: 248px;
+	height: 140px;
+	padding-top: 7px;
+	padding-left: 12px;
 	line-height: 1.1;
+	background: url('../images/encyclopedia_block.png?v=0.1d');
+}
+.dialog-preview.encyclopedia-description.invalid div.text-window{
+	background: url('../images/encyclopedia_block_invalid.png?v=0.1d');
 }
 .dialog-preview div.text-window.centered,
 .dialog-preview div.text-container.centered{

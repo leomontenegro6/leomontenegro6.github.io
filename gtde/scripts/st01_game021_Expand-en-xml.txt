@@ -6,10 +6,10 @@
 this was the <COR: 6>murder weapon<COR: 15>.<FIM_BLOCO>
 
 [m01_2270]
-<Cena: 3 31><RETRATO: 201><Unknown15: 21><Unknown16>Oh, no... That pistol...<FIM_BLOCO>
+<Cena: 3 31><RETRATO: 201><SFX: 21><Flash>Oh, no... That pistol...<FIM_BLOCO>
 
 [m01_2275]
-<Cena: 3 33><RETRATO: 204><Unknown15: 22><Unknown23: 0 20>Yup. Same model as the pistols<Q>
+<Cena: 3 33><RETRATO: 204><SFX: 22><Unknown23: 0 20>Yup. Same model as the pistols<Q>
 you <COR: 6>detectives <COR: 15>carry around.<FIM>
 <RETRATO: 201>You don't think... it's<Q>
 Lynne's, do you...?<FIM>
@@ -17,10 +17,10 @@ Lynne's, do you...?<FIM>
 hers, it's all over.<FIM_BLOCO>
 
 [m01_2285]
-<Cena: 3 36><RETRATO: 204><Unknown15: 24><Unknown16><Unknown17: 1 40>Fool! If you want to<Q>
+<Cena: 3 36><RETRATO: 204><SFX: 24><Flash><Tremer_RETRATO: 1 40>Fool! If you want to<Q>
 fire the thing, aim it<Q>
 in your own direction!<FIM>
-<RETRATO: 201><Unknown16><Unknown17: 1 40>I-I didn't fire it!<Q>
+<RETRATO: 201><Flash><Tremer_RETRATO: 1 40>I-I didn't fire it!<Q>
 I'm the victim here!<FIM>
 This is the act of somebody<Q>
 who's jealous of my<Q>
@@ -30,8 +30,8 @@ for? I'm hardly jealous of you.<FIM_BLOCO>
 
 [m01_2360]
 <Cena: 3 49><RETRATO: 131>I've been waiting for you.<FIM>
-<RETRATO: 21><Unknown15: 21><Unknown16><Unknown17: 1 40>Eek! Wh-What are you?!<FIM>
-<Unknown15: 22><Unknown16>A desk lamp... that sounds<Q>
+<RETRATO: 21><SFX: 21><Flash><Tremer_RETRATO: 1 40>Eek! Wh-What are you?!<FIM>
+<SFX: 22><Flash>A desk lamp... that sounds<Q>
 like an old grandpa...?<FIM>
 <RETRATO: 131>Just call me ”Ray.”<FIM>
 <RETRATO: 13>”Grandpa Ray”...?<FIM>
@@ -46,7 +46,7 @@ you really look like, right?<FIM>
 <RETRATO: 131>.........<FIM>
 Now, then. About that<Q>
 gunshot that took your life...<FIM>
-<RETRATO: 19><Unknown15: 21><Unknown16>...!<FIM>
+<RETRATO: 19><SFX: 21><Flash>...!<FIM>
 <RETRATO: 131>I heard it way up on the upper<Q>
 level, a scant few minutes from<Q>
 now.<FIM_BLOCO>
@@ -56,16 +56,16 @@ now.<FIM_BLOCO>
 his rifle ready right now.<Unknown13><FIM_BLOCO>
 
 [m01_2380]
-<Cena: 3 51><RETRATO: 17><Unknown16><Unknown17: 1 40>All right, I'm going in! I'll get him<Q>
+<Cena: 3 51><RETRATO: 17><Flash><Tremer_RETRATO: 1 40>All right, I'm going in! I'll get him<Q>
 with those ”ghost trick” thingies!<FIM>
 <RETRATO: 131>I'm very sorry, young lady...<FIM>
-<Unknown15: 22>...but you <COR: 6>don't have<COR: 15><Q>
+<SFX: 22>...but you <COR: 6>don't have<COR: 15><Q>
 those powers.<FIM>
-<RETRATO: 21><Unknown15: 21><Unknown16>What?! Why not?!<FIM>
+<RETRATO: 21><SFX: 21><Flash>What?! Why not?!<FIM>
 <RETRATO: 131>I'm afraid I don't know the reason.<FIM>
 But only a special few have<Q>
 the powers of the dead.<FIM>
-<RETRATO: 15><Unknown15: 24><Unknown17: 1 40><Unknown16>What?! Are you saying I'm<Q>
+<RETRATO: 15><SFX: 24><Tremer_RETRATO: 1 40><Flash>What?! Are you saying I'm<Q>
 not special?! That's not fair!<FIM>
 <RETRATO: 131>Anyway, we don't have much time.<FIM_BLOCO>
 
@@ -73,7 +73,7 @@ not special?! That's not fair!<FIM>
 <Cena: 3 52><RETRATO: 131>Come on and hop in.<FIM_BLOCO>
 
 [m01_2386]
-<Cena: 3 53><Mini_RETRATO: 1><Unknown15: 22>It's no use.<FIM>
+<Cena: 3 53><Mini_RETRATO: 1><SFX: 22>It's no use.<FIM>
 <Mini_RETRATO: 3>What's the matter?<FIM>
 <Mini_RETRATO: 1>This telephone doesn't seem<Q>
 to be working right now.<FIM>
@@ -83,7 +83,7 @@ the phone anytime we want.<FIM>
 <Mini_RETRATO: 3>I think it's a message<Q>
 from the gods.<FIM>
 <Mini_RETRATO: 1>Message from the gods?<FIM>
-<Mini_RETRATO: 3><Unknown15: 23><Unknown17: 1 40><Unknown16>That's right. They're telling<Q>
+<Mini_RETRATO: 3><SFX: 23><Tremer_RETRATO: 1 40><Flash>That's right. They're telling<Q>
 us to stay right here and<Q>
 find that horrible hitman!<FIM>
 <Mini_RETRATO: 1>That's a very personalized<Q>
@@ -97,7 +97,7 @@ after me is upstairs, isn't he?<FIM>
 <COR: 9>(In other words...)<COR: 15><FIM>
 <COR: 9>(...we <COR: 6>can't stop him<COR: 9> if<Q>
 we stay down here!)<COR: 15><FIM>
-<Mini_RETRATO: 3><Unknown16><Unknown17: 1 40>Let's go, then!<FIM>
+<Mini_RETRATO: 3><Flash><Tremer_RETRATO: 1 40>Let's go, then!<FIM>
 I'm not really big on the<Q>
 idea of getting shot again.<FIM_BLOCO>
 
@@ -111,7 +111,7 @@ And if there's one thing<Q>
 I hate, it's losing a race.<FIM>
 <Mini_RETRATO: 1>I wasn't aware we were in<Q>
 a race with the inspector.<FIM>
-<Mini_RETRATO: 3><Unknown15: 21><Unknown16>Think barber pole stripes<Unknown24><Q>
+<Mini_RETRATO: 3><SFX: 21><Flash>Think barber pole stripes<Unknown24><Q>
 you're red, and he's white,<Q>
 and it's a race to the top!<FIM>
 <Mini_RETRATO: 1><COR: 9>(*sigh* Maybe I should just<Q>
@@ -128,7 +128,7 @@ There isn't a lot of time.<Q>
 Let's try to find him, fast.<FIM>
 <Mini_RETRATO: 3>I'm going to make good and<Q>
 sure he understands...<FIM>
-<Unknown15: 23><Unknown16><Unknown17: 1 40>...what happens to people<Q>
+<SFX: 23><Flash><Tremer_RETRATO: 1 40>...what happens to people<Q>
 who point guns at others!<FIM>
 <Mini_RETRATO: 1><COR: 9>(There's a gleam in her eye<Q>
 that's absolutely blinding...)<COR: 15><FIM_BLOCO>
@@ -139,12 +139,12 @@ there! The horrible hitman!<FIM>
 <Mini_RETRATO: 1><COR: 9>(I think his name is actually<Q>
 ”Tengo,” but I guess that<Q>
 doesn't matter.)<COR: 15><FIM>
-<Mini_RETRATO: 3><Unknown15: 23><Unknown17: 1 40><Unknown16>C'mon! Let's go grind<Q>
+<Mini_RETRATO: 3><SFX: 23><Tremer_RETRATO: 1 40><Flash>C'mon! Let's go grind<Q>
 him into pieces!<FIM>
 <Mini_RETRATO: 1>I wish you wouldn't<Q>
 use such violent<Q>
 expressions. Besides...<FIM>
-<Unknown15: 24><Unknown17: 1 40><COR: 9>(I don't see any cores<Q>
+<SFX: 24><Tremer_RETRATO: 1 40><COR: 9>(I don't see any cores<Q>
 that'll get us over there.)<COR: 15><FIM>
 <COR: 9>(I think we might've <COR: 6>missed<Q>
 our chance<COR: 9> already.)<COR: 15><FIM>
@@ -158,11 +158,11 @@ hitman division by next<Q>
 month now for sure.<FIM_BLOCO>
 
 [m01_2675]
-<Cena: 3 59><RETRATO: 11><Unknown15: 21><Unknown16><Unknown17: 1 40>There he is! The horrible hitman!<FIM>
+<Cena: 3 59><RETRATO: 11><SFX: 21><Flash><Tremer_RETRATO: 1 40>There he is! The horrible hitman!<FIM>
 <RETRATO: 44><COR: 9>(I think his name is actually<Q>
 ”Tengo,” but that doesn't<Q>
 matter now.)<COR: 15><FIM>
-<Unknown14: 40 65535>We have to stop him<Q>
+<RETRATO_2: 40 65535>We have to stop him<Q>
 from shooting... fast!<FIM_BLOCO>
 
 [m01_2540]
@@ -172,16 +172,16 @@ but I <COR: 6>can't hear<COR: 15> him from here.<FIM_BLOCO>
 [m01_2700]
 <Cena: 3 61><RETRATO: 39>There. We put a stop<Q>
 to that shot at least.<FIM>
-<RETRATO: 6><Unknown15: 21><Unknown16><Unknown17: 1 40>We did it! So I'm safe now, right?<FIM>
+<RETRATO: 6><SFX: 21><Flash><Tremer_RETRATO: 1 40>We did it! So I'm safe now, right?<FIM>
 <RETRATO: 52>Well, that changed your fate a<Q>
 little, but it didn't avert it<Q>
 completely. We're not done yet.<FIM>
 The hitman is a professional. And<Q>
 he really, really wants to be head<Q>
 of the division, apparently.<FIM>
-<Unknown14: 43 65535><Unknown15: 22><COR: 9>(I doubt blocking a shot here and<Q>
+<RETRATO_2: 43 65535><SFX: 22><COR: 9>(I doubt blocking a shot here and<Q>
 there is really gonna stop him.)<COR: 15><FIM>
-<RETRATO: 18><Unknown16>If you want to rough him<Q>
+<RETRATO: 18><Flash>If you want to rough him<Q>
 up a little bit, I promise I<Q>
 won't put it in my report.<FIM>
 <RETRATO: 39>Let's think of <COR: 6>something else<COR: 15><Q>
@@ -199,7 +199,7 @@ I have to be careful of even<Q>
 the least bit of scandal.”<FIM>
 <RETRATO: 44>So it sounds like he <COR: 6>won't show<Q>
 up<COR: 15> in spots where a <COR: 6>light is on<COR: 15>.<FIM>
-<RETRATO: 18><Unknown15: 21><Unknown16>And, next year, I'm going to<Q>
+<RETRATO: 18><SFX: 21><Flash>And, next year, I'm going to<Q>
 spread some nasty, scandalous<Q>
 rumors about him!<FIM_BLOCO>
 
@@ -209,7 +209,7 @@ flashing light on?<FIM>
 <RETRATO: 197>Wasn't me. It went off<Q>
 all by itself. Scared the<Q>
 heck out of me.<FIM>
-<RETRATO: 191><Unknown15: 22>Well, just make sure you<Q>
+<RETRATO: 191><SFX: 22>Well, just make sure you<Q>
 lay off it. Don't wanna<Q>
 waste any electricity.<FIM>
 <RETRATO: 197>Have things gotten that<Q>
@@ -225,21 +225,21 @@ at least that much, especially<Q>
 on a dark night like tonight.<FIM_BLOCO>
 
 [m01_2665]
-<Cena: 3 64><RETRATO: 191><Unknown15: 24><Unknown17: 1 40><Unknown16>Hey, I told you to<Q>
+<Cena: 3 64><RETRATO: 191><SFX: 24><Tremer_RETRATO: 1 40><Flash>Hey, I told you to<Q>
 lay off that thing!<FIM>
-<RETRATO: 197><Unknown15: 24><Unknown17: 1 40><Unknown16>And I told you, it wasn't me!<FIM>
+<RETRATO: 197><SFX: 24><Tremer_RETRATO: 1 40><Flash>And I told you, it wasn't me!<FIM>
 <RETRATO: 191>Uh-oh... I think I might know<Q>
 what's going on here...<FIM>
-<Unknown15: 22>This is the work of... you know.<FIM>
-<RETRATO: 197><Unknown15: 21><Unknown16><Unknown17: 1 40>What? Hey, shut up!<Q>
+<SFX: 22>This is the work of... you know.<FIM>
+<RETRATO: 197><SFX: 21><Flash><Tremer_RETRATO: 1 40>What? Hey, shut up!<Q>
 You're creeping me out!<FIM>
 <RETRATO: 191>But you know as well as I<Q>
 do, the only explanation<Q>
 for mischief like this is...<FIM>
-<Unknown15: 22>...Inspector Cabanela!<FIM>
+<SFX: 22>...Inspector Cabanela!<FIM>
 <Mini_RETRATO: 1>So they tell tales about him<Q>
 as though he's a ghost, eh?<FIM>
-<Mini_RETRATO: 3><Unknown17: 1 40><Unknown16>But Inspector Cabanela is<Q>
+<Mini_RETRATO: 3><Tremer_RETRATO: 1 40><Flash>But Inspector Cabanela is<Q>
 really a very nice person!<FIM_BLOCO>
 
 [m01_2609]
@@ -281,12 +281,12 @@ nothing for a man of my skill.<FIM>
 like dark, gloomy places.<FIM>
 I'd be happy to throw him<Q>
 in a dark, gloomy cell!<FIM>
-<Unknown14: 18 65535><Unknown15: 23><Unknown16><Unknown17: 1 40>C'mon, Sissel. Get him!<FIM>
+<RETRATO_2: 18 65535><SFX: 23><Flash><Tremer_RETRATO: 1 40>C'mon, Sissel. Get him!<FIM>
 <RETRATO: 48><COR: 9>(Hold up! When did I<Q>
 become HER assistant?!)<COR: 15><FIM_BLOCO>
 
 [m01_2650]
-<Cena: 3 68><Mini_RETRATO: 3><Unknown15: 21><Unknown16>Oh! Look at that! One of<Q>
+<Cena: 3 68><Mini_RETRATO: 3><SFX: 21><Flash>Oh! Look at that! One of<Q>
 the lights went out.<FIM>
 <Mini_RETRATO: 1>There are three lights<Q>
 here all together.<FIM>
@@ -306,7 +306,7 @@ place to work the headlamp.<FIM>
 things way too far.)<COR: 15><FIM_BLOCO>
 
 [m01_2655]
-<Cena: 3 69><Mini_RETRATO: 3><Unknown15: 21><Unknown16>Look! One of the<Q>
+<Cena: 3 69><Mini_RETRATO: 3><SFX: 21><Flash>Look! One of the<Q>
 lights went out!<FIM>
 <Mini_RETRATO: 1>There are three lights<Q>
 here all together.<FIM>
@@ -322,7 +322,7 @@ I bet that would put a nice<Q>
 stop to my horrible hitman.<FIM>
 <Mini_RETRATO: 1>If it just stopped him,<Q>
 that would be fine.<FIM>
-<Unknown15: 22>But if it killed him, would<Q>
+<SFX: 22>But if it killed him, would<Q>
 I be obligated to save him?<FIM>
 <Mini_RETRATO: 3>.........<FIM>
 Anyway... let's just focus<Q>
@@ -333,7 +333,7 @@ something you like to do.)<COR: 15><FIM>
 <Mini_RETRATO: 3>Just the right amount.<Q>
 That's the way detectives<Q>
 think about things!<FIM>
-<Unknown15: 23><Unknown17: 1 40><Unknown16>Now, c'mon!<Q>
+<SFX: 23><Tremer_RETRATO: 1 40><Flash>Now, c'mon!<Q>
 Let's do this thing!<FIM>
 Ooh, I just love stamping<Q>
 out evil! It makes me<Q>
@@ -352,7 +352,7 @@ waste bullets. Besides...<FIM>
 ...I'd have to put the extra bullets<Q>
 down as an extra expense, and<Q>
 accounting never likes that.<FIM>
-<RETRATO: 16><Unknown15: 24><Unknown17: 1 40><Unknown16>What the heck is that<Q>
+<RETRATO: 16><SFX: 24><Tremer_RETRATO: 1 40><Flash>What the heck is that<Q>
 idiot blathering about?!<FIM>
 <RETRATO: 52>Hey, don't get mad at me!<Q>
 <COR: 9>(We have to stop this guy.)<COR: 15><FIM_BLOCO>
@@ -370,7 +370,7 @@ cause me to miss the target.<FIM>
 Likewise, worries over an<Q>
 unstable income could<Q>
 also cause me to miss.<FIM>
-<RETRATO: 16><Unknown15: 24><Unknown17: 1 40><Unknown16>What the heck is that<Q>
+<RETRATO: 16><SFX: 24><Tremer_RETRATO: 1 40><Flash>What the heck is that<Q>
 idiot blathering about?!<FIM>
 <RETRATO: 52>Hey, don't get mad at me!<Q>
 <COR: 9>(We have to do<Q>
@@ -389,7 +389,7 @@ shock of the kickback...<FIM>
 I have no intention of biting<Q>
 my tongue. I only want my<Q>
 bullet to bite my prey.<FIM>
-<RETRATO: 16><Unknown15: 24><Unknown17: 1 40><Unknown16>What the heck is that<Q>
+<RETRATO: 16><SFX: 24><Tremer_RETRATO: 1 40><Flash>What the heck is that<Q>
 idiot blathering about?!<FIM>
 <RETRATO: 52>Hey, don't get mad at me!<Q>
 <COR: 9>(Uh-oh. We're running<Q>
@@ -397,39 +397,39 @@ out of time...)<COR: 15><FIM_BLOCO>
 
 [m01_2740]
 <Cena: 3 74><RETRATO: 191>Did you hear a scream just now?<FIM>
-<RETRATO: 197><Unknown15: 24><Unknown17: 1 40><Unknown16>I'm telling you, it wasn't me!<FIM>
+<RETRATO: 197><SFX: 24><Tremer_RETRATO: 1 40><Flash>I'm telling you, it wasn't me!<FIM>
 <RETRATO: 191>Nobody said it was.<FIM_BLOCO>
 
 [m01_2750]
 <Cena: 3 75><RETRATO: 43>There.<FIM>
-<Unknown14: 39 65535>We found a nice dark spot for<Q>
+<RETRATO_2: 39 65535>We found a nice dark spot for<Q>
 our gloom-loving hitman.<FIM>
 I think your death has<Q>
 just been erased. Again.<FIM_BLOCO>
 
 [m01_2760]
 <Cena: 3 76><RETRATO: 20>Why not, I wonder...?<FIM>
-<RETRATO: 41><Unknown15: 21><Unknown16>Huh?<FIM>
+<RETRATO: 41><SFX: 21><Flash>Huh?<FIM>
 <RETRATO: 20>Why don't I have<Q>
 <COR: 6>powers<COR: 15> like yours?<FIM>
 If I could do things like<Q>
 you do, it could really<Q>
 help me pursue my case...<FIM>
-<Unknown14: 28 65535><Unknown15: 22>Why only the ”<COR: 6>special few<COR: 15>,” huh?<Q>
+<RETRATO_2: 28 65535><SFX: 22>Why only the ”<COR: 6>special few<COR: 15>,” huh?<Q>
 It's not fair!<FIM>
 <RETRATO: 43><COR: 9>(That's the same thing<Q>
 the little doggie said, too.)<COR: 15><FIM>
-<Unknown14: 39 65535>Well, I'm jealous of YOU, actually.<FIM>
-<RETRATO: 22><Unknown16><Unknown17: 1 40>You are? Why?<FIM>
+<RETRATO_2: 39 65535>Well, I'm jealous of YOU, actually.<FIM>
+<RETRATO: 22><Flash><Tremer_RETRATO: 1 40>You are? Why?<FIM>
 <RETRATO: 39>Because your life can be saved.<Q>
 Even if you die again tonight.<FIM>
 I can save you, with<Q>
 my ghost tricks.<FIM>
-<Unknown14: 52 65535><Unknown15: 22>Nobody can save my life, though.<FIM>
-<RETRATO: 22><Unknown15: 21><Unknown16>Oh...<FIM>
+<RETRATO_2: 52 65535><SFX: 22>Nobody can save my life, though.<FIM>
+<RETRATO: 22><SFX: 21><Flash>Oh...<FIM>
 <RETRATO: 39><COR: 9>(These powers of the dead...<Q>
 why have they <COR: 6>chosen me<COR: 9>?)<COR: 15><FIM>
-<Unknown14: 43 65535><COR: 9>(Will I find the answer to<Q>
+<RETRATO_2: 43 65535><COR: 9>(Will I find the answer to<Q>
 that question tonight?)<COR: 15><FIM>
 <RETRATO: 28>Sissel... I'm so sorry.<FIM>
 <RETRATO: 39>Well, you're free to do<Q>
@@ -440,18 +440,18 @@ goodbye, Detective.<FIM>
 each other again?<FIM>
 <RETRATO: 39>If you ever want to see me<Q>
 again, all you have to do is die.<FIM>
-<RETRATO: 6><Unknown15: 21><Unknown16><Unknown17: 1 40>Okay, got it!<FIM>
+<RETRATO: 6><SFX: 21><Flash><Tremer_RETRATO: 1 40>Okay, got it!<FIM>
 <RETRATO: 47><COR: 9>(I was kidding.)<COR: 15><FIM>
-<Unknown14: 39 65535>Well, guess we'd better be<Q>
+<RETRATO_2: 39 65535>Well, guess we'd better be<Q>
 getting back... to the present!<FIM_BLOCO>
 
 [m01_2530]
 <Cena: 3 77><RETRATO: 43>The gunshot came from<Q>
 somewhere way <COR: 6>overhead<COR: 15>.<FIM>
-<Unknown14: 39 65535>If we want to stop him, we<Q>
+<RETRATO_2: 39 65535>If we want to stop him, we<Q>
 have to go to where he is.<FIM>
 But we'll have to find him first...<FIM>
-<Unknown14: 43 65535><COR: 9>(We have to look for the right<Q>
+<RETRATO_2: 43 65535><COR: 9>(We have to look for the right<Q>
 <COR: 6>timing <COR: 9>that will open up a <COR: 6>path<COR: 9><Q>
 to where the hitman is.)<COR: 15><FIM_BLOCO>
 
@@ -459,10 +459,10 @@ to where the hitman is.)<COR: 15><FIM_BLOCO>
 <Cena: 3 78><RETRATO: 43>Even if we block his shot,<Q>
 that'd only buy us a little<Q>
 more time.<FIM>
-<Unknown14: 41 65535>It doesn't look like we can<Q>
+<RETRATO_2: 41 65535>It doesn't look like we can<Q>
 discourage him from shooting<Q>
 completely.<FIM>
-<RETRATO: 17><Unknown15: 21><Unknown16>The only way to deal with evil<Q>
+<RETRATO: 17><SFX: 21><Flash>The only way to deal with evil<Q>
 is to crush it completely!<FIM>
 <RETRATO: 43><COR: 9>(This lady detective is<Q>
 just a little excessive...)<COR: 15><FIM_BLOCO>

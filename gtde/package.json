@@ -1,6 +1,6 @@
 {
 	"name": "Editor de diálogos do Ghost Trick Phantom Detective",
-	"version": "0.1c",
+	"version": "0.1d",
 	"description": "Editor de diálogos do Ghost Trick Phantom Detective",
 	"main": "main.js",
 	"scripts": {
