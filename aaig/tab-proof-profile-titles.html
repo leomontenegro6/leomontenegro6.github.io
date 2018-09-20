@@ -1,0 +1,184 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+		
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="panel panel-default">
+					<div class="panel-heading l-filters">&nbsp;</div>
+					<div class="panel-body">
+						
+						<form class="form-proof-profile-title" onsubmit="return aaig.generateImages(this)" onreset="return aaig.resetForm(this)"
+							data-image="proof-profile-title-conteiner">
+							<!-- Proof / profile title text -->
+							<div class="form-group">
+								<label for="proof-profile-title-text" class="control-label l-label-proof-profile-titles">&nbsp;</label>
+								<input type="text" name="proof-profile-title-text" id="proof-profile-title-text" class="form-control p-text-buttons text"
+									onkeyup="aaig.updatePreview(this)" />
+								<textarea name="proof-profile-title-text-batch-mode" id="proof-profile-title-text-batch-mode"
+									class="form-control p-text-batch-mode text-batch-mode resizable-vertical" rows="10"
+									onkeyup="aaig.updatePreviewBatchMode(this)" onclick="$(this).trigger('keyup')"
+									style="display: none"></textarea>
+							</div>
+
+							<!-- Platform and batch mode -->
+							<div class="form-inline" style="margin-bottom: 5px">
+								<label for="proof-profile-title-platform" class="control-label l-label-platform">&nbsp;</label>
+								<select id="proof-profile-title-platform" name="proof-profile-title-platform" class="form-control platform"
+									onchange="aaig.changePlatform(this)">
+									<option value="ds">Nintendo DS</option>
+									<option value="3ds" selected>Nintendo 3DS</option>
+								</select>
+								<label for="proof-profile-title-batch-mode" class="control-label l-label-batch-mode">&nbsp;</label>
+								<div class="checkbox">
+									<input type="checkbox" name="proof-profile-title-batch-mode" id="proof-profile-title-batch-mode"
+										class="form-control batch-mode" onchange="aaig.toggleBatchModeFields(this)" />
+									<label for="proof-profile-title-batch-mode">&nbsp;</label>
+								</div>
+							</div>
+							
+							<!-- Batch mode settings -->
+							<div class="form-inline batch-mode-settings" style="margin-bottom: 5px; display: none">
+								<label for="proof-profile-title-batch-mode-initial-file-number"
+									class="control-label l-label-batch-mode-initial-file-number">&nbsp;</label>
+								<input type="number" id="proof-profile-title-batch-mode-initial-file-number"
+									name="proof-profile-title-batch-mode-initial-file-number" class="form-control batch-mode-initial-file-number"
+									value="0" min="0" max="10000" maxlength="5" />
+								<label for="proof-profile-title-batch-mode-left-zeroes" class="control-label l-label-batch-mode-left-zeroes">&nbsp;</label>
+								<input type="number" id="proof-profile-title-batch-mode-left-zeroes" name="proof-profile-title-batch-mode-left-zeroes"
+									class="form-control batch-mode-left-zeroes p-none" min="0" max="8" maxlength="4" />
+							</div>
+							
+							<!-- Visual customization fields -->
+							<div class="panel-group" id="visual-customization-proof-profile-titles" role="tablist">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="visual-customization-proof-profile-titles-heading">
+										<h4 class="panel-title">
+											<a role="button" data-toggle="collapse" data-parent="#visual-customization-proof-profile-titles"
+												href="#visual-customization-proof-profile-titles-collapse" aria-expanded="true"
+												aria-controls="visual-customization-proof-profile-titles-collapse">
+												<span class="plus-minus glyphicon glyphicon-plus"></span>
+												<span class="l-accordion-visual-customizations">&nbsp;</span>
+											</a>
+										</h4>
+									</div>
+									<div id="visual-customization-proof-profile-titles-collapse" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="visual-customization-proof-profile-titles-heading">
+										<div class="panel-body">
+											<!-- Scale -->
+											<div class="form-inline" style="margin-bottom: 5px;">
+												<label for="automatic-scale-proof-profile-title" class="control-label l-label-scale">&nbsp;</label>
+												<div class="checkbox">
+													<input type="checkbox" name="automatic-scale-proof-profile-title" id="automatic-scale-proof-profile-title"
+														class="form-control automatic-scale" checked onchange="aaig.toggleAutomaticScale(this)" />
+													<label for="automatic-scale-proof-profile-title" class="control-label l-label-automatic-scale"
+														style="margin-right: 7.5px; font-weight: normal">&nbsp;</label>
+												</div>												
+												<input type="text" id="proof-profile-title-scale" class="slider scale" data-slider-min="0.500" data-slider-max="1.200"
+													data-slider-step="0.005" data-slider-value="1.045" data-slider-tooltip="hide" data-slider-enabled="false" />
+												<input type="text" class="form-control slider-value" disabled />
+											</div>
+
+											<!-- Font (3DS) -->
+											<div class="form-inline" style="margin-bottom: 5px">
+												<label for="proof-profile-title-font" class="control-label l-label-font">&nbsp;</label>
+												<select id="proof-profile-title-font" name="proof-profile-title-font" class="form-control font-3ds"
+													onchange="aaig.changeFont(this)"></select>
+												<input type="text" id="proof-profile-title-another-font" class="form-control p-another-font" style="display: none"
+													onkeyup="aaig.setCustomFont(this)" />
+												<select id="proof-profile-title-font-size" name="proof-profile-title-font-size" class="form-control font-size"
+													onchange="aaig.changeFontSize(this)"></select>
+												<div class="btn-group" data-toggle="buttons">
+													<label class="btn btn-default t-button-bold">
+														<input type="checkbox" class="estilos" value="b" onchange="aaig.changeFontStyle(this)" />
+														<b class="l-button-bold">&nbsp;</b>
+													</label>
+													<label class="btn btn-default t-button-italic">
+														<input type="checkbox" class="estilos" value="i" onchange="aaig.changeFontStyle(this)" />
+														<i class="l-button-italic">&nbsp;</i>
+													</label>
+												</div>
+											</div>
+
+											<!-- Font (DS) -->
+											<div class="form-inline" style="margin-bottom: 5px; margin-top: 5px; display: none">
+												<label for="proof-profile-title-font-ds" class="control-label l-label-font">&nbsp;</label>
+												<select id="proof-profile-title-font-ds" name="proof-profile-title-font-ds" class="form-control font-ds"
+													onchange="aaig.changeFontDS(this)">
+													<option value="a" class="l-option-ds-font-automatic" selected>&nbsp;</option>
+													<option value="n" class="l-option-ds-font-normal">&nbsp;</option>
+													<option value="c" class="l-option-ds-font-condensed">&nbsp;</option>
+													<option value="ec" class="l-option-ds-font-extra-condensed">&nbsp;</option>
+												</select>
+											</div>
+
+											<!-- Margin Top -->
+											<div class="form-inline" style="margin-bottom: 5px">
+												<label for="proof-profile-title-margin-top" class="control-label l-label-margin-top" style="margin-right: 7.5px">&nbsp;</label>
+												<input type="text" id="proof-profile-title-margin-top" class="slider margin-top"
+													   data-slider-min="-5" data-slider-max="30" data-slider-step="1" data-slider-value="-2"
+													   data-slider-tooltip="hide" />
+												<input type="text" class="form-control slider-value" disabled />
+											</div>
+
+											<!-- Margin Left -->
+											<div class="form-inline" style="margin-bottom: 5px">
+												<label for="proof-profile-title-margin-left" class="control-label l-label-margin-left" style="margin-right: 7.5px">&nbsp;</label>
+												<input type="text" id="proof-profile-title-margin-left" class="slider margin-left"
+													   data-slider-min="-5" data-slider-max="30" data-slider-step="1" data-slider-value="0"
+													   data-slider-tooltip="hide" />
+												<input type="text" class="form-control slider-value" disabled />
+											</div>
+
+											<!-- Show Comparative -->
+											<div class="form-inline" style="margin-bottom: 5px">
+												<label for="proof-profile-title-show-comparative" class="control-label l-label-show-comparative">&nbsp;</label>
+												<div class="checkbox">
+													<input type="checkbox" name="proof-profile-title-show-comparative" id="proof-profile-title-show-comparative"
+														class="form-control show-comparative" onchange="aaig.toggleComparativeImage(this)" />
+													<label for="proof-profile-title-show-comparative">&nbsp;</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Generate image and reset form buttons -->
+							<button type="submit" id="proof-profile-title-generate-image" class="btn btn-primary" aria-label="Generate button">
+								<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+								<span class="l-button-generate-image">&nbsp;</span>
+							</button>
+							<button type="reset" class="btn btn-danger" aria-label="Reset button">
+								<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+								<span class="l-button-reset-form">&nbsp;</span>
+							</button>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="previews row">
+					<div class="col-xs-12">
+						<div id="proof-profile-title-preview" class="panel panel-default">
+							<div class="panel-heading l-preview">&nbsp;</div>
+							<div class="panel-body">
+								<div id="proof-profile-title-conteiner">
+									<div class="text nowrap" data-width="160"></div>
+								</div>
+								<br /><br />
+								<img src="images/proof_profile_title_bg_filled.png" class="button-template" style="display: none" />
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="panel panel-default last-canvases">
+							<div class="panel-heading l-last-canvases">&nbsp;</div>
+							<div class="panel-body"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

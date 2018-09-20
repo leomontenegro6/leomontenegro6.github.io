@@ -776,13 +776,14 @@ function gtde(){
 						'highlight': '<FIM_BLOCO>',
 						'className': 'gray'
 					}, {
-						// All other tags, except for <Q>, <E>, <FIM> e <Acao: 0>
+						// All other tags, except for <Q>, <E>, <FIM> and <Acao: 0>
 						'highlight': [
 							/<Cena:[( 0-9)]*>/g, '<texto_centro>', /<(Mini_)*RETRATO(_2)*:[( 0-9)]*>/g,
-							/<Unknown[(A-z0-9)]*>/g, /<Unknown[(A-z0-9)]*:[( 0-9)]*>/g, /<COR:[( 0-9)]*>/g,
-							/<TRICK:[( 0-9)]*>/g, /<fade_in_dlg:[( 0-9)]*>/g, /<FIM_AUTO:[( 0-9)]*>/g,
-							/<SFX:[( 0-9)]*>/g, '<Flash>', '<GHOST>', '<BACK>', '<BOTAO_0>', '<BOTAO_1>',
-							'<BOTAO_2>', '<BOTAO_3>', '<ICONE_0>', '<ICONE_1>'
+							/<(Tremer_)*RETRATO:[( 0-9)]*>/g, /<Unknown[(A-z0-9)]*>/g,
+							/<Unknown[(A-z0-9)]*:[( 0-9)]*>/g, /<COR:[( 0-9)]*>/g, /<TRICK:[( 0-9)]*>/g,
+							/<fade_in_dlg:[( 0-9)]*>/g, /<FIM_AUTO:[( 0-9)]*>/g, /<SFX:[( 0-9)]*>/g,
+							'<Flash>', '<GHOST>', '<BACK>', '<BOTAO_0>', '<BOTAO_1>', '<BOTAO_2>',
+							'<BOTAO_3>', '<ICONE_0>', '<ICONE_1>'
 						],
 						'className': 'red'
 					}
