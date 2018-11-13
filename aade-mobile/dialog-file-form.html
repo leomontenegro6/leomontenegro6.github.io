@@ -1,0 +1,191 @@
+<form class="dialog-file-form" onsubmit="return aade.readScriptFiles(this)">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			
+			<div class="row">
+				<div class="col-sm-8 text-center">
+					<div id="main-options" class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default btn-sm">
+							<input type="radio" name="file-origin" id="file-origin-input" value="f"
+								onchange="aade.toggleFileOrigin(this)" />
+							<span class="glyphicon glyphicon-open-file"></span><br />
+							<strong style="color: #666">Escolher arquivo</strong>
+						</label>
+						<label class="btn btn-default btn-sm">
+							<input type="radio" name="file-origin" id="file-origin-select-test-scripts" value="t"
+								onchange="aade.toggleFileOrigin(this)" />
+							<span class="glyphicon glyphicon-list-alt"></span><br />
+							<strong style="color: #666">Abrir script de teste</strong>
+						</label>
+					</div>
+					
+					<div class="text-center">
+						
+						<input type="file" id="file-field" name="script-file" required multiple disabled
+							onchange="aade.readScriptFilesFromInput(this)" style="display: none" />
+						
+						<div id="test-scripts-list" class="btn-group-vertical file-list" data-toggle="buttons" style="display: none">
+							<p>Selecione um dos scripts abaixo</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel-group" id="configurations-collapse" role="tablist" style="margin-top: 10px">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="configurations-collapse-heading">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#configurations-collapse"
+										href="#configurations-collapse-collapse" aria-expanded="true"
+										aria-controls="configurations-collapse-collapse">
+										<span class="plus-minus glyphicon glyphicon-plus"></span>
+										Configurações
+									</a>
+								</h4>
+							</div>
+							<div id="configurations-collapse-collapse" class="panel-collapse collapse"
+								role="tabpanel" aria-labelledby="configurations-collapse-heading">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="game-field-aa1" class="control-label">Jogo:</label>
+												<div class="btn-group-vertical radio-grid" data-toggle="buttons">
+													<label class="btn btn-default active">
+														<input type="radio" name="game-field" id="game-field-aa1" value="aa1"
+															onchange="aade.changeDefaultGame(this); aade.loadEquivalenceTableFromFileForm(this.value)" checked />
+														<span class="radio" style="top: 10px"></span>
+														<span class="title">Phoenix Wright: Ace Attorney</span>
+														<span class="subtitle">(AA1)</span>
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="game-field" id="game-field-aa2" value="aa2"
+															onchange="aade.changeDefaultGame(this); aade.loadEquivalenceTableFromFileForm(this.value)" />
+														<span class="radio" style="top: 10px"></span>
+														<span class="title">Phoenix Wright: Ace Attorney</span>
+														<span class="subtitle">Justice For All (AA2)</span>
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="game-field" id="game-field-aa3" value="aa3"
+															onchange="aade.changeDefaultGame(this); aade.loadEquivalenceTableFromFileForm(this.value)" />
+														<span class="radio" style="top: 10px"></span>
+														<span class="title">Phoenix Wright: Ace Attorney</span>
+														<span class="subtitle">Trials and Tribulations (AA3)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="name-type-original" class="control-label">Nomes da Tabela de Equivalência:</label>
+												<div class="btn-group-vertical radio-grid" data-toggle="buttons">
+													<label class="btn btn-default active">
+														<input type="radio" name="name-type" id="name-type-original" value="o"
+															onchange="aade.changeDefaultNameTypes(this)" checked />
+														<span class="radio"></span>
+														Originais
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="name-type" id="name-type-adapted" value="a"
+															onchange="aade.changeDefaultNameTypes(this)" />
+														<span class="radio"></span>
+														Adaptados
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="platform-3ds" class="control-label">Plataforma:</label>
+												<div class="btn-group-vertical radio-grid" data-toggle="buttons">
+													<label class="btn btn-default active">
+														<input type="radio" name="platform" id="platform-3ds" value="3ds"
+															onchange="aade.changePreviewPlatform(this)" checked />
+														<span class="radio"></span>
+														<span class="title">Nintendo 3DS</span>
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="platform" id="platform-ds-jacutemsabao" value="ds_jacutemsabao"
+															onchange="aade.changePreviewPlatform(this)" />
+														<span class="radio" style="top: 10px"></span>
+														<span class="title">Nintendo DS</span>
+														<span class="subtitle">(Americana - Jacutem Sabão)</span>
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="platform" id="platform-ds-american" value="ds_american"
+															onchange="aade.changePreviewPlatform(this)" />
+														<span class="radio" style="top: 10px"></span>
+														<span class="title">Nintendo DS</span>
+														<span class="subtitle">(Americana)</span>
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="platform" id="platform-ds-european" value="ds_european"
+															onchange="aade.changePreviewPlatform(this)" />
+														<span class="radio" style="top: 10px"></span>
+														<span class="title">Nintendo DS</span>
+														<span class="subtitle">(Européia)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="destination-tool-diegohh" class="control-label">Tool de Destino:</label>
+												<div class="btn-group-vertical radio-grid" data-toggle="buttons">
+													<label class="btn btn-default active">
+														<input type="radio" name="destination-tool" id="destination-tool-diegohh" value="dhh"
+															onchange="aade.changeDestinationTool(this)" checked />
+														<span class="radio" style="top: 8px"></span>
+														<span class="title">Tool do DiegoHH</span>
+														<span class="subtitle" style="font-size: 11px">(Scripts em ANSI, tags em {chaves})</span>
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="destination-tool" id="destination-tool-onepiecefreak" value="opf"
+															onchange="aade.changeDestinationTool(this)" />
+														<span class="radio" style="top: 8px"></span>
+														<span class="title">Tool nova do Onepiecefreak</span>
+														<span class="subtitle" style="font-size: 11px">(Scripts em UTF-8, tags em &lt;chevron&gt;)</span>
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="destination-tool" id="destination-tool-old-onepiecefreak" value="oopf"
+															onchange="aade.changeDestinationTool(this)" />
+														<span class="radio" style="top: 8px"></span>
+														<span class="title">Antiga tool do Onepiecefreak</span>
+														<span class="subtitle" style="font-size: 11px">(Scripts em UTF-8, tags em {chaves})</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="mobile-show-initially-preview" class="control-label">Exibir Inicialmente:</label>
+												<div class="btn-group-vertical radio-grid" data-toggle="buttons">
+													<label class="btn btn-default active">
+														<input type="radio" name="mobile-show-initially" id="mobile-show-initially-preview" value="p"
+															onchange="aade.changeMobileShowInitially(this)" checked />
+														<span class="radio"></span>
+														Prévia
+													</label>
+													<label class="btn btn-default">
+														<input type="radio" name="mobile-show-initially" id="mobile-show-initially-textfield" value="t"
+															onchange="aade.changeMobileShowInitially(this)" />
+														<span class="radio"></span>
+														Campo de Texto
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

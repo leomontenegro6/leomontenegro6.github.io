@@ -1,0 +1,18 @@
+<tr>
+	<td>
+		<div class="row" style="padding-bottom: 5px">
+			<div class="col-xs-10">
+				<span style="white-space: nowrap"><b>Ordem:</b> <span class="order">{{:order}}</span></span> - 
+				<span style="white-space: nowrap"><b>Seção:</b> <span class="section">{{:section}}</span></span> - 
+				<span style="white-space: nowrap"><b>Número:</b> <span class="block-number">{{:blockNumber}}</span></span>
+			</div>
+			<div class="col-xs-2 text-right analysis-goto-action">
+				<button type="button" class="btn btn-sm btn-primary"
+					onclick="aade.gotoRow('{{:scriptTabId}}', {{:order}})">
+					<span class="glyphicon glyphicon-arrow-right"></span>
+				</button>
+			</div>
+		</div>
+		{{:previewElement}}
+	</td>
+</tr>

@@ -1,0 +1,86 @@
+<tr>
+	<td class="order hidden-xs">{{:order}}</td>
+	<td class="form-fields">
+		<div class="row visible-xs">
+			<div class="col-xs-10">
+				<span style="white-space: nowrap"><b>Ordem:</b> <span class="order">{{:order}}</span></span> - 
+				<span style="white-space: nowrap"><b>Seção:</b> <span class="section">{{:section}}</span></span> - 
+				<span style="white-space: nowrap"><b>Número:</b> <span class="block-number">{{:blockNumber}}</span></span>
+			</div>
+			<div class="col-xs-2 text-right block-menu-container">
+				
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary dropdown-toggle block-menu"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="glyphicon glyphicon-option-vertical"></span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li>
+							<a href="#" title="Mostrar campo de texto" class="show-textfield-mobile"
+							   onclick="aade.showPreviewOnMobile(this); event.preventDefault()">
+								<span class="glyphicon glyphicon-search"></span>
+								Mostrar Prévia
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<textarea class="form-control text-field" data-order="{{:order}}"
+			data-section="{{:section}}" data-block="{{:blockNumber}}" data-color="{{:color}}"
+			onkeyup="aade.updatePreview(this, '{{:dialogId}}', 't', event)"
+			onchange="aade.updateRow(this)">{{:text}}</textarea>
+		<div class="text-without-tags hidden">{{:textWithoutTags}}</div>
+	</td>
+	<td class="preview-conteiners hidden-xs">
+		<div class="row visible-xs block-data" style="padding-bottom: 5px">
+			<div class="col-xs-10">
+				<span style="white-space: nowrap"><b>Ordem:</b> <span class="order">{{:order}}</span></span> - 
+				<span style="white-space: nowrap"><b>Seção:</b> <span class="section">{{:section}}</span></span> - 
+				<span style="white-space: nowrap"><b>Número:</b> <span class="block-number">{{:blockNumber}}</span></span>
+			</div>
+			<div class="col-xs-2 text-right block-menu-container">
+				
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary dropdown-toggle block-menu"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="glyphicon glyphicon-option-vertical"></span>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li>
+							<a href="#" class="show-preview-mobile"
+							   onclick="aade.showPreviewOnMobile(this); event.preventDefault()">
+								<span class="glyphicon glyphicon-search"></span>
+								Mostrar Campo de Texto
+							</a>
+						</li>
+						<li>
+							<a href="#" class="copy-clipboard" onclick="event.preventDefault()">
+								<span class="glyphicon glyphicon-copy"></span>
+								Copiar Texto
+							</a>
+						</li>
+						<li>
+							<a href="#" class="render-image"
+							   onclick="aade.renderPreviewImageOnBrowser(this); event.preventDefault()">
+								<span class="glyphicon glyphicon-picture"></span>
+								Gerar Imagem
+							</a>
+						</li>
+						<li>
+							<a href="#" class="add-new-block" tabindex="-1"
+							   onclick="aade.addNewDialogBlock(this); event.preventDefault()">
+								<span class="glyphicon glyphicon-plus"></span>
+								Adicionar Novo Bloco
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="{{:dialogId}}" class="dialog-preview text-only">
+			<div class="character-name" data-character-code="{{:characterCode}}"></div>
+			<div class="text-window"></div>
+		</div>
+	</td>
+</tr>
