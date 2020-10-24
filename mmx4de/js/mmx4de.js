@@ -105,7 +105,7 @@ function mmx4de(){
 				var reader = new FileReader();
 				var filename = file.name;
 				
-				reader.readAsText(file, "iso-8859-1");
+				reader.readAsText(file, "utf-8");
 				reader.onload = function (evt) {
 					var fileContents = evt.target.result;
 					that.showLoadingIndicator();
