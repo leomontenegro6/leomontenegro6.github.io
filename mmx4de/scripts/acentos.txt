@@ -1,0 +1,1099 @@
+[1][SELVA]
+À noite, vovô Kowalsky vê o ímã
+cair no pé do pinguim queixoso...
+
+[SELVA]
+e vovó põe açúcar no chá
+de tâmaras do jabuti feliz.
+------------------------------
+[1][CIBERESPAÇO]
+ÀÁÂÃÇÉÊÍÓÔÕÚ
+àáâãçéêíóôõú
+
+[CIBERESPAÇO]
+Mergulhe no Ciberespaço e
+dê fim neste erro.
+------------------------------
+[1][FORÇA AÉREA]
+A nave da Repliforça
+acaba de decolar.
+
+[FORÇA AÉREA]
+Persiga e destrua-a em pleno
+ar.
+------------------------------
+[1][VULCÃO]
+Dragoon, da unidade 14, é um
+traidor.
+
+[VULCÃO]
+Localize e traga-o de volta
+à base.
+------------------------------
+[0][BASE MARINHA]
+A Repliforça dizimou a
+cidade e fugiu.
+
+[BASE MARINHA]
+Persiga-os com a
+Moto Terrestre.
+------------------------------
+[0][BIO LABORATÓRIO]
+O laboratório antigo voltou a
+funcionar.
+
+[BIO LABORATÓRIO]
+Investigue e destrua este
+laboratório.
+------------------------------
+[0][TREM MILITAR]
+Um trem militar está levando
+suprimentos.
+
+[TREM MILITAR]
+Elimine a rota de abastecimento
+deles.
+------------------------------
+[0][BASE DE GELO]
+Descobrimos uma base
+escondida na neve.
+
+[BASE DE GELO]
+Interrompa a produção da nova
+arma.
+------------------------------
+[0][SPIDER]
+Como ousa nos chamar de
+Mavericks!?
+
+[SPIDER]
+Não vou permitir que siga
+adiante.
+
+[SPIDER]
+Se preza por sua vida,
+vá embora!
+------------------------------
+[0][WALRUS]
+Meu oponente é um garoto?
+Estão pegando leve comigo.
+
+[WALRUS]
+Que seja. Vou fazer você
+em pedaços!
+------------------------------
+[0][MUSHROOM]
+Você é o tal do X?
+
+[MUSHROOM]
+Um certo alguém me deu uma
+ordem.
+
+[MUSHROOM]
+“Se X aparecer, brinque com
+ele”!
+
+[X]
+O quê?! Ordem de quem?
+
+[MUSHROOM]
+Eu não te conto!
+------------------------------
+[0][DRAGOON]
+Enfim chegou, X!
+
+[X]
+Dragoon! Por que você traiu o
+QG?!
+
+[DRAGOON]
+Rê, rê, rê.
+
+[DRAGOON]
+Se quiser descobrir, lute comigo!
+
+[X]
+Isso é errado!
+Eu não lutarei contra um aliado!
+
+[DRAGOON]
+Ingênuo como sempre.
+Ouça com atenção.
+
+[DRAGOON]
+Fui eu quem derrubou a
+Colônia Celeste!
+
+[DRAGOON]
+Foi a melhor sensação do
+mundo! Rá, rá, rá!
+
+[X]
+O quê?! Tantas pessoas
+inocentes!
+
+[X]
+Você não é Dragoon!
+É só um Maverick!
+
+[DRAGOON]
+Exatamente!
+Fique furioso, X!
+
+[DRAGOON]
+Mostre-me o seu verdadeiro
+poder!
+------------------------------
+[0][DRAGOON]
+Você é muito bom mesmo...
+X...
+
+[X]
+Dragoon! Por que você fez
+esta atrocidade?
+
+[DRAGOON]
+...Eu sempre... quis lutar...
+com você...
+
+[DRAGOON]
+...Então... ele...
+...apareceu... e...
+
+[X]
+Ele? Quem?!
+
+[DRAGOON]
+Me convidou para a
+Repliforça...
+
+[DRAGOON]
+Provocar você, para lutar...
+
+[X]
+Está dizendo que nos traiu
+apenas para poder lutar comigo?
+
+[DRAGOON]
+Estou feliz por ter lutado...
+com você pra valer...
+
+[X]
+Dragoon!!!
+------------------------------
+[0][STINGRAY]
+Hmph.
+
+[STINGRAY]
+Não acredito que você me
+seguiu até aqui.
+
+[STINGRAY]
+Mas... Daqui não passará!
+
+[STINGRAY]
+Prepare-se, X!
+------------------------------
+[0][PEACOCK]
+Potencial do alvo... imensurável?!
+
+[PEACOCK]
+Inacreditável.
+
+[X]
+Quem é você? Por que está
+fazendo isso?
+
+[PEACOCK]
+Um certo alguém me pediu um
+favor.
+
+[PEACOCK]
+“Investigar você”,
+ele disse.
+
+[X]
+Quem é esse alguém!?
+
+[PEACOCK]
+Então, vamos começar!
+------------------------------
+[0][OWL]
+Você transformou mesmo minha
+unidade em sucata, não foi?
+
+[OWL]
+Vou retribuir o favor
+à altura!
+------------------------------
+[0][BEAST]
+Arrumando briga com a minha
+unidade?
+
+[BEAST]
+Não teme por sua vida?
+
+[BEAST]
+Já tem um tempo que eu não
+mato alguém.
+
+[BEAST]
+Vou tratar você muito “bem”,
+pode ter certeza!
+------------------------------
+[0][TEIA RELÂMPAGO]
+Atira uma teia envolta em
+eletricidade.
+
+Pode ser usada tanto para
+ataque, como para criar paredes
+escaláveis
+
+que permitem acessar
+áreas mais elevadas.
+------------------------------
+[0][TORRE DE GELO]
+Cria um grande bloco de gelo
+que serve de escudo.
+
+Útil também para prender
+inimigos com sua frieza,
+antes de derreter.
+------------------------------
+[0][ALMA CORPÓREA]
+Acumula energia para criar
+uma ilusão.
+
+Os inimigos sofrerão danos ao
+encostar na projeção de
+energia criada.
+
+Entretanto, o gasto de
+energia é bastante
+elevado.
+
+Depois de algum tempo após
+utilizar, a projeção
+desaparecerá.
+
+Ela também sumirá se
+sofrer muitos danos.
+------------------------------
+[0][FOGO ASCENDENTE]
+Atira bolas de fogo
+verticalmente.
+
+É efetivo contra alvos aéreos e
+inimigos em plataformas acima
+de você.
+
+Algumas áreas e objetos podem
+ser queimados com esta arma.
+------------------------------
+[0][CAÇADOR TERRESTRE]
+Atira mini-arraias que andam
+rente às superficies.
+
+É efetivo contra inimigos no
+solo, nas paredes ou no
+teto.
+
+Aperte para baixo enquanto os
+robôs escalam tetos, para
+fazê-los cair.
+------------------------------
+[0][LASER GUIADO]
+Mova o cursor até travar a mira
+nos inimigos.
+
+Em seguida, ataque-os com um
+raio laser teleguiado.
+------------------------------
+[0][CICLONE DUPLO]
+Lança ciclones pelas mãos, em
+duas direções.
+
+É mais eficaz quando se está
+cercado de inimigos, ou contra
+alvos aéreos.
+------------------------------
+[0][LÂMINAS GÊMEAS]
+Atira duas lâminas em direções
+diferentes.
+
+Esta arma tem grande alcance
+de fogo, e atinge inimigos com
+facilidade.
+------------------------------
+[0][DR. LIGHT]
+Esta batalha nunca deveria ter
+acontecido, X...
+
+[DR. LIGHT]
+Por que replóides lutam entre
+si?
+
+[DR. LIGHT]
+Por que aqueles, que deveriam
+trazer paz, continuam lutando?
+
+[DR. LIGHT]
+Tem que ser só um mal
+entendido...
+
+[DR. LIGHT]
+X, entre nesta cápsula.
+
+[DR. LIGHT]
+Equipe-se com isso e descubra
+a verdade.
+
+[DR. LIGHT]
+Receba este módulo para as
+pernas,
+
+[DR. LIGHT]
+e aperte duas vezes o botão
+de pulo, para planar.
+
+[DR. LIGHT]
+Você poderá mover para os
+lados,
+
+[DR. LIGHT]
+e manter-se no ar por alguns
+instantes.
+
+[DR. LIGHT]
+Será útil para atravessar áreas
+perigosas e lugares elevados.
+
+[DR. LIGHT]
+Finde esta trágica guerra
+o quanto antes, X.
+------------------------------
+[0][DR. LIGHT]
+Receba este módulo para a
+a cabeça, X.
+
+[DR. LIGHT]
+Este módulo aprimorará sua
+habilidade com armas especiais.
+
+[DR. LIGHT]
+Também reduzirá o consumo de
+energia de armas
+
+[DR. LIGHT]
+quando estiverem perto de
+acabar.
+
+[DR. LIGHT]
+Agora poderá usar suas armas
+especiais mais do que antes.
+------------------------------
+[0][DR. LIGHT]
+Receba este módulo para seu
+corpo, X.
+
+[DR. LIGHT]
+Esta parte da armadura
+absorverá danos recebidos,
+
+[DR. LIGHT]
+e gradualmente armazenará
+energia no seu interior.
+
+[DR. LIGHT]
+Quando a armadura estiver
+totalmente energizada,
+
+[DR. LIGHT]
+Poderá executar o golpe
+invencível, o Ataque Nova.
+
+[DR. LIGHT]
+Mas, ao executá-lo, toda a
+energia acumulada é consumida.
+
+[DR. LIGHT]
+Use-o somente em situações
+extremas.
+------------------------------
+[0][DR. LIGHT]
+Receba este módulo para o seu
+braço.
+
+[DR. LIGHT]
+Com isto, seus tiros carregados
+serão mais efetivos
+
+[DR. LIGHT]
+contra inimigos fortes.
+
+[DR. LIGHT]
+Se o tiro acertar o oponente,
+é gerado um rastro de plasma,
+
+[DR. LIGHT]
+causando danos adicionais
+ao mesmo.
+
+[DR. LIGHT]
+No entanto, há dois módulos de
+braço intercambiáveis.
+
+[DR. LIGHT]
+Ao entrar nesta cápsula, o
+módulo anterior será substituído.
+------------------------------
+[0][DR. LIGHT]
+Receba este módulo para o
+braço.
+
+[DR. LIGHT]
+Com isto, você poderá lançar
+4 tiros carregados de uma vez.
+
+[DR. LIGHT]
+Ele demanda mais tempo
+de carga,
+
+[DR. LIGHT]
+mas você poderá atirar os tiros
+estocados na hora que quiser.
+
+[DR. LIGHT]
+No entanto, há dois módulos de
+braço intercambiáveis.
+
+[DR. LIGHT]
+Ao entrar nesta cápsula, o
+módulo anterior será substituído.
+------------------------------
+[0][QG DOS CAÇADORES]
+Mavericks foram localizados 
+na coordenada 5567!
+
+[QG DOS CAÇADORES]
+Os Mavericks estão ocupando 
+a Côlonia Celeste, utilizando
+
+[QG DOS CAÇADORES]
+armamento militar de
+última geração!
+
+[QG DOS CAÇADORES]
+Acredita-se que o exército
+pertença a Repliforça!
+
+[X]
+Entendido.
+Já estou a caminho!
+------------------------------
+[1][X]
+...Quem é você?
+
+[CORONEL]
+Eu sou o Coronel da Repliforça.
+
+[X]
+Foi a Repliforça que esteve
+ocupando esta área?
+
+[X]
+Por favor, responda!
+
+[CORONEL]
+Nós? Que absurdo!
+
+[CORONEL]
+Eu só vim até aqui para salvar
+minha irmã.
+
+[CORONEL]
+Somente para isso!
+
+[CORONEL]
+A Repliforça não é responsável
+pelo caos nesta região!
+
+[X]
+Ainda assim, preciso que você
+se desarme
+
+[X]
+e me siga até o
+QG dos Caçadores.
+
+[CORONEL]
+Eu me recuso!
+
+[CORONEL]
+Está dizendo para eu e meus
+soldados largarem as armas?
+
+[CORONEL]
+A única forma de largarmos
+nossas armas
+
+[CORONEL]
+é se não estivermos mais em
+condições de lutar.
+
+[X]
+Mas então vocês serão
+classificados como Mavericks,
+
+[X]
+e tratados como tal.
+
+[CORONEL]
+Façam o que quiser!
+
+[CORONEL]
+Nós, da Repliforça, preferimos
+ir à luta
+
+[CORONEL]
+a jogar fora o nosso orgulho de
+soldado.
+
+[CORONEL]
+Podem nos considerar como
+Mavericks,
+
+[CORONEL]
+se assim desejarem!
+
+[X]
+Espere! Acalme-se!
+Coronel!
+------------------------------
+[0][X]
+Quem é você?
+
+[DOUBLE]
+Eu me chamo Double.
+Sou um caçador novato.
+
+[DOUBLE]
+Chefe!
+
+[DOUBLE]
+A Repliforça já começou
+um golpe de estado!
+
+[X]
+O quê?!
+
+[X]
+O Coronel está
+sendo precipitado demais!
+
+[DOUBLE]
+Chefe!
+
+[DOUBLE]
+Há ordens para você sair e
+enfrentá-los!
+
+[X]
+Entendido. Estou a caminho!
+------------------------------
+[0][DOUBLE]
+Chefe!
+
+[DOUBLE]
+Acabou de chegar uma
+mensagem do Coronel!
+
+[CORONEL]
+X! Estou esperando você no
+Museu Memorial.
+
+[CORONEL]
+Venha até aqui, e seja pontual!
+
+[DOUBLE]
+Chefe, só pode ser uma
+armadilha!
+
+[X]
+Talvez... Mas infelizmente eu
+não posso evitar!
+------------------------------
+[0][X]
+Coronel! Pare com esta loucura
+agora!
+
+[CORONEL]
+Eu me recuso!
+
+[X]
+Acalme-se, Coronel!
+Pense melhor!
+
+[CORONEL]
+Nós, da Repliforça, obteremos
+nossa independência!
+
+[CORONEL]
+Este é o propósito desta
+batalha!
+
+[CORONEL]
+Em guarda! Não mostrarei
+misericórdia! Vamos lá!
+------------------------------
+[1][CORONEL]
+Você é tão bom quanto eu
+pensei que fosse!
+
+[CORONEL]
+Mas na próxima, eu não pegarei
+leve como desta vez! Adeus!
+
+[X]
+Coronel!
+------------------------------
+[0][DOUBLE]
+A Repliforça reuniu suas tropas
+e começou a se mover!
+
+[X]
+Para qual lugar?
+
+[DOUBLE]
+Para o porto espacial!
+
+[DOUBLE]
+Planejam
+dirigir-se ao espaço sideral!
+
+[X]
+Depressa! Temos que impedir o
+Coronel!
+------------------------------
+[0][X]
+Coronel, para trás!
+
+[CORONEL]
+Combaterei quem interferir
+com nossa independência!
+
+[X]
+Pare com isso! Isto é
+apenas uma ilusão!
+
+[CORONEL]
+Infelizmente nunca haverá
+acordo com os caçadores.
+
+[CORONEL]
+Vamos lutar,
+X!
+
+[CORONEL]
+Não se contenha mais!
+
+[CORONEL]
+Lute com toda sua força!
+------------------------------
+[0][DOUBLE]
+Chefe!
+A Repliforça voou para o
+
+[DOUBLE]
+espaço sideral...
+
+[X]
+Double, prepare a nossa
+espaçonave.
+
+[X]
+Eu vou atrás deles!
+
+[DOUBLE]
+Chefe, isto é imprudente!
+
+[DOUBLE]
+E também é muito perigoso!
+
+[X]
+Estou indo em direção ao
+espaço agora mesmo!
+
+[X]
+Double, deixarei você no
+comando do QG!
+------------------------------
+[0][X]
+Double! O que você...
+está fazendo aqui!?
+
+[DOUBLE]
+Rê, rê, rê...
+Rááá, rá, rá, rá, rá!
+
+[DOUBLE]
+Tanto a Repliforça como os
+Caçadores de Mavericks...
+
+[DOUBLE]
+Todos são um bando de idiotas.
+
+[DOUBLE]
+Bem, graças a isso, o meu
+trabalho ficou bem mais fácil!
+
+[X]
+O-O que está dizendo, Double?
+O que isso quer dizer?
+
+[DOUBLE]
+Pense nisso quando estiver no
+outro mundo! Morra, X!
+
+[DOUBLE]
+Estive esperando muito por isso.
+Vou cortá-lo em mil pedaços!
+------------------------------
+[1][X]
+Double!
+
+[DOUBLE]
+Droga...!
+
+[DOUBLE]
+Não acredito que eu
+perdi para alguém como você...
+
+[X]
+Double, me diga!
+Até você nisso? Por quê?
+
+[DOUBLE]
+Rê, rê, rê...
+Rá, rá, rá, rá, rá!
+
+[DOUBLE]
+Você é ingênuo demais, X!
+
+[DOUBLE]
+Fui enviado como
+espião
+
+[DOUBLE]
+para monitorá-lo desde
+o início!
+
+[X]
+Double...! Eu... Eu...!
+Eu acreditei em você!
+
+[DOUBLE]
+Rá, rá, rá, rá!
+
+[DOUBLE]
+Esta sua ingenuidade ainda vai
+te matar um dia!
+
+[DOUBLE]
+Adeus, X!
+
+[DOUBLE]
+Estarei lhe esperando
+no outro mundo!
+
+[X]
+Double!!
+------------------------------
+[0][X]
+General! Quais são suas
+intenções exatamente?
+
+[GENERAL]
+Eu criarei uma nação de
+replóides. Este é nosso desejo.
+
+[GENERAL]
+Enfrentarei todos que interferirem
+com nossa independência.
+
+[X]
+Deve haver outras soluções,
+além de lutarmos!
+
+[GENERAL]
+Nós fomos rotulados de
+Mavericks.
+
+[GENERAL]
+Que outra escolha teríamos,
+senão ir à luta?
+
+[X]
+Mas...
+
+[GENERAL]
+Nesse ponto que chegamos,
+não posso mais voltar atrás!
+
+[GENERAL]
+Prepare-se, X! Parece que
+estamos destinados a lutar!
+------------------------------
+[1][X]
+O-O quê!?
+O que está acontecendo!?
+
+[GENERAL]
+Não pode ser...
+
+[GENERAL]
+Esta arma não
+deveria estar se movendo...
+
+[X]
+General! O que está havendo?
+
+[GENERAL]
+Alguém está fazendo a arma
+se mover por conta própria!
+
+[GENERAL]
+Rápido, X...
+
+[GENERAL]
+A Terra está... em perigo!
+
+[X]
+Entendido. Impedirei esta arma
+agora mesmo!
+------------------------------
+[0][SIGMA]
+Magnífico...
+É tão magnífico, X!
+
+[X]
+Você é... Sigma!
+
+[SIGMA]
+Rê, rê, rê. O plano de fazer a
+Repliforça se virar contra vocês,
+
+[SIGMA]
+Caçadores de Mavericks,
+funcionou perfeitamente!
+
+[SIGMA]
+Double também fez um
+excelente trabalho como espião!
+
+[X]
+Droga! Seu desgraçado!
+
+[SIGMA]
+Rê, rê, rê.
+
+[SIGMA]
+A Repliforça não poderia
+comemorar mais!
+
+[SIGMA]
+Só o que me resta é usar a
+arma que eles fizeram,
+
+[SIGMA]
+para destruir a Terra.
+
+[X]
+Cale a boca! Não deixarei que
+faça isso!
+
+[SIGMA]
+Tente então.
+Se puder, é claro, X!
+------------------------------
+[1][SIGMA]
+Rê, rê, rê...
+Rê, rê, rê...
+
+[X]
+Qual é a graça?
+
+[SIGMA]
+Esta arma está mirada em
+direção à Terra...
+
+[SIGMA]
+Ninguém...
+
+[SIGMA]
+Pode impedi-la agora!
+
+[X]
+Droga!
+
+[SIGMA]
+Rá, rá, rá, rá, rá!
+Adeus, X!
+------------------------------
+[1][X]
+General!
+
+[GENERAL]
+Se utilizarmos o meu corpo,
+
+[GENERAL]
+podemos impedir esta arma.
+
+[X]
+Mas, se fizer isso, você vai...
+
+[GENERAL]
+Permiti que muitos dos meus
+homens morressem...
+
+[GENERAL]
+Não conseguirei mais viver com
+isso...
+
+[GENERAL]
+X, perdoe toda a nossa
+insensatez...
+
+[X]
+Generaaaaal!
+------------------------------
+[0][X]
+Você é Dragoon, um caçador
+da unidade 14!
+
+[DRAGOON]
+Isso é horrível, X!
+
+[DRAGOON]
+Aquele Maverick acaba de
+destruir o reator de força!
+
+[X]
+O quê?! Assim, a Colônia Celeste
+cairá no solo a qualquer minuto!
+
+[DRAGOON]
+É tarde demais, X!
+Vou sair daqui agora mesmo.
+
+[DRAGOON]
+Não faça nada imprudente!
+Evacue também, entendido?
+------------------------------
+[1][X]
+Nesse ritmo, a cidade abaixo
+se tornará um mar de chamas.
+
+[X]
+Haverão muitas vítimas...
+
+[X]
+Por agora, só me resta sair
+daqui, e ir em direção à cidade!
+------------------------------
+[1][X]
+Mas que problema!
+
+[X]
+Nesse ritmo, todos da Repliforça
+serão rotulados de Mavericks!
+------------------------------
+[0][SIGMA]
+Rê, rê, rê.
+Você é bom, X!
+
+[SIGMA]
+Mas será apenas até aqui que
+você chegará.
+
+[SIGMA]
+Você não será capaz de se
+esquivar deste ataque!
+------------------------------
+[0][SIGMA]
+Rá, rá, rá, rá! O que acha deste
+meu poder tremendo?!
+
+[SIGMA]
+Suma na imensidão do espaço!
+Torne-se poeira cósmica!
+------------------------------
+[1][CORONEL]
+Impressionante...
+Mas é tarde demais!
+
+[X]
+O quê?!
+
+[CORONEL]
+A Repliforça...
+
+[CORONEL]
+Já voou para o
+espaço!
+
+[CORONEL]
+Este...
+será o meu fim...
+
+[CORONEL]
+Mas a Repliforça não perecerá!
+
+[CORONEL]
+Uma nação para replóides...
+
+[CORONEL]
+Há de nascer no
+espaço sideral!
+
+[X]
+Coroneeeel!!!
+------------------------------
+[1][X]
+Que horrível.
+A cidade está em ruínas.
+
+[X]
+Tantas pessoas inocentes...
+Não vou perdoá-los!
+------------------------------
+[0][DR. LIGHT]
+X, você finalmente chegou...
+
+[DR. LIGHT]
+Dentro dessa cápsula, estão
+seladas as partes secretas
+
+[DR. LIGHT]
+da Armadura Definitiva.
+
+[DR. LIGHT]
+Ao executar seu Giga Ataque,
+suas asas se abrirão,
+
+[DR. LIGHT]
+e você poderá desferir o golpe
+invencível, Ataque Nova.
+
+[DR. LIGHT]
+No entanto, esta armadura não
+está totalmente concluída,
+
+[DR. LIGHT]
+e não posso garantir toda a
+sua confiabilidade.
+
+[DR. LIGHT]
+Se for aceitável para você,
+entre nesta cápsula agora.
+------------------------------

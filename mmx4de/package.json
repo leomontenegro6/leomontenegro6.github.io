@@ -1,0 +1,23 @@
+{
+	"name": "Editor de diálogos do Mega Man X4",
+	"version": "0.1d",
+	"description": "Editor de diálogos do Mega Man X4",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": "https://github.com/leomontenegro6/leomontenegro6.github.io/tree/master/mmx4de",
+	"keywords": [
+		"mega",
+		"man",
+		"battle",
+		"network",
+		"rock",
+		"man"
+	],
+	"author": "Solid One, Joapeer",
+	"license": "GPL-3.0",
+	"devDependencies": {
+		"electron": "~1.8.4"
+	}
+}
