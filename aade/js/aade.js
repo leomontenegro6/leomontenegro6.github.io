@@ -315,6 +315,10 @@ function aade(){
 				'label': 'AAI1 Caso 1 Início (DiegoHH e djmatheusito).txt'
 			},
 			{
+				'filename': 'AAI2 Case 1 Beginning (DiegoHH and djmatheusito).txt',
+				'label': 'AAI2 Caso 1 Início (DiegoHH e djmatheusito).txt'
+			},
+			{
 				'filename': 'AA1 Accents (DiegoHH).txt',
 				'label': 'AA1 Acentos (DiegoHH).txt'
 			},
@@ -800,6 +804,7 @@ function aade(){
 							if(checkBreakDetected){
 								checkFirstAlphanumericChar = false;
 								blockNumber++;
+								
 							}
 
 							tagText = '';
@@ -823,7 +828,7 @@ function aade(){
 						}
 					}
 				}
-
+				
 				// Loading dialog parser table
 				var $dialogParserTable = $divTabpanel.children('table');
 				var $tbody = $dialogParserTable.children('tbody');
@@ -1446,6 +1451,13 @@ function aade(){
 				} else {
 					lastColor = 0;
 				}
+				
+				// if selected game is AAI2, all text starts with color 0.
+				if(game == 'aai2')
+				{
+					lastColor = 0;
+				}
+				
 				this.lastColor = this.getColorClass(lastColor);
 			}
 			
@@ -1607,6 +1619,7 @@ function aade(){
 		var $radioGameFieldAA3 = $('#config-game-field-aa3');
 		var $radioGameFieldAA4 = $('#config-game-field-aa4');
 		var $radioGameFieldAAI1 = $('#config-game-field-aai1');
+		var $radioGameFieldAAI2 = $('#config-game-field-aai2');
 		var $radioNameTypeOriginal = $('#config-name-type-original');
 		var $radioNameTypeAdapted = $('#config-name-type-adapted');
 		var $radioPlatform3DS = $('#config-platform-3ds');
@@ -1628,7 +1641,10 @@ function aade(){
 			$radioGameFieldAA3.prop('checked', true);
 		} else if(this.configs.game == 'aa2'){
 			$radioGameFieldAA2.prop('checked', true);
-		} else {
+		} else if(this.configs.game == 'aai2'){
+			$radioGameFieldAAI2.prop('checked', true);
+		} 
+		else {
 			$radioGameFieldAA1.prop('checked', true);
 		}
 		
@@ -1685,6 +1701,7 @@ function aade(){
 		var $radioGameFieldAA3 = $('#config-game-field-aa3');
 		var $radioGameFieldAA4 = $('#config-game-field-aa4');
 		var $radioGameFieldAAI1 = $('#config-game-field-aai1');
+		var $radioGameFieldAAI1 = $('#config-game-field-aai2');
 		var $radioNameTypeOriginal = $('#config-name-type-original');
 		var $radioNameTypeAdapted = $('#config-name-type-adapted');
 		var $radioPlatform3DS = $('#config-platform-3ds');
@@ -1765,11 +1782,12 @@ function aade(){
 		var checkedGame = $checkedRadioGameField.val();
 		var checkedPlatform = $checkedRadioPlatformField.val();
 		
-		if(checkedGame == 'aai1'){
+		if(checkedGame == 'aai1' || checkedGame == 'aai2'){
 			$radioInvalidateLargeLinesFields.attr('disabled', 'disabled').prop('checked', false);
 			if(checkedPlatform == '3ds') $radioPlatformDSJTS.prop('checked', true);
 			$radioPlatform3DS.attr('disabled', 'disabled');
-		} else {
+		} 
+		else {
 			$radioPlatform3DS.removeAttr('disabled', 'disabled');
 			$radioInvalidateLargeLinesFields.removeAttr('disabled').first().prop('checked', true);
 		}
@@ -3423,7 +3441,7 @@ function aade(){
 		
 		if(!platform) platform = this.defaultConfigs.platform;
 		
-		if(game == 'aai1'){
+		if(game == 'aai1' || game == 'aai2'){
 			if(platform == '3ds') $selectPlatform.val('ds_jacutemsabao');
 			$selectPlatform.find("option[value='3ds']").attr('disabled', 'disabled');
 		} else {
